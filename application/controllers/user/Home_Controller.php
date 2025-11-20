@@ -18,6 +18,7 @@ class Home_Controller extends CI_Controller {
     	$this->data['time1'] = $this->Home_Model->get_time1();
     	$this->data['time2'] = $this->Home_Model->get_time2();
     	$this->data['time3'] = $this->Home_Model->get_time3();
+		$this->data['time4'] = $this->Home_Model->get_time4();
     	$this->data['inactiveDate'] = $this->Home_Model->getInactiveData();
     	$this->data['dateOfOneMonth'] = $this->Home_Model->getDataOneMonth();
     	$this->updateInactiveData($this->data['inactiveDate']);

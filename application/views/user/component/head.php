@@ -13,8 +13,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" href="<?=base_url()?>webroot/user/images/logo_lotter.png">
 		<meta charset="utf-8">
-		<title>Haryana State Lottery</title>
-		<meta name="keywords" content="Haryana State Lottery">
+		<title>Kerala Weekly Lottery</title>
+		<meta name="keywords" content="Kerala Weekly Lottery">
         <meta name="description" content="Best Lottery Agency in Haryana">
 		<!--<link rel="stylesheet" href="<?=base_url()?>webroot/user/css/style.css">-->
 		<link rel="stylesheet" href="<?=base_url()?>webroot/user/css/bootstrap.min.css">
@@ -27,26 +27,24 @@
 		<style>
 		
 body{
-    background:#0f8a33!important;
+    background: -webkit-linear-gradient(180deg, #c40051e3, #ff9500);
 }		
 		    
 #navbar {
-  /*background: -webkit-linear-gradient(#035272, #7fc6d7);*/
-  /*background: -webkit-linear-gradient(#720303, #d77f7f);*/
-  background:#428dcc;
+  background: -webkit-linear-gradient(180deg, #e1005efd, #ff7300ff); /* blue → soft purple */
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 .navbar-nav .nav-link{
-        color: #222 !important;
+        color: #ffffff !important;
         text-transform: uppercase;
         font-weight: bold;
         letter-spacing: 0.5px;
 }
 .navbar-nav .nav-link:hover{
-    color:red !important;
+    color:#ffffff !important;
 }
 footer{
-    background-color:red;
+    background: -webkit-linear-gradient(180deg, #be004fff, #d96200ff); /* blue → soft purple */
     padding:15px 0px;
     text-align:center;
     color:#FFF;
@@ -62,7 +60,7 @@ footer a{
    font-weight:bold;
 }
 footer a:hover{
-    color:#ffc107;
+    color:#ffffff;
     text-decoration:none;
 }
 footer .bottom-content{
@@ -72,12 +70,12 @@ footer .bottom-content{
 .middle-section{
     width:100%;
     height:auto;
-    background:#0f8a33;
-    padding-bottom:80px;
+    background: -webkit-linear-gradient(180deg, #c40051e3, #ff9500);
     padding-top:20px;
+    padding-bottom:20px;
 }
 .middle-section h1{
-    color: #f53218; 
+    color: #ffffff; 
     font-size: 66px;
     letter-spacing:2px;
     font-weight:bold;
@@ -85,11 +83,27 @@ footer .bottom-content{
     line-height:60px;
 }
 .middle-section h2{
-    color:#f53218;
+    color:#ffffff;
     font-size:28px;
     line-height:35px;
     letter-spacing: 1px;
     font-weight: bold;
+}
+.red-button{
+    background: #ff0202ff;
+    border-color:  #ff0202ff;
+}
+.red-button:hover {
+  background-color: #f97272ff; /* Link color when hovered */
+  border-color: #f97272ff;
+}
+.green-button{
+    background: #0048ffff;
+    border-color: #0048ffff;
+}
+.green-button:hover {
+  background-color: #789dfcff; /* Link color when hovered */
+  border-color: #789dfcff;
 }
 .oldhnew{
     margin-top:20px;
@@ -107,16 +121,16 @@ footer .bottom-content{
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
     padding: 15px;
     border-radius: 10px;
-    background: #0014ff;
+    background: #00ccffc4;
     display:flex;
     justify-content:center;
     align-items:center;
 }
-#left_box{
+#left_box {
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
     padding: 25px;
     border-radius: 10px;
-    background: #b20909;
+    background: #00ffd0a6;
     margin-right: 25px;
     height: 115px;
     display: flex;
@@ -191,15 +205,15 @@ footer .bottom-content{
   justify-content:center;
   margin-bottom:25px;
 }
-.row.equal h5{
+.row.equal h5 {
     font-weight: bold;
     letter-spacing: 1px;
-    color: #fbbd02;
-    font-size:22px;
+    color: #000000;
+    font-size: 22px;
 }
-.row.equal #time{
+.row.equal #time {
     font-weight: bold;
-    color: coral;
+    color: #b30e0e;
     letter-spacing: 0.5px;
     font-size: 16px;
 }

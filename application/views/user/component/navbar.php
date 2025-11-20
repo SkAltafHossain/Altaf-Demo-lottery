@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-light" id="navbar" style="">
-    <a class="navbar-brand" href="<?=base_url('home')?>" title="Haryana State Lottery" style="align-items: center !important;">
+    <a class="navbar-brand" href="<?=base_url('home')?>" title="Kerala Weekly Lottery" style="align-items: center !important;">
         <div style = "text-align: center;">
             <img src="<?=base_url()?>webroot/user/images/logo_lottery_1.png" width="40px" class="d-inline-block align-top">
-            <span style = "color: red; display: inline-block; vertical-align: middle; font-size: 25px; font-weight: 700;text-transform: uppercase; margin-left: 5px; letter-spacing: 1px;">  Haryana State Lottery</span>
+            <span style = "color: white; display: inline-block; vertical-align: middle; font-size: 25px; font-weight: 700;text-transform: uppercase; margin-left: 5px; letter-spacing: 1px;"> Kerala Weekly Lottery</span>
         </div>
     </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

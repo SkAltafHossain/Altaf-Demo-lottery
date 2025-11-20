@@ -62,6 +62,22 @@ class Home_Model extends CI_model
         return $time;
   	} 
 
+    public function get_time4()
+  	{
+  	    $currentdate=date('Y-m-d');
+  		  $this->db->select('tbl_price_manegment.status as statusPrice');
+  		  $this->db->from('tbl_price_manegment');
+  		  $this->db->where('tbl_price_manegment.time','4');
+  		  $this->db->where('tbl_price_manegment.date',$currentdate);
+  		  $this->db->where('tbl_price_manegment.status','Active');
+        
+        $parent = $this->db->get();
+   
+        $time = $parent->result();
+ 
+        return $time;
+  	} 
+
   	public function getInactiveData(){
 
 		  $this->db->select('DATE_FORMAT(tbl_price_manegment.date, "%d/%m/%Y") as date_1,tbl_price_manegment.id,tbl_time.time as time_t ');
