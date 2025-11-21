@@ -2,7 +2,7 @@
     <p class=""><a href="<?=base_url('home')?>">Home</a> | <a href="<?=base_url('today-result')?>">Today Result</a> | <a href="<?=base_url('old-result')?>">Old Results</a> | <a href="<?=base_url('contact')?>">Contact</a></p>
   <!-- Copyright -->
   <div class="bottom-content">
-    © 2021 Lottery. All rights reserved || Powered By : Haryana State Lottery
+    © 2021 Lottery. All rights reserved || Powered By : Kerala Weekly Lottery
   </div>
   <!-- Copyright -->
 </footer>          

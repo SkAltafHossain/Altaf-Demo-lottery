@@ -5,17 +5,17 @@
         <div class="row equal">
         <div class="col-md-8" id="leftone">
             <div class="boxthing colour-1">  
-                <h5>DIAMOND MORNING</h5>
+                <h5>MORNING</h5>
                 <!-- <p>11:00 AM</p> -->
                 <input type="text" name="time" id="time" value="11:30 AM" style="border: none; background: transparent;">
             </div>
         </div> 
         <div class="col-md-3" id="rightone">
             <div class="boxthing colour-2">
-            	<input type="date"max="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -1 day')); ?>" min="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -31 day')); ?>">
-                <button class="btn btn-outline-primary" type="submit" style="background: #c002ff;color: white;">DBF</button>
-                <input type="date" name="pdate" id="pdate"max="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -1 day'));?>" min="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -31 day')); ?>" class="validate[required]" data-errormessage-value-missing="Date is required" data-prompt-position="bottomLeft">
-                <button class="btn btn-outline-warning" type="submit" >PDF</button>
+            	<input type="date" max="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -1 day')); ?>" min="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -31 day')); ?>">
+                <button class="btn btn-primary btn-lg green-button" type="submit" >DBF</button>
+                <input type="date" name="pdate" id="pdate" max="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -1 day'));?>" min="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -31 day')); ?>" class="validate[required]" data-errormessage-value-missing="Date is required" data-prompt-position="bottomLeft">
+                <button class="btn btn-primary btn-lg red-button" type="submit" >PDF</button>
                <!--  <a href="<?=base_url('today_result/'.$value->id)?>"class="btn btn-warning btn-lg" target= "_blank">PDF</a> -->
             </div>  
         </div>
@@ -25,17 +25,17 @@
       <div class="row equal">
         <div class="col-md-8" id="leftone">
             <div class="boxthing colour-1">
-                <h5>DIAMOND DAY</h5>
+                <h5>DAY</h5>
                 <!-- <p>03:00 PM</p> -->
               <input type="text" name="time" id="time" value="03:30 PM" style="border: none; background: transparent;"> 
             </div>
         </div> 
         <div class="col-md-3" id="rightone">
             <div class="boxthing colour-2">
-                <input type="date"max="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -1 day')); ?>"  min="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -31 day')); ?>">
-                <button class="btn btn-outline-primary" type="submit" style="background: #c002ff;color: white;">DBF</button>
-                <input type="date"  name="pdate" id="pdate"max="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -1 day'));?>"min="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -31 day')); ?>" class="validate[required]" data-errormessage-value-missing="Date is required" data-prompt-position="bottomLeft">
-                <button class="btn btn-outline-warning" type="submit" style="background: #48aec0;color: white;">PDF</button>
+                <input type="date" max="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -1 day')); ?>"  min="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -31 day')); ?>">
+                <button class="btn btn-primary btn-lg green-button" type="submit">DBF</button>
+                <input type="date"  name="pdate" id="pdate" max="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -1 day'));?>"min="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -31 day')); ?>" class="validate[required]" data-errormessage-value-missing="Date is required" data-prompt-position="bottomLeft">
+                <button class="btn btn-primary btn-lg red-button" type="submit">PDF</button>
                <!--  <a href="<?=base_url('today_result/'.$value->id)?>"class="btn btn-warning btn-lg" target= "_blank">PDF</a> -->
             </div>
         </div>
@@ -45,17 +45,37 @@
                <div class="row equal">
         <div class="col-md-8" id="leftone">
             <div class="boxthing colour-1">
-                <h5>DIAMOND EVENING</h5>
-                <!-- <p>07:00 PM</p> -->
-                <input type="text" name="time" id="time" value="07:30 PM" style="border: none; background: transparent;">
+                <h5>EVENING</h5>
+                <!-- <p>05:00 PM</p> -->
+                <input type="text" name="time" id="time" value="05:00 PM" style="border: none; background: transparent;">
             </div>
         </div> 
         <div class="col-md-3" id="rightone">
             <div class="boxthing colour-2">
-                <input type="date"max="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -1 day')); ?>"  min="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -31 day')); ?>">
-                <button class="btn btn-outline-primary" type="submit" style="background: #c002ff;color: white;">DBF</button>
-                <input type="date"  name="pdate" id="pdate"max="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -1 day'));?>" min="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -31 day')); ?>" class="validate[required]" data-errormessage-value-missing="Date is required" data-prompt-position="bottomLeft">
-                <button class="btn btn-outline-warning" type="submit" style="background: #48aec0;color: white;">PDF</button>
+                <input type="date" max="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -1 day')); ?>"  min="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -31 day')); ?>">
+                <button class="btn btn-primary btn-lg green-button" type="submit">DBF</button>
+                <input type="date"  name="pdate" id="pdate" max="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -1 day'));?>" min="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -31 day')); ?>" class="validate[required]" data-errormessage-value-missing="Date is required" data-prompt-position="bottomLeft">
+                <button class="btn btn-primary btn-lg red-button" type="submit">PDF</button>
+               <!--  <a href="<?=base_url('today_result/'.$value->id)?>"class="btn btn-warning btn-lg" target= "_blank">PDF</a> -->
+            </div>
+        </div>
+        </div>
+    </form>
+    <form class="from-group" action="oldday_result_date7" method="POST" id="form3">
+               <div class="row equal">
+        <div class="col-md-8" id="leftone">
+            <div class="boxthing colour-1">
+                <h5>NIGHT</h5>
+                <!-- <p>08:30 PM</p> -->
+                <input type="text" name="time" id="time" value="08:30 PM" style="border: none; background: transparent;">
+            </div>
+        </div> 
+        <div class="col-md-3" id="rightone">
+            <div class="boxthing colour-2">
+                <input type="date" max="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -1 day')); ?>"  min="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -31 day')); ?>">
+                <button class="btn btn-primary btn-lg green-button" type="submit">DBF</button>
+                <input type="date"  name="pdate" id="pdate" max="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -1 day'));?>" min="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -31 day')); ?>" class="validate[required]" data-errormessage-value-missing="Date is required" data-prompt-position="bottomLeft">
+                <button class="btn btn-primary btn-lg red-button" type="submit">PDF</button>
                <!--  <a href="<?=base_url('today_result/'.$value->id)?>"class="btn btn-warning btn-lg" target= "_blank">PDF</a> -->
             </div>
         </div>

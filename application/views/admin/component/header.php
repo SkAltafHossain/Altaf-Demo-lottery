@@ -56,7 +56,7 @@
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
-                    <div class="logo"><img alt="image" class="img-responsive" src="<?=base_url()?>webroot/user/images/logo_lottery_1.png" style="background: white;"/></div>
+                    <div class="logo"><img alt="image" class="img-responsive" src="<?=base_url()?>webroot/user/images/logo_lottery_1.webp" style="background: white;"/></div>
                     <div class="logo-element">
                         <!-- <img alt="image" class="img-responsive" src="<?=base_url()?>webroot/admin/img/logo-icon.png" /> -->
                         Logo

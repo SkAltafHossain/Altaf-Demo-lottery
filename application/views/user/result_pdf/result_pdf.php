@@ -111,12 +111,12 @@
 <body>
     <table border="0" width="100%" height="100%" style="padding-bottom: 15px;">  
         <tr>  
-            <td><img src="<?=base_url('webroot/user/images/logo_lottery_1.png')?>" id="left_logo"> </td>
+            <td><img src="<?=base_url('webroot/user/images/logo_lottery_1.webp')?>" id="left_logo"> </td>
             <td align="center">
                 <table>
                     <tr>
                         <td>
-                            <span id="header_text" style="font-weight: bold;">HARYANA STATE LOTTERY</span>
+                            <span id="header_text" style="font-weight: bold;">Kerala Weekly Lottery</span>
                         </td>
                         
 
@@ -130,14 +130,14 @@
 
                 </table>
             </td>  
-            <td><img src="<?=base_url('webroot/user/images/logo_lottery_1.png')?>" id="left_logo"></td>             
+            <td><img src="<?=base_url('webroot/user/images/logo_lottery_1.webp')?>" id="left_logo"></td>             
         </tr>   
     </table> 
 
     <div id="div_last" align="center">
         <div class="row" style="margin-top: 15px; margin-left: 20px; margin-right: 20px;">
           <div class="column left" style = "text-align: left; font-size: 15px; font-weight: bold"><?=$result_pdf->time_t?></div>
-          <div class="column middle" style = "text-align: center;"><span id="div1">HARYANA STATE LOTTERY</span></div>
+          <div class="column middle" style = "text-align: center;"><span id="div1">Kerala Weekly Lottery</span></div>
           <div class="column right" style = "text-align: right; font-size: 15px; font-weight: bold"><?=$result_pdf->time_t?></div>
         </div>
         <div align="center"><span id="div2" >TIGER</span></div>
@@ -293,7 +293,7 @@
     </div>
 
     <div align="center">
-        <div align="center" style="padding-top: 15px; padding-bottom: 8px;"><span id="div7">ISSUED BY:THE DIRECTOR HARYANA STATE LOTTERY</span></div>
+        <div align="center" style="padding-top: 15px; padding-bottom: 8px;"><span id="div7">ISSUED BY:THE DIRECTOR Kerala Weekly Lottery</span></div>
         <hr style="height:2px;border-width:0;color:gray;background-color:gray">
         <div align="center" style="padding-top: 8px; padding-bottom: 10px;"><span id="div8"> <?=$result_pdf->time_t." Result ".  $result_pdf->date_1 ?></span></div>
     </div>

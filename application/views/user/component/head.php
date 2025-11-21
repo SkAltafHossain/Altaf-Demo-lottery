@@ -11,7 +11,7 @@
       gtag('config', 'G-QNPPL18CXB');
     </script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" href="<?=base_url()?>webroot/user/images/logo_lotter.png">
+		<link rel="icon" href="<?=base_url()?>webroot/user/images/logo_lottery_1.webp">
 		<meta charset="utf-8">
 		<title>Kerala Weekly Lottery</title>
 		<meta name="keywords" content="Kerala Weekly Lottery">
@@ -100,6 +100,7 @@ footer .bottom-content{
 .green-button{
     background: #0048ffff;
     border-color: #0048ffff;
+    margin-bottom:5px;
 }
 .green-button:hover {
   background-color: #789dfcff; /* Link color when hovered */
@@ -215,13 +216,13 @@ footer .bottom-content{
     font-weight: bold;
     color: #b30e0e;
     letter-spacing: 0.5px;
-    font-size: 16px;
+    font-size: 20px;
 }
 #rightone{
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
     padding: 15px;
     border-radius: 10px;
-    background: #0014ff;
+    background: #00ccffc4;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -231,7 +232,7 @@ footer .bottom-content{
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
     padding: 25px;
     border-radius: 10px;
-    background: #b20909;
+    background: #00ffd0a6;
     margin-right: 25px;
     height: 115px;
     display: flex;
@@ -268,7 +269,7 @@ footer .bottom-content{
 #contact {
   width: 100%;
   height: 100%;
-  background: #0f8a33;
+  /* background: #0f8a33; */
 }
 
 .section-header {
@@ -276,7 +277,7 @@ footer .bottom-content{
   padding: 40px 0;
   font: 300 60px 'Oswald', sans-serif;
   text-transform: uppercase;
-  color:#f53218;
+  color:white;
   font-size:28px;
   line-height:35px;
   letter-spacing: 1px;
@@ -352,7 +353,7 @@ footer .bottom-content{
   display:flex;
   justify-content:flex-start;
   align-items:center;
-  color:red;
+  color:white;
   margin-bottom:20px;
 }
 
@@ -375,13 +376,13 @@ footer .bottom-content{
 }
 
 .contact-text a {
-  color: red;
+  color: white;
   text-decoration: none;
   transition-duration: 0.2s;
 }
 
 .contact-text a:hover {
-  color: violet;
+  color: blue;
   text-decoration: none;
 }
 
@@ -581,16 +582,16 @@ main #odometer {
 }
 
 .link a{
-    color: red;
+    color: white;
     text-decoration: none;
 }
 .link a:hover{
-    color: #e18b8b;
+    color: blue;
     text-decoration: none;
 }
 
 .live{
-    color: red;
+    color: white;
     position: absolute;
     padding-left: 1150px;
     position: absolute;

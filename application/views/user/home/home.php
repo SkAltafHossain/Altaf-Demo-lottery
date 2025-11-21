@@ -5,9 +5,8 @@
 	    <div class="container">
 	    <form class="from-group">  
 	        <center>
-	            <h1>TIGER</h1>
 	            <h2>TODAYS RESULT</h2>
-	            <span id="filenotfound" style="color: red; display: none; ">File Not Updated Please Try Again Later!</span>
+	            <span id="filenotfound" style="color: #cfaaaaff; display: none; ">File Not Updated Please Try Again Later!</span>
 	            <h4> <?=date("d/m/Y");?></h4>
 	        </center>
 	         
@@ -15,7 +14,7 @@
 	        <div class="row equal">
 	            <div class="col-md-8" id="left_box">       
 	                <div class="boxthing colour-1">
-	                <h5>TIGER MORNING</h5>
+	                <h5>MORNING</h5>
 	              	<font id="time">11:30 AM</font> 
 	                     <!-- <input type="text" name="time" id="time" value="11:00 AM" style="border: none; background: transparent;"> -->
 	                </div>
@@ -50,7 +49,7 @@
 	        <div class="row equal">
 	            <div class="col-md-8" id="left_box">       
 	                <div class="boxthing colour-1">
-	                <h5>TIGER DAY</h5>
+	                <h5>DAY</h5>
 	              	<font id="time">03:00 PM</font> 
 	                     <!-- <input type="text" name="time" id="time" value="11:00 AM" style="border: none; background: transparent;"> -->
 	                </div>
@@ -83,7 +82,7 @@
 	        <div class="row equal">
 	            <div class="col-md-8" id="left_box">       
 	                <div class="boxthing colour-1">
-	                <h5>TIGER EVENING</h5>
+	                <h5>EVENING</h5>
 	              	<font id="time">05:00 PM</font> 
 	                     <!-- <input type="text" name="time" id="time" value="11:00 AM" style="border: none; background: transparent;"> -->
 	                </div>

@@ -14,7 +14,7 @@
 	<section id="section_1">
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Haryana State Lottery</p>
+    		        <p>Kerala Weekly Lottery</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -137,13 +137,13 @@
 			?>
 
 			<div id="head_div">
-				<center><span id="heading_text">HARYANA STATE LOTTERY</span></center>
+				<center><span id="heading_text">Kerala Weekly Lottery</span></center>
 				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 18px; padding-right: 15px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Haryana</b></span>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
 					<img src="<?=base_url()?>webroot/live_draw/assets/images/side_logo.png" id="side_logo">
-					<p id="shimla1">Haryana State Lottery</p>
+					<p id="shimla1">Kerala Weekly Lottery</p>
 				</div>
 				<div id="sub_side2">
 					<p id="shimla_price_1">1st Prize</p>
@@ -252,7 +252,7 @@
 	    
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Haryana State Lottery</p>
+    		        <p>Kerala Weekly Lottery</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -342,13 +342,13 @@
 			?>
 
 			<div id="head_div">
-				<center><span id="heading_text">HARYANA STATE LOTTERY</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 18px; padding-right: 15px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Haryana</b></span>
+				<center><span id="heading_text">Kerala Weekly Lottery</span></center>
+				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 18px; padding-right: 15px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Kerala</b></span>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
 					<img src="<?=base_url()?>webroot/live_draw/assets/images/side_logo.png" id="side_logo">
-					<p id="shimla1">Haryana State Lottery</p>
+					<p id="shimla1">Kerala Weekly Lottery</p>
 				</div>
 				<div id="sub_side2">
 					<p id="shimla_price_1">2nd Prize</p>
@@ -449,7 +449,7 @@
 	<section id="section_3">
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Haryana State Lottery</p>
+    		        <p>Kerala Weekly Lottery</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -538,13 +538,13 @@
 			?>
 
 			<div id="head_div">
-				<center><span id="heading_text">HARYANA STATE LOTTERY</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Haryana</b></span>
+				<center><span id="heading_text">Kerala Weekly Lottery</span></center>
+				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Kerala</b></span>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
 					<img src="<?=base_url()?>webroot/live_draw/assets/images/side_logo.png" id="side_logo">
-					<p id="shimla1">Haryana State Lottery</p>
+					<p id="shimla1">Kerala Weekly Lottery</p>
 				</div>
 				<div id="sub_side2">
 					<p id="shimla_price_1">3rd Prize</p>
@@ -648,7 +648,7 @@
 	<section id="section_9">
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Haryana State Lottery</p>
+    		        <p>Kerala Weekly Lottery</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -735,13 +735,13 @@
 			?>
 
 			<div id="head_div">
-				<center><span id="heading_text">HARYANA STATE LOTTERY</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Haryana</b></span>
+				<center><span id="heading_text">Kerala Weekly Lottery</span></center>
+				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Kerala</b></span>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
 					<img src="<?=base_url()?>webroot/live_draw/assets/images/side_logo.png" id="side_logo">
-					<p id="shimla1">Haryana State Lottery</p>
+					<p id="shimla1">Kerala Weekly Lottery</p>
 				</div>
 				<div id="sub_side2">
 					<p id="shimla_price_1">4th Prize</p>
@@ -956,7 +956,7 @@
 	<section id="section_4">
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Haryana State Lottery</p>
+    		        <p>Kerala Weekly Lottery</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -1047,13 +1047,13 @@
 			?>
 
 			<div id="head_div">
-				<center><span id="heading_text">HARYANA STATE LOTTERY</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Haryana</b></span>
+				<center><span id="heading_text">Kerala Weekly Lottery</span></center>
+				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Kerala</b></span>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
 					<img src="<?=base_url()?>webroot/live_draw/assets/images/side_logo.png" id="side_logo">
-					<p id="shimla1">Haryana State Lottery</p>
+					<p id="shimla1">Kerala Weekly Lottery</p>
 				</div>
 				<div id="sub_side2">
 					<p id="shimla_price_1">5th Prize</p>
@@ -1171,7 +1171,7 @@
 	<section id="section_10">
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Haryana State Lottery</p>
+    		        <p>Kerala Weekly Lottery</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -1259,13 +1259,13 @@
 			?>
 
 			<div id="head_div">
-				<center><span id="heading_text">HARYANA STATE LOTTERY</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Haryana</b></span>
+				<center><span id="heading_text">Kerala Weekly Lottery</span></center>
+				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Kerala</b></span>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
 					<img src="<?=base_url()?>webroot/live_draw/assets/images/side_logo.png" id="side_logo">
-					<p id="shimla1">Haryana State Lottery</p>
+					<p id="shimla1">Kerala Weekly Lottery</p>
 				</div>
 				<div id="sub_side2">
 					<p id="shimla_price_1">5th Prize</p>
@@ -1383,7 +1383,7 @@
 	<section id="section_11">
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Haryana State Lottery</p>
+    		        <p>Kerala Weekly Lottery</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -1472,13 +1472,13 @@
 			?>
 
 			<div id="head_div">
-				<center><span id="heading_text">HARYANA STATE LOTTERY</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Haryana</b></span>
+				<center><span id="heading_text">Kerala Weekly Lottery</span></center>
+				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Kerala</b></span>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
 					<img src="<?=base_url()?>webroot/live_draw/assets/images/side_logo.png" id="side_logo">
-					<p id="shimla1">Haryana State Lottery</p>
+					<p id="shimla1">Kerala Weekly Lottery</p>
 				</div>
 				<div id="sub_side2">
 					<p id="shimla_price_1">5th Prize</p>
@@ -1596,7 +1596,7 @@
 	<section id="section_12">
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Haryana State Lottery</p>
+    		        <p>Kerala Weekly Lottery</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -1685,13 +1685,13 @@
 			?>
 
 			<div id="head_div">
-				<center><span id="heading_text">HARYANA STATE LOTTERY</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Haryana</b></span>
+				<center><span id="heading_text">Kerala Weekly Lottery</span></center>
+				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Kerala</b></span>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
 					<img src="<?=base_url()?>webroot/live_draw/assets/images/side_logo.png" id="side_logo">
-					<p id="shimla1">Haryana State Lottery</p>
+					<p id="shimla1">Kerala Weekly Lottery</p>
 				</div>
 				<div id="sub_side2">
 					<p id="shimla_price_1">5th Prize</p>
@@ -1810,7 +1810,7 @@
 
             <div id="altaf">
     		   <div class="sakir">
-    		        <p>Haryana State Lottery</p>
+    		        <p>Kerala Weekly Lottery</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -1898,13 +1898,13 @@
 			?>
 
 			<div id="head_div">
-				<center><span id="heading_text">HARYANA STATE LOTTERY</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Haryana</b></span>
+				<center><span id="heading_text">Kerala Weekly Lottery</span></center>
+				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Kerala</b></span>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
 					<img src="<?=base_url()?>webroot/live_draw/assets/images/side_logo.png" id="side_logo">
-					<p id="shimla1">Haryana State Lottery</p>
+					<p id="shimla1">Kerala Weekly Lottery</p>
 				</div>
 				<div id="sub_side2">
 					<p id="shimla_price_1">5th Prize</p>
@@ -2168,13 +2168,13 @@
 			?>
 
 			<div id="head_div_15">
-				<center><span id="heading_text">HARYANA STATE LOTTERY</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Haryana</b></span>
+				<center><span id="heading_text">Kerala Weekly Lottery</span></center>
+				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Kerala</b></span>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
 					<img src="<?=base_url()?>webroot/live_draw/assets/images/side_logo.png" id="side_logo">
-					<p id="shimla1">Haryana State Lottery</p>
+					<p id="shimla1">Kerala Weekly Lottery</p>
 				</div>
 				<div id="sub_side2">
 					<p id="shimla_price_1">1st Prize</p>
@@ -2366,13 +2366,13 @@
 			?>
 
 			<div id="head_div_16">
-				<center><span id="heading_text">HARYANA STATE LOTTERY</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Haryana</b></span>
+				<center><span id="heading_text">Kerala Weekly Lottery</span></center>
+				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Kerala</b></span>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
 					<img src="<?=base_url()?>webroot/live_draw/assets/images/side_logo.png" id="side_logo">
-					<p id="shimla1">Haryana State Lottery</p>
+					<p id="shimla1">Kerala Weekly Lottery</p>
 				</div>
 				<div id="sub_side2">
 					<p id="shimla_price_1">1st Prize</p>

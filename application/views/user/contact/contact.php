@@ -17,14 +17,14 @@
 
         <ul class="contact-list">
           <li class="list-item">
-              <i class="fa fa-map-marker fa-2x"></i>
-            <span class="contact-text place">Haryana - 171006</span>
+              <i class="fa fa-home fa-2x"></i>
+            <span class="contact-text place">Karela - 491223</span>
           </li>
 
           <li class="list-item">
-              <i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:999manipur@gmail.com" target="_blank">9999haryana@gmail.com</a></span></i></li>
+              <i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:999manipur@gmail.com" target="_blank">9999kerala@gmail.com</a></span></i></li>
 
-        </ul>
+        </ul> 
 
       </div>
 
