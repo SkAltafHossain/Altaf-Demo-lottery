@@ -142,7 +142,7 @@
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
-					<img src="<?=base_url()?>webroot/live_draw/assets/images/side_logo.png" id="side_logo">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.webp" id="side_logo">
 					<p id="shimla1">Kerala Weekly Lottery</p>
 				</div>
 				<div id="sub_side2">
@@ -347,7 +347,7 @@
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
-					<img src="<?=base_url()?>webroot/live_draw/assets/images/side_logo.png" id="side_logo">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.webp" id="side_logo">
 					<p id="shimla1">Kerala Weekly Lottery</p>
 				</div>
 				<div id="sub_side2">
@@ -543,7 +543,7 @@
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
-					<img src="<?=base_url()?>webroot/live_draw/assets/images/side_logo.png" id="side_logo">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.webp" id="side_logo">
 					<p id="shimla1">Kerala Weekly Lottery</p>
 				</div>
 				<div id="sub_side2">
@@ -740,7 +740,7 @@
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
-					<img src="<?=base_url()?>webroot/live_draw/assets/images/side_logo.png" id="side_logo">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.webp" id="side_logo">
 					<p id="shimla1">Kerala Weekly Lottery</p>
 				</div>
 				<div id="sub_side2">
@@ -1052,7 +1052,7 @@
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
-					<img src="<?=base_url()?>webroot/live_draw/assets/images/side_logo.png" id="side_logo">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.webp" id="side_logo">
 					<p id="shimla1">Kerala Weekly Lottery</p>
 				</div>
 				<div id="sub_side2">
@@ -1264,7 +1264,7 @@
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
-					<img src="<?=base_url()?>webroot/live_draw/assets/images/side_logo.png" id="side_logo">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.webp" id="side_logo">
 					<p id="shimla1">Kerala Weekly Lottery</p>
 				</div>
 				<div id="sub_side2">
@@ -1477,7 +1477,7 @@
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
-					<img src="<?=base_url()?>webroot/live_draw/assets/images/side_logo.png" id="side_logo">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.webp" id="side_logo">
 					<p id="shimla1">Kerala Weekly Lottery</p>
 				</div>
 				<div id="sub_side2">
@@ -1690,7 +1690,7 @@
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
-					<img src="<?=base_url()?>webroot/live_draw/assets/images/side_logo.png" id="side_logo">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.webp" id="side_logo">
 					<p id="shimla1">Kerala Weekly Lottery</p>
 				</div>
 				<div id="sub_side2">
@@ -1903,7 +1903,7 @@
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
-					<img src="<?=base_url()?>webroot/live_draw/assets/images/side_logo.png" id="side_logo">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.webp" id="side_logo">
 					<p id="shimla1">Kerala Weekly Lottery</p>
 				</div>
 				<div id="sub_side2">
@@ -2173,7 +2173,7 @@
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
-					<img src="<?=base_url()?>webroot/live_draw/assets/images/side_logo.png" id="side_logo">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.webp" id="side_logo">
 					<p id="shimla1">Kerala Weekly Lottery</p>
 				</div>
 				<div id="sub_side2">
@@ -2371,7 +2371,7 @@
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
-					<img src="<?=base_url()?>webroot/live_draw/assets/images/side_logo.png" id="side_logo">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.webp" id="side_logo">
 					<p id="shimla1">Kerala Weekly Lottery</p>
 				</div>
 				<div id="sub_side2">

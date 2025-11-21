@@ -40,7 +40,7 @@ $this->load->view('admin/msg/error');
 <!-- <div class="modal-content">
 <div class="modal-body">
 <div class="header-section">
-<img src="<?=base_url()?>webroot/admin/images/logo.png">
+<img src="<?=base_url()?>webroot/admin/images/logo_lottery_1.webp">
 </div>
 <div class="model-half-section-first hide-on-mobile"> -->
 <!-- <div id="carousel-example" class="carousel slide" data-ride="carousel">
