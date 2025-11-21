@@ -814,9 +814,14 @@
 	<?php
 		$fifth_price2=$fifth_price->five_price;
 		$slug1=trim($fifth_price2);
-      	$slug1=str_replace(" ",'',$slug1);
-      	$slug1=preg_replace('/[^A-Za-z0-9\-]/', '', $slug1);
+       	$slug1=str_replace(" ",'',$slug1);
+       	$slug1=preg_replace('/[^A-Za-z0-9\-]/', '', $slug1);
       	$fifth_price21=str_split($slug1);
+      	// Ensure we have enough elements to safely index up to 399 in later logic
+      	$len_fifth = count($fifth_price21);
+      	for ($pad_i = $len_fifth; $pad_i < 400; $pad_i++) {
+      	    $fifth_price21[$pad_i] = '0';
+      	}
       	$fifth_price2_31='';
       	$fifth_price2_31js='';
       	for($i=0;$i<80;$i++){

@@ -62,7 +62,7 @@ var fop= document.getElementById('shimla_price_34').value;
 var fip= document.getElementById('shimla_price_35').value;
 
 setTimeout(function(){
-  var audio = new Audio('http://shimlastatelottery.in/webroot/live_draw/assets/images/lottery_adio1.mp3');
+  var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
   audio.play();
   setTimeout(function(){
 
@@ -79,7 +79,7 @@ setTimeout(function(){
 },245500);
 
 setTimeout(function(){
-  var audio = new Audio('http://shimlastatelottery.in/webroot/live_draw/assets/images/lottery_adio1.mp3');
+  var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
   audio.play();
   setTimeout(function(){
 
@@ -343,7 +343,7 @@ setTimeout(function(){
 },305000);
 
 setTimeout(function(){
-  var audio = new Audio('http://shimlastatelottery.in/webroot/live_draw/assets/images/lottery_audio2.mp3');
+  var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_audio2.mp3');
   audio.play();
   
 },304900);
@@ -518,7 +518,7 @@ setTimeout(function(){
 },328500);
 
 setTimeout(function(){
-  var audio = new Audio('http://shimlastatelottery.in/webroot/live_draw/assets/images/lottery_adio1.mp3');
+  var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
   audio.play();
   setTimeout(function(){
 
@@ -566,7 +566,7 @@ setTimeout(function(){
 },335500);
 
 setTimeout(function(){
-  var audio = new Audio('http://shimlastatelottery.in/webroot/live_draw/assets/images/lottery_audio2.mp3');
+  var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_audio2.mp3');
   audio.play();
   
 },340500);

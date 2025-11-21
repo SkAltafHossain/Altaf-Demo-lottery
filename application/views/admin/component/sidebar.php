@@ -55,7 +55,7 @@
                     
                     $price_data=$this->db->get('tbl_price_manegment')->row();
                    // pr($price_data);die();
-                    if($price_data->status=='Inactive')
+                    if($price_data && $price_data->status=='Inactive')
                     {
                         ?>
                         <a  style="color: red" href="<?=base_url('live-draw')?>">
