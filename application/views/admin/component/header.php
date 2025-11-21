@@ -4,7 +4,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="<?=base_url()?>webroot/user/images/fab_icon.png">
+    <link rel="icon" href="<?=base_url()?>webroot/user/images/logo_lottery_1.webp">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title><?=$page_title?></title>    
