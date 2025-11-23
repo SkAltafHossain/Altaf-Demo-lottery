@@ -83,7 +83,7 @@
 
     #div9{
         text-align: center;
-        font-size: 1  10px;
+        font-size: 15px;
         font-family: serif;
         
     }
