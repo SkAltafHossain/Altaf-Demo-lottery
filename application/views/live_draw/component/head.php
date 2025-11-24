@@ -2,7 +2,7 @@
 <html lang="en">
 	<head> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" href="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.webp">
+		<link rel="icon" href="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.png">
 		<meta charset="utf-8">
 		<title>Lottery</title>
 		<!--<link rel="stylesheet" href="<?=base_url()?>webroot/live_draw/assets/css/style.css">-->

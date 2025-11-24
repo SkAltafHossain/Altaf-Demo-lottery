@@ -6,9 +6,11 @@
 
     class Api_Controller extends CI_Controller 
     {
+        
         public function __construct()
         {
             parent::__construct();
+            
             $this->load->helper(array('common_helper', 'string', 'form', 'security','url'));
             //load user model
             $this->load->model('api/Api_Model');
@@ -21,151 +23,154 @@
         }
         /*<====================Customer Api List==================>*/
 
-
-        public function date_result()
+        public function first_price_jodi()
         {
-            $number=$this->input->post('number');
+            // Get all results in the new format from model
+            $results = $this->Api_Model->get_all_first_price_jodi();
             
-            $fdata = $this->Api_Model->date_only($number);
+            $response = [
+                'status' => 'success',
+                'data' => array_values($results) // Ensure we return a sequential array
+            ];
             
-            $number1=null;
-            
-            if($number){
-              $number1=$number;  
-            }
-            else{
-                $number1="null";
-            }
-            
-            $data = Array();
-            if($fdata!=null){
-                
-                foreach ($fdata as $key => $value) {
-
-                    
-
-                    $first_price_11=$this->Api_Model->date_search_getRows("11:00 AM",$value->date);
-                    $first_price_3=$this->Api_Model->date_search_getRows("03:00 PM",$value->date);
-                    $first_price_7=$this->Api_Model->date_search_getRows("07:00 PM",$value->date);
-                
-                    $data[$key]['date']=date('d-m-y', strtotime($value->date));
-
-                    if($first_price_11!=0){
-                        $slug1=trim($first_price_11);
-                        $slug1=str_replace(" ",'',$slug1);
-                        $slug1=preg_replace('/[^A-Za-z0-9\-]/', '', $slug1);
-                        $first_price_last=substr($slug1,7, 1);
-                        
-                        if($first_price_last==$number){
-                            $data[$key]['mor']=$first_price_last."==Selected";
-                        }
-                        else{
-                            $data[$key]['mor']=$first_price_last."==null";
-                        }
-                        
-                        
-                            
-                    }
-                    else{
-                        $data[$key]['mor']=" ";
-                    }
-
-                    if($first_price_3!=0){
-                        $slug1=trim($first_price_3);
-                        $slug1=str_replace(" ",'',$slug1);
-                        $slug1=preg_replace('/[^A-Za-z0-9\-]/', '', $slug1);
-                        $first_price_last=substr($slug1,7, 1);
-                        
-                        if($first_price_last==$number){
-                            $data[$key]['day']=$first_price_last."==Selected";
-                        }
-                        else{
-                            $data[$key]['day']=$first_price_last."==null";
-                        }
-                        
-                    }
-                    else{
-                        $data[$key]['day']=" ";
-                    }
-
-                    if($first_price_7!=0){
-                        $slug1=trim($first_price_7);
-                        $slug1=str_replace(" ",'',$slug1);
-                        $slug1=preg_replace('/[^A-Za-z0-9\-]/', '', $slug1);
-                        $first_price_last=substr($slug1,7, 1);
-                        
-                        if($first_price_last==$number){
-                            $data[$key]['eve']=$first_price_last."==Selected";
-                        }
-                        else{
-                            $data[$key]['eve']=$first_price_last."==null";
-                        }
-                            
-                    }
-                    else{
-                        $data[$key]['eve']=" ";
-                    }
-                }
-                $data1['return_data']=$data;
-                $data1['return_message']='Retrive Successfuly';
-                $data1['return_status']=1;
-                echo json_encode($data1);   
-            }
-            else
-            {
-                $data1['return_data']=$data;
-                $data1['return_message']='No data were found.';
-                $data1['return_status']=0;
-                echo json_encode($data1); 
+            if (empty($results)) {
+                $response['status'] = 'success';
+                $response['data'] = [];
             }
 
+            $this->output
+                 ->set_content_type('application/json')
+                 ->set_output(json_encode($response));
         }
-
-        public function invoice_carent_data()
+        
+        public function first_price_last()
         {
-           $invoice_data = $this->Api_Model->carrent_data();
-           
-               if(!empty($invoice_data))
-                {
-                    $data['return_data']=$invoice_data;
-                    $data['return_message']='Retrive Successfuly';
-                    $data['return_status']=1;
-                    echo json_encode($data);
-                }
-                else
-                {
-                    $data['return_message']='No data were found.';
-                    $data['return_status']=0;
-                    echo json_encode($data);
-                }
-        }
-
-        public function invoice_prev_next_data()
-        {
-            $date=$this->input->post('date');
-            $time=$this->input->post('time');
-          
-            if(!empty($date) && !empty($time))
-            {
-                $fdata = $this->Api_Model->prev_next_data($date,$time);
-                if(!empty($fdata))
-                {
-                    $data['return_data']=[$fdata];
-                    $data['return_message']='Retrive Successfuly';
-                    $data['return_status']=1;
-                    echo json_encode($data);
-                }
-                else
-                {
-                    $data['return_message']='No data were found.';
-                    $data['return_status']=0;
-                    echo json_encode($data); 
-                }
-            }
-        }
+            // Get all results in the new format from model
+            $results = $this->Api_Model->get_all_first_price_last();
             
+            $response = [
+                'status' => 'success',
+                'data' => array_values($results) // Ensure we return a sequential array
+            ];
+            
+            if (empty($results)) {
+                $response['status'] = 'success';
+                $response['data'] = [];
+            }
+
+            $this->output
+                 ->set_content_type('application/json')
+                 ->set_output(json_encode($response));
+        }
     
+        public function latest_result() {
+            // Get the latest result with next result from the model
+            $result = $this->Api_Model->get_latest_result();
+            
+            if ($result && isset($result['current'])) {
+                $response = [
+                    'status' => 'success',
+                    'data' => $result
+                ];
+            } else {
+                $response = [
+                    'status' => 'success',
+                    'data' => [
+                        'current' => null,
+                        'previous' => null,
+                        'next' => null
+                    ],
+                    'message' => 'No results found'
+                ];
+            }
+            
+            $this->output
+                ->set_content_type('application/json')
+                ->set_output(json_encode($response));
         }
+        
+        public function next_result() {
+            // Get current date and time_id from request
+            $current_date = $this->input->get('current_date');
+            $current_time_id = $this->input->get('current_time_id');
+            
+            if (empty($current_date) || empty($current_time_id)) {
+                $this->output
+                     ->set_status_header(400)
+                     ->set_content_type('application/json')
+                     ->set_output(json_encode([
+                         'status' => 'error',
+                         'message' => 'current_date and current_time_id parameters are required'
+                     ]));
+                return;
+            }
+            
+            // Get the next result
+            $result = $this->Api_Model->get_next_result($current_date, $current_time_id);
+            
+            if ($result && isset($result['current'])) {
+                $response = [
+                    'status' => 'success',
+                    'data' => $result
+                ];
+            } else {
+                $response = [
+                    'status' => 'success',
+                    'data' => [
+                        'current' => null,
+                        'previous' => false,
+                        'next' => false
+                    ],
+                    'message' => 'No newer results found'
+                ];
+            }
+            
+            $this->output
+                 ->set_content_type('application/json')
+                 ->set_output(json_encode($response));
+        }
+        
+        public function previous_result() {
+            // Get current date and time_id from request
+            $current_date = $this->input->get('current_date');
+            $current_time_id = $this->input->get('current_time_id');
+            
+            if (empty($current_date) || empty($current_time_id)) {
+                $this->output
+                     ->set_status_header(400)
+                     ->set_content_type('application/json')
+                     ->set_output(json_encode([
+                         'status' => 'error',
+                         'message' => 'current_date and current_time_id parameters are required'
+                     ]));
+                return;
+            }
+            
+            // Get the previous result
+            $result = $this->Api_Model->get_previous_result($current_date, $current_time_id);
+            
+            if ($result && isset($result['current'])) {
+                $response = [
+                    'status' => 'success',
+                    'data' => $result
+                ];
+            } else {
+                $response = [
+                    'status' => 'success',
+                    'data' => [
+                        'current' => null,
+                        'previous' => false,
+                        'next' => false
+                    ],
+                    'message' => 'No older results found'
+                ];
+            }
+            
+            $this->output
+                 ->set_content_type('application/json')
+                 ->set_output(json_encode($response));
+        }
+    }
         
     
 ?>

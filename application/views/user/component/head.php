@@ -11,10 +11,10 @@
       gtag('config', 'G-QNPPL18CXB');
     </script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" href="<?=base_url()?>webroot/user/images/logo_lottery_1.webp">
+		<link rel="icon" href="<?=base_url()?>webroot/user/images/logo_lottery_1.png">
 		<meta charset="utf-8">
-		<title>Kerala Weekly Lottery</title>
-		<meta name="keywords" content="Kerala Weekly Lottery">
+		<title>Hariana State Lottery</title>
+		<meta name="keywords" content="Hariana State Lottery">
         <meta name="description" content="Best Lottery Agency in Haryana">
 		<!--<link rel="stylesheet" href="<?=base_url()?>webroot/user/css/style.css">-->
 		<link rel="stylesheet" href="<?=base_url()?>webroot/user/css/bootstrap.min.css">

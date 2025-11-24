@@ -53,7 +53,8 @@ $route['all_report/all_data_search']='admin/report/Report_Controller/date_wise';
 
 
 ///.............Api...........////
-$route['api/date'] = 'api/Api_Controller/date_result'; 
-$route['api/invoice-carent-data'] = 'api/Api_Controller/invoice_carent_data';
-$route['api/invoice-prev-next-data'] = 'api/Api_Controller/invoice_prev_next_data'; 
-
+$route['api/first-price-jodi'] = 'api/Api_Controller/first_price_jodi';
+$route['api/first-price-last'] = 'api/Api_Controller/first_price_last';
+$route['api/latest-result'] = 'api/Api_Controller/latest_result';
+$route['api/next-result'] = 'api/Api_Controller/next_result';
+$route['api/previous-result'] = 'api/Api_Controller/previous_result';
