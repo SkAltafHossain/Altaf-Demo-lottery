@@ -103,7 +103,7 @@ $db['default'] = array(
 // ======================
 $db['live'] = array(
 	'dsn'	=> '',
-	'hostname' => 'live_server_hostname',
+	'hostname' => 'localhost',
 	'username' => 'u710604058_hariana_state',
 	'password' => 'HarianaState@123',
 	'database' => 'u710604058_hariana_state',
