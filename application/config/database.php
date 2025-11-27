@@ -76,36 +76,36 @@ $query_builder = TRUE;
 // ======================
 // Local Development (XAMPP Default)
 // ======================
-$db['default'] = array(
-	'dsn'	=> '',
-	'hostname' => 'localhost',
-    'username' => 'root',		// XAMPP default username
-	'password' => '',			// XAMPP default password (empty)
-	'database' => 'haryanalottery_state',		// Your local database name
-	'dbdriver' => 'mysqli',
-	'dbprefix' => '',
-	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'production'),
-	'cache_on' => FALSE,
-	'cachedir' => '',
-	'char_set' => 'utf8',
-	'dbcollat' => 'utf8_general_ci',
-	'swap_pre' => '',
-	'encrypt' => FALSE,
-	'compress' => FALSE,
-	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => TRUE
-);
+// $db['default'] = array(
+// 	'dsn'	=> '',
+// 	'hostname' => 'localhost',
+//     'username' => 'root',		// XAMPP default username
+// 	'password' => '',			// XAMPP default password (empty)
+// 	'database' => 'haryanalottery_state',		// Your local database name
+// 	'dbdriver' => 'mysqli',
+// 	'dbprefix' => '',
+// 	'pconnect' => FALSE,
+// 	'db_debug' => (ENVIRONMENT !== 'production'),
+// 	'cache_on' => FALSE,
+// 	'cachedir' => '',
+// 	'char_set' => 'utf8',
+// 	'dbcollat' => 'utf8_general_ci',
+// 	'swap_pre' => '',
+// 	'encrypt' => FALSE,
+// 	'compress' => FALSE,
+// 	'stricton' => FALSE,
+// 	'failover' => array(),
+// 	'save_queries' => TRUE
+// );
 
 // ======================
 // Live Production Server
 // ======================
-$db['live'] = array(
+$db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 	'username' => 'u710604058_hariana_state',
-	'password' => 'HarianaState@123',
+	'password' => 'Hariana@123',
 	'database' => 'u710604058_hariana_state',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
