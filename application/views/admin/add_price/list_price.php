@@ -28,6 +28,7 @@
                         <th>3rd Price</th>
                         <th>4th Price</th>    
                         <th>5th Price</th>
+                        <th>PDF</th>
                         <!-- <th>Status</th> -->
                         <th class="noExport">Action</th>
                     </tr>
@@ -44,7 +45,14 @@
                             <td><?=$value->sce_price?></td>
                             <td><?=$value->third_price?></td>
                             <td><?=$value->for_price?></td>
-                           <td><?=$value->five_price?></td>
+                            <td><?=$value->five_price?></td>
+                            <td>
+                                <?php if (!empty($value->pdf_file)) { ?>
+                                    <a href="<?=base_url($value->pdf_file)?>" class="btn btn-xs btn-info" target="_blank">View PDF</a>
+                                <?php } else { ?>
+                                    -
+                                <?php } ?>
+                            </td>
                             <!-- <td>
                                 <input type="checkbox" class="js-switch" onchange="common_status_change(this.value)" id="status" value="<?=$value->uniqcode?>" <?=$value->status == 'Active' ? 'checked' : ''?> /></td> -->
 

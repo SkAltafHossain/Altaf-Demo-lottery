@@ -116,141 +116,30 @@
             return $final_results;
         }
         
-        public function get_latest_result() {
-            // Get the latest result
-            $latest = $this->db->select([
-                'tbl_price_manegment.*',
-                'DATE_FORMAT(tbl_price_manegment.date, "%d/%m/%Y") as formatted_date',
-                'tbl_time.time as time_slot',
+        // Get all results (with PDF path) ordered latest first
+        public function get_all_results_with_pdf_latest()
+        {
+            $this->db->select([
+                'tbl_price_manegment.uniqcode',
+                'tbl_price_manegment.title',
+                'tbl_price_manegment.drow_number',
+                'tbl_price_manegment.first_price',
+                'tbl_price_manegment.sce_price',
+                'tbl_price_manegment.third_price',
+                'tbl_price_manegment.for_price',
+                'tbl_price_manegment.five_price',
+                'tbl_price_manegment.pdf_file',
+                'DATE_FORMAT(tbl_price_manegment.date, "%d/%m/%Y") as result_date',
+                'tbl_time.time as result_time',
                 'tbl_time.id as time_id'
-            ])
-            ->from('tbl_price_manegment')
-            ->join('tbl_time', 'tbl_price_manegment.time = tbl_time.id', 'left')
-            ->where('tbl_price_manegment.status', 'Active')
-            ->order_by('tbl_price_manegment.date', 'desc')
-            ->order_by('tbl_time.id', 'desc')
-            ->limit(1)
-            ->get()
-            ->row_array();
-
-            if (!$latest) {
-                return null;
-            }
-
-            // Get next result (older than current)
-            $next = $this->db->select([
-                    'tbl_price_manegment.*',
-                    'DATE_FORMAT(tbl_price_manegment.date, "%d/%m/%Y") as formatted_date',
-                    'tbl_time.time as time_slot',
-                    'tbl_time.id as time_id'
-                ])
-                ->from('tbl_price_manegment')
-                ->join('tbl_time', 'tbl_price_manegment.time = tbl_time.id', 'left')
-                ->where('tbl_price_manegment.status', 'Active')
-                ->where("(tbl_price_manegment.date < '{$latest['date']}' OR (tbl_price_manegment.date = '{$latest['date']}' AND tbl_time.id < '{$latest['time_id']}'))")
-                ->order_by('tbl_price_manegment.date', 'desc')
-                ->order_by('tbl_time.id', 'desc')
-                ->limit(1)
-                ->get()
-                ->row_array();
-
-            return [
-                'current' => $latest,
-                'previous' => $next ? true : false, // true if there's an older result
-                'next' => false // Always false for latest result as there's no newer one
-            ];
-        }
-        
-        public function get_next_result($current_date, $current_time_id) {
-            // Get the next (newer) result
-            $next = $this->db->select([
-                    'tbl_price_manegment.*',
-                    'DATE_FORMAT(tbl_price_manegment.date, "%d/%m/%Y") as formatted_date',
-                    'tbl_time.time as time_slot',
-                    'tbl_time.id as time_id'
-                ])
-                ->from('tbl_price_manegment')
-                ->join('tbl_time', 'tbl_price_manegment.time = tbl_time.id', 'left')
-                ->where('tbl_price_manegment.status', 'Active')
-                ->where("(tbl_price_manegment.date > '{$current_date}' OR (tbl_price_manegment.date = '{$current_date}' AND tbl_time.id > '{$current_time_id}'))")
-                ->order_by('tbl_price_manegment.date', 'asc')
-                ->order_by('tbl_time.id', 'asc')
-                ->limit(1)
-                ->get()
-                ->row_array();
-
-            if (!$next) {
-                return null;
-            }
-
-            // Get the previous result (older than current)
-            $previous = $this->db->select([
-                    'tbl_price_manegment.*',
-                    'DATE_FORMAT(tbl_price_manegment.date, "%d/%m/%Y") as formatted_date',
-                    'tbl_time.time as time_slot',
-                    'tbl_time.id as time_id'
-                ])
-                ->from('tbl_price_manegment')
-                ->join('tbl_time', 'tbl_price_manegment.time = tbl_time.id', 'left')
-                ->where('tbl_price_manegment.status', 'Active')
-                ->where("(tbl_price_manegment.date < '{$next['date']}' OR (tbl_price_manegment.date = '{$next['date']}' AND tbl_time.id < '{$next['time_id']}'))")
-                ->order_by('tbl_price_manegment.date', 'desc')
-                ->order_by('tbl_time.id', 'desc')
-                ->limit(1)
-                ->get()
-                ->row_array();
-
-            return [
-                'current' => $next,
-                'previous' => $previous ? true : false,
-                'next' => true // Since we're getting next result, there's always a newer one (the current one)
-            ];
-        }
-        
-        public function get_previous_result($current_date, $current_time_id) {
-            // Get the previous (older) result
-            $previous = $this->db->select([
-                    'tbl_price_manegment.*',
-                    'DATE_FORMAT(tbl_price_manegment.date, "%d/%m/%Y") as formatted_date',
-                    'tbl_time.time as time_slot',
-                    'tbl_time.id as time_id'
-                ])
-                ->from('tbl_price_manegment')
-                ->join('tbl_time', 'tbl_price_manegment.time = tbl_time.id', 'left')
-                ->where('tbl_price_manegment.status', 'Active')
-                ->where("(tbl_price_manegment.date < '{$current_date}' OR (tbl_price_manegment.date = '{$current_date}' AND tbl_time.id < '{$current_time_id}'))")
-                ->order_by('tbl_price_manegment.date', 'desc')
-                ->order_by('tbl_time.id', 'desc')
-                ->limit(1)
-                ->get()
-                ->row_array();
-
-            if (!$previous) {
-                return null;
-            }
-
-            // Get the next result (newer than current)
-            $next = $this->db->select([
-                    'tbl_price_manegment.*',
-                    'DATE_FORMAT(tbl_price_manegment.date, "%d/%m/%Y") as formatted_date',
-                    'tbl_time.time as time_slot',
-                    'tbl_time.id as time_id'
-                ])
-                ->from('tbl_price_manegment')
-                ->join('tbl_time', 'tbl_price_manegment.time = tbl_time.id', 'left')
-                ->where('tbl_price_manegment.status', 'Active')
-                ->where("(tbl_price_manegment.date > '{$previous['date']}' OR (tbl_price_manegment.date = '{$previous['date']}' AND tbl_time.id > '{$previous['time_id']}'))")
-                ->order_by('tbl_price_manegment.date', 'asc')
-                ->order_by('tbl_time.id', 'asc')
-                ->limit(1)
-                ->get()
-                ->row_array();
-
-            return [
-                'current' => $previous,
-                'previous' => true, // Since we're getting previous result, there's always an older one
-                'next' => $next ? true : false
-            ];
+            ]);
+            $this->db->from('tbl_price_manegment');
+            $this->db->join('tbl_time', 'tbl_price_manegment.time = tbl_time.id', 'left');
+            $this->db->where('tbl_price_manegment.status', 'Active');
+            $this->db->order_by('tbl_price_manegment.date', 'asc');
+            $this->db->order_by('tbl_time.id', 'asc');
+            $query = $this->db->get();
+            return $query->result_array();
         }
         
     }

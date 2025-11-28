@@ -7,6 +7,7 @@
 		{
 		  	parent::__construct(); 		
 			$this->load->helper(array('common_helper', 'string', 'form', 'security', 'text'));		
+			$this->load->model('result/Result_Model'); // Load Result_Model in the constructor
 			if(($this->session->userdata('adminDetails')==NULL))
 			{
 			   return redirect('/');
@@ -49,8 +50,9 @@
 				$for_price=$this->input->post('for_price');
 				$th_price=$this->input->post('five_price');   
 				$time=$this->input->post('time');
+				$uniqcode = "pr".random_string('alnum',28);
 				$data=array(
-				'uniqcode' =>"pr".random_string('alnum',28),
+				'uniqcode' =>$uniqcode,
 				'title' => $title,
 				'drow_number' => $drow_number,   
 				'first_price' => $st_price,
@@ -64,6 +66,23 @@
 				// echo"<pre>";
 				// print_r($data);die();			
 				$this->db->insert('tbl_price_manegment', $data);
+				
+				// Generate and save result PDF for this price/time and store path in pdf_file
+				$this->load->model('result/Result_Model');
+				$result_pdf = $this->Result_Model->result_details($time);
+				if(!empty($result_pdf)){
+					$pdf_data['result_pdf'] = $result_pdf;
+					$mpdf = new \Mpdf\Mpdf();
+					$html = $this->load->view('user/result_pdf/result_pdf',$pdf_data,true);
+					$mpdf->WriteHTML($html);
+					
+					$filename = date('Ymd').'_time'.$time.'.pdf';
+					$filepath = FCPATH.'uploads/price_pdfs/'.$filename;
+					$mpdf->Output($filepath,'F');
+					
+					$this->db->where('uniqcode', $uniqcode);
+					$this->db->update('tbl_price_manegment', array('pdf_file' => 'uploads/price_pdfs/'.$filename));
+				}
 				$this->session->set_flashdata('success', 'Price added successfully.');
 				redirect('admin/view_price');
 				
@@ -115,6 +134,23 @@
 				// print_r($data);die();			
 				$this->db->where('uniqcode', $uniqcode);
 				$update=$this->db->update('tbl_price_manegment', $data);
+				
+				// Regenerate and save result PDF for this updated price/time and store path in pdf_file
+				$this->load->model('result/Result_Model');
+				$result_pdf = $this->Result_Model->result_details($time);
+				if(!empty($result_pdf)){
+					$pdf_data['result_pdf'] = $result_pdf;
+					$mpdf = new \Mpdf\Mpdf();
+					$html = $this->load->view('user/result_pdf/result_pdf',$pdf_data,true);
+					$mpdf->WriteHTML($html);
+					
+					$filename = date('Ymd').'_time'.$time.'.pdf';
+					$filepath = FCPATH.'uploads/price_pdfs/'.$filename;
+					$mpdf->Output($filepath,'F');
+					
+					$this->db->where('uniqcode', $uniqcode);
+					$this->db->update('tbl_price_manegment', array('pdf_file' => 'uploads/price_pdfs/'.$filename));
+				}
 				$this->session->set_flashdata('success', 'Price update successfully.');
 				redirect('admin/view_price');
 				
