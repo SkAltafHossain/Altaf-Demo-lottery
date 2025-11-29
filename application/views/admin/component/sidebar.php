@@ -69,7 +69,7 @@
                     
                 </li>
                 <li>
-                    <span class="m-r-sm text-muted welcome-message"><span style="color: #999c9e">Welcome to</span> <b>Hariana State Lottery ADMIN SYSTEM</b></span>
+                    <span class="m-r-sm text-muted welcome-message"><span style="color: #999c9e">Welcome to</span> <b>Haryana State Lottery ADMIN SYSTEM</b></span>
                 </li>            
                 <li>
                     <a class="logout-icon" href="<?=base_url('admin/AdminController/logout')?>">

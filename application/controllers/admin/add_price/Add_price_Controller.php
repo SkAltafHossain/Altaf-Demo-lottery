@@ -69,7 +69,7 @@
 				
 				// Generate and save result PDF for this price/time and store path in pdf_file
 				$this->load->model('result/Result_Model');
-				$result_pdf = $this->Result_Model->result_details($time);
+				$result_pdf = $this->Result_Model->result_details_add($time);
 				if(!empty($result_pdf)){
 					$pdf_data['result_pdf'] = $result_pdf;
 					$mpdf = new \Mpdf\Mpdf();
@@ -137,7 +137,7 @@
 				
 				// Regenerate and save result PDF for this updated price/time and store path in pdf_file
 				$this->load->model('result/Result_Model');
-				$result_pdf = $this->Result_Model->result_details($time);
+				$result_pdf = $this->Result_Model->result_details_add($time);
 				if(!empty($result_pdf)){
 					$pdf_data['result_pdf'] = $result_pdf;
 					$mpdf = new \Mpdf\Mpdf();
