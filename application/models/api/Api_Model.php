@@ -14,10 +14,10 @@
         {
             // First, get all time slots to ensure we include all of them
             $time_slots = [
-                '11:30 AM' => '00',
-                '03:00 PM' => '00',
-                '05:00 PM' => '00',
-                '08:30 PM' => '00'
+                '11:30 AM' => '--',
+                '03:00 PM' => '--',
+                '05:00 PM' => '--',
+                '08:30 PM' => '--'
             ];
             
             // Get all results from database
@@ -67,10 +67,10 @@
         {
             // First, get all time slots to ensure we include all of them
             $time_slots = [
-                '11:30 AM' => '0',
-                '03:00 PM' => '0',
-                '05:00 PM' => '0',
-                '08:30 PM' => '0'
+                '11:30 AM' => '-',
+                '03:00 PM' => '-',
+                '05:00 PM' => '-',
+                '08:30 PM' => '-'
             ];
             
             // Get all results from database
