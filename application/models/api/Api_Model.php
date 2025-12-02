@@ -136,9 +136,9 @@
             $this->db->from('tbl_price_manegment');
             $this->db->join('tbl_time', 'tbl_price_manegment.time = tbl_time.id', 'left');
             $this->db->where('tbl_price_manegment.status', 'Active');
-            $this->db->order_by('tbl_price_manegment.date', 'asc');
-            $this->db->order_by('tbl_price_manegment.time', 'asc');
-            $this->db->order_by('tbl_time.id', 'asc');
+            $this->db->order_by('tbl_price_manegment.date', 'desc');
+            $this->db->order_by('tbl_price_manegment.time', 'desc');
+            $this->db->order_by('tbl_time.id', 'desc');
             $query = $this->db->get();
             return $query->result_array();
         }
