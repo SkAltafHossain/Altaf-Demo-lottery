@@ -19,6 +19,23 @@
                 '05:00 PM' => '--',
                 '08:30 PM' => '--'
             ];
+
+            $this->db->select([
+                'tbl_price_manegment.first_price',
+                'DATE_FORMAT(tbl_price_manegment.date, "%d-%m-%Y") as result_date',
+                'tbl_time.time as result_time',
+                'tbl_time.id as time_id'
+            ]);
+            $this->db->from('tbl_price_manegment'); 
+            $this->db->join('tbl_time', 'tbl_price_manegment.time = tbl_time.id', 'left');
+            $this->db->where('tbl_price_manegment.status', 'Active');
+            $this->db->where('tbl_price_manegment.date', date('Y-m-d'));
+            $this->db->order_by('tbl_price_manegment.date', 'desc');
+            $this->db->order_by('tbl_time.id', 'asc');
+            $final_results = [];
+            if($this->db->get()->num_rows() == 0){
+                $final_results[] = array_merge(['date' => date('d-m-Y')], $time_slots);
+            }
             
             // Get all results from database
             $this->db->select([
@@ -55,7 +72,7 @@
             }
             
             // Convert to indexed array and ensure all dates have all time slots
-            $final_results = [];
+            
             foreach ($formatted_results as $date => $entry) {
                 $final_results[] = array_merge(['date' => $date], $time_slots, $entry);
             }
@@ -72,6 +89,23 @@
                 '05:00 PM' => '-',
                 '08:30 PM' => '-'
             ];
+
+            $this->db->select([
+                'tbl_price_manegment.first_price',
+                'DATE_FORMAT(tbl_price_manegment.date, "%d-%m-%Y") as result_date',
+                'tbl_time.time as result_time',
+                'tbl_time.id as time_id'
+            ]);
+            $this->db->from('tbl_price_manegment'); 
+            $this->db->join('tbl_time', 'tbl_price_manegment.time = tbl_time.id', 'left');
+            $this->db->where('tbl_price_manegment.status', 'Active');
+            $this->db->where('tbl_price_manegment.date', date('Y-m-d'));
+            $this->db->order_by('tbl_price_manegment.date', 'desc');
+            $this->db->order_by('tbl_time.id', 'asc');
+            $final_results = [];
+            if($this->db->get()->num_rows() == 0){
+                $final_results[] = array_merge(['date' => date('d-m-Y')], $time_slots);
+            }
             
             // Get all results from database
             $this->db->select([
