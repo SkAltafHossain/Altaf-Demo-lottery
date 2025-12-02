@@ -142,7 +142,7 @@
             }
             
             // Convert to indexed array and ensure all dates have all time slots
-            $final_results = [];
+            
             foreach ($formatted_results as $date => $entry) {
                 $final_results[] = array_merge(['date' => $date], $time_slots, $entry);
             }
