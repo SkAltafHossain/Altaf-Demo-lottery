@@ -25,7 +25,7 @@
 
     #div1{
         text-align: center;
-        font-size: 15px;
+        font-size: 20px;
         font-family: serif;
         font-weight: bold;
     }
@@ -33,7 +33,7 @@
     #div2{
         text-align: center;
         font-family: serif;
-        font-size: 50px; 
+        font-size: 45px; 
         font-weight: bold; 
         color: #cc0000;
     }
@@ -140,7 +140,7 @@
           <div class="column middle" style = "text-align: center;"><span id="div1">Haryana State Lottery</span></div>
           <div class="column right" style = "text-align: right; font-size: 15px; font-weight: bold"><?=$result_pdf->time_t?></div>
         </div>
-        <div align="center"><span id="div2" >TIGER</span></div>
+        <div align="center"><span id="div2" >ROYAL TIGER</span></div>
         <div align="center" style="padding-top: - 10px; padding-bottom: 10px"><span id="div3"><?=$result_pdf->title?></span></div>
         <div align="center"><span id="div4"><?=$result_pdf->drow_number?> Draw held on  <?=$result_pdf->date_1 ?>   Price ₹6/-</span></div>
         <div align="center" style="padding-top: 10px; padding-bottom: 10px;"><span id="div5">1st Prize 1 Crore/- <?=$result_pdf->first_price?></span></div>    
@@ -156,11 +156,57 @@
 
             ?> (REAMINING ALL SERIALS)</span></div>
         <div align="center" style="padding-top:  10px; padding-bottom:  10px;"><span id="div6">2nd Prize ₹7000/-</span></div>
-        <div align="center"><span id="div9"><?=$result_pdf->sce_price?></span></div>
+        <?php 
+            $secondPrice = $result_pdf->sce_price;
+            $slug2=trim($secondPrice);
+            $slug2=str_replace(" ",'',$slug2);
+            $slug2=preg_replace('/[^A-Za-z0-9\-]/', '', $slug2);
+            $k=0;
+            $second_price_1="";
+            for($i=0;$i<10;$i++){ 
+                for($j=0;$j<5;$j++){
+                    $second_price_1=$second_price_1.$slug2[$k];
+                    $k++;
+                }
+                $second_price_1=$second_price_1. "&nbsp;&nbsp;&nbsp;";
+            }
+        ?>
+        
+        <div align="center"><span id="div9"><?=$second_price_1?></span></div>
         <div align="center" style="padding-top:  10px; padding-bottom:   10px;"><span id="div6">3rd Prize ₹2500/-</span></div>
-        <div align="center"><span id="div9"><?=$result_pdf->third_price?></span></div>
+        <?php 
+            $thirdPrice = $result_pdf->third_price;
+            $slug3=trim($thirdPrice);
+            $slug3=str_replace(" ",'',$slug3);
+            $slug3=preg_replace('/[^A-Za-z0-9\-]/', '', $slug3);
+            $k=0;
+            $third_price_1="";
+            for($i=0;$i<10;$i++){ 
+                for($j=0;$j<4;$j++){
+                    $third_price_1=$third_price_1.$slug3[$k];
+                    $k++;
+                }
+                $third_price_1=$third_price_1. "&nbsp;&nbsp;&nbsp;";
+            }
+        ?>
+        <div align="center"><span id="div9"><?=$third_price_1?></span></div>
         <div align="center" style="padding-top:   10px; padding-bottom:   10px;"><span id="div6">4th Prize ₹1500/-</span></div>
-        <div align="center"><span id="div9"><?=$result_pdf->for_price?></span></div>
+        <?php 
+            $fourthPrice = $result_pdf->for_price;
+            $slug4=trim($fourthPrice);
+            $slug4=str_replace(" ",'',$slug4);
+            $slug4=preg_replace('/[^A-Za-z0-9\-]/', '', $slug4);
+            $k=0;
+            $fourth_price_1="";
+            for($i=0;$i<10;$i++){ 
+                for($j=0;$j<4;$j++){
+                    $fourth_price_1=$fourth_price_1.$slug4[$k];
+                    $k++;
+                }
+                $fourth_price_1=$fourth_price_1. "&nbsp;&nbsp;&nbsp;";
+            }
+        ?>
+        <div align="center"><span id="div9"><?=$fourth_price_1?></span></div>
 
         <div align="center" style="padding-top:   10px; padding-bottom:   10px;"><span id="div6">5th Prize ₹800</span></div>
         <?php
@@ -174,10 +220,10 @@
             for($i=0;$i<10;$i++){
 
                 for($j=0;$j<4;$j++){
-                    $fifth_price_1=$fifth_price_1.$fifth_price1[$k];
+                    $fifth_price_1=$fifth_price_1."".$fifth_price1[$k];
                     $k++;
                 }
-                $fifth_price_1=$fifth_price_1." ";
+                $fifth_price_1=$fifth_price_1. "&nbsp;&nbsp;&nbsp;";
                 
             }
             $fifth_price_2="";
@@ -187,7 +233,7 @@
                     $fifth_price_2=$fifth_price_2.$fifth_price1[$k];
                     $k++;
                 }
-                $fifth_price_2=$fifth_price_2." ";
+                $fifth_price_2=$fifth_price_2. "&nbsp;&nbsp;&nbsp;";
                 
             }
             $fifth_price_3="";
@@ -197,7 +243,7 @@
                     $fifth_price_3=$fifth_price_3.$fifth_price1[$k];
                     $k++;
                 }
-                $fifth_price_3=$fifth_price_3." ";
+                $fifth_price_3=$fifth_price_3. "&nbsp;&nbsp;&nbsp;";
                 
             }
 
@@ -208,7 +254,7 @@
                     $fifth_price_4=$fifth_price_4.$fifth_price1[$k];
                     $k++;
                 }
-                $fifth_price_4=$fifth_price_4." ";
+                $fifth_price_4=$fifth_price_4. "&nbsp;&nbsp;&nbsp;";
                 
             }
 
@@ -219,7 +265,7 @@
                     $fifth_price_5=$fifth_price_5.$fifth_price1[$k];
                     $k++;
                 }
-                $fifth_price_5=$fifth_price_5." ";
+                $fifth_price_5=$fifth_price_5. "&nbsp;&nbsp;&nbsp;";
                 
             }
             $fifth_price_6="";
@@ -229,7 +275,7 @@
                     $fifth_price_6=$fifth_price_6.$fifth_price1[$k];
                     $k++;
                 }
-                $fifth_price_6=$fifth_price_6." ";
+                $fifth_price_6=$fifth_price_6. "&nbsp;&nbsp;&nbsp;";
                 
             }
 
@@ -240,7 +286,7 @@
                     $fifth_price_7=$fifth_price_7.$fifth_price1[$k];
                     $k++;
                 }
-                $fifth_price_7=$fifth_price_7." ";
+                $fifth_price_7=$fifth_price_7. "&nbsp;&nbsp;&nbsp;";
                 
             }
 
@@ -251,7 +297,7 @@
                     $fifth_price_8=$fifth_price_8.$fifth_price1[$k];
                     $k++;
                 }
-                $fifth_price_8=$fifth_price_8." ";
+                $fifth_price_8=$fifth_price_8. "&nbsp;&nbsp;&nbsp;";
                 
             }
 
@@ -262,7 +308,7 @@
                     $fifth_price_9=$fifth_price_9.$fifth_price1[$k];
                     $k++;
                 }
-                $fifth_price_9=$fifth_price_9." ";
+                $fifth_price_9=$fifth_price_9. "&nbsp;&nbsp;&nbsp;";
                 
             }
 
@@ -273,7 +319,7 @@
                     $fifth_price_10=$fifth_price_10.$fifth_price1[$k];
                     $k++;
                 }
-                $fifth_price_10=$fifth_price_10." ";
+                $fifth_price_10=$fifth_price_10. "&nbsp;&nbsp;&nbsp;";
                 
             }
 

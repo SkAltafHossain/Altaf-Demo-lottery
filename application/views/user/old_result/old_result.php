@@ -5,7 +5,7 @@
         <div class="row equal">
         <div class="col-md-8" id="leftone">
             <div class="boxthing colour-1">  
-                <h5>MORNING</h5>
+                <h5>ROYAL TIGER MORNING</h5>
                 <!-- <p>11:00 AM</p> -->
                 <input type="text" name="time" id="time" value="11:30 AM" style="border: none; background: transparent;">
             </div>
@@ -25,7 +25,7 @@
       <div class="row equal">
         <div class="col-md-8" id="leftone">
             <div class="boxthing colour-1">
-                <h5>DAY</h5>
+                <h5>ROYAL TIGER DAY</h5>
                 <!-- <p>03:00 PM</p> -->
               <input type="text" name="time" id="time" value="03:30 PM" style="border: none; background: transparent;"> 
             </div>
@@ -45,7 +45,7 @@
                <div class="row equal">
         <div class="col-md-8" id="leftone">
             <div class="boxthing colour-1">
-                <h5>EVENING</h5>
+                <h5>ROYAL TIGER EVENING</h5>
                 <!-- <p>05:00 PM</p> -->
                 <input type="text" name="time" id="time" value="05:00 PM" style="border: none; background: transparent;">
             </div>
@@ -65,7 +65,7 @@
                <div class="row equal">
         <div class="col-md-8" id="leftone">
             <div class="boxthing colour-1">
-                <h5>NIGHT</h5>
+                <h5>ROYAL TIGER NIGHT</h5>
                 <!-- <p>08:30 PM</p> -->
                 <input type="text" name="time" id="time" value="08:30 PM" style="border: none; background: transparent;">
             </div>
