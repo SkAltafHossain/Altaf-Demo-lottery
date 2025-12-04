@@ -81,9 +81,7 @@
 								$first_price3=(int)$first_price2/10000;
 								$mn=fmod((int)$first_price3,10);							
 							}
-							
-							$start=$mn;
-							
+							$start = $mn;
 							for($od=$mn;$od<50+$mn;$od++){
 
 								if($start==9){
@@ -92,7 +90,6 @@
 								$start++;
 							}
 							echo $start?>
-								
 						</p>
 
 						<script type="text/javascript">
@@ -101,12 +98,21 @@
 				          document.getElementById(id).value=<?php
 
 				          echo $mn;
-
+							
 				          ?>;
+
+							setTimeout(() => {
+								var id='odometer'+<?=$i.$j.$k?>;
+								document.getElementById(id).innerText=<?php
+
+								echo $mn;
+
+								?>;
+							}, 32000);
 
 						</script>
 
-						<div class="odometer1" id="odometer1">
+						<div class="odometer1" id="odometer1<?=$i.$j.$k?>">
 	    
 							<div class="digit">
 								<div class="digit-container digit-one"><?php 

@@ -326,58 +326,36 @@
           $(".odometer1").show();
         },23900);
 
-        setTimeout(() => {
-          for(let i = 0; i < 10; i++) {
-            for(let j = 1; j <= 2; j++) {
-              for(let k = 1; k <= 5; k++) {
-                var id = 'odometer' + i + j + k;ßß
-                setTimeout(() => {
-                  $("#" + id).show();
-                }, 100 + k);
-              }
-            }
-          }
-        }, 33400);
-
         setTimeout(function(){
-          $(".odometer1").hide();
           $(".odometer_zoom").show();
+          $(".odometer1").hide();
+          $(".odometer").show();
         },33900);
 
-        setTimeout(function(){
- 
-          for(var k=1;k<=5;k++)
-          {
-            for(var j=1;j<=2;j++)
-            {
-              for(var i=0;i<10;i++) 
-              {
-                id='odometer'+i+j+k;
-                var m=document.getElementById(id);
-                m.innerHTML = m.value;
-              }
-            } 
-          }
-          
-        },33400);
+        // setTimeout(() => {
+        //   $("#odometer525").show();
+        //   $("#odometer1525").hide();
+        // }, 32500);
 
-        setTimeout(function(){
- 
-          for(var k=1;k<=5;k++)
-          {
-            for(var j=1;j<=2;j++)
-            {
-              for(var i=0;i<10;i++) 
-              {
-                id='odometer_17'+i+j+k;
-                
-                var m=document.getElementById(id);
-                m.innerHTML = m.value;
-              }
-            } 
-          }
-          
-        },33400);
+        // setTimeout(() => {
+        //   $("#odometer925").show();
+        //   $("#odometer1925").hide();
+        // }, 33100);
+
+        // setTimeout(() => {
+        //   $("#odometer725").show();
+        //   $("#odometer1725").hide();
+        // }, 32800);
+
+        // setTimeout(() => {
+        //   $("#odometer625").show();
+        //   $("#odometer1625").hide();
+        // }, 33700);
+
+        // setTimeout(() => {
+        //   $("#odometer825").show();
+        //   $("#odometer1825").hide();
+        // }, 33400);
 
 
 
