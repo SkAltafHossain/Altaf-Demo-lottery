@@ -321,43 +321,62 @@
         });
 
         setTimeout(function(){
-          $(".odometer").hide();
           $(".odometer_zoom").hide();
-          $(".odometer1").show();
         },23900);
 
         setTimeout(function(){
           $(".odometer_zoom").show();
-          $(".odometer1").hide();
-          $(".odometer").show();
         },33900);
 
-        // setTimeout(() => {
-        //   $("#odometer525").show();
-        //   $("#odometer1525").hide();
-        // }, 32500);
+        setTimeout(function(){
+          $("#odometer525").hide();
+          $("#odometer1525").show();
+        },23000);
 
-        // setTimeout(() => {
-        //   $("#odometer925").show();
-        //   $("#odometer1925").hide();
-        // }, 33100);
+        setTimeout(function(){
+          $("#odometer525").show();
+          $("#odometer1525").hide();
+        },33000);
 
-        // setTimeout(() => {
-        //   $("#odometer725").show();
-        //   $("#odometer1725").hide();
-        // }, 32800);
+        setTimeout(function(){
+          $("#odometer725").hide();
+          $("#odometer1725").show();
+        },23000);
 
-        // setTimeout(() => {
-        //   $("#odometer625").show();
-        //   $("#odometer1625").hide();
-        // }, 33700);
+        setTimeout(function(){
+          $("#odometer725").show();
+          $("#odometer1725").hide();
+        },33000);
 
-        // setTimeout(() => {
-        //   $("#odometer825").show();
-        //   $("#odometer1825").hide();
-        // }, 33400);
+        setTimeout(function(){
+          $("#odometer625").hide();
+          $("#odometer1625").show();
+        },23500);
 
+        setTimeout(function(){
+          $("#odometer625").show();
+          $("#odometer1625").hide();
+        },33500);
 
+        setTimeout(function(){
+          $("#odometer825").hide();
+          $("#odometer1825").show();
+        },23500);
+
+        setTimeout(function(){
+          $("#odometer825").show();
+          $("#odometer1825").hide();
+        },33500);
+
+        setTimeout(function(){
+          $("#odometer925").hide();
+          $("#odometer1925").show();
+        },24000);
+
+        setTimeout(function(){
+          $("#odometer925").show();
+          $("#odometer1925").hide();
+        },34000);
 
     </script>
 </body>
