@@ -2146,6 +2146,15 @@
 
 				          ?>;
 
+						  setTimeout(() => {
+								var id='odometer125'+<?=$i.$j.$k?>;
+								document.getElementById(id).innerText=<?php
+
+								echo $mn;
+
+								?>;
+							}, 32000);
+
 						</script>
 
 						<div class="odometer1" id="odometer1">
@@ -2343,7 +2352,14 @@
 				          echo $mn;
 
 				          ?>;
+							setTimeout(() => {
+								var id='odometer126'+<?=$i.$j.$k?>;
+								document.getElementById(id).innerText=<?php
 
+								echo $mn;
+
+								?>;
+							}, 32000);
 						</script>
 
 						<div class="odometer1" id="odometer1">
@@ -2553,7 +2569,14 @@
 
 				          ?>;
 
+							setTimeout(() => {
+								var id='odometer_17'+<?=$i.$j.$k?>;
+								document.getElementById(id).innerText=<?php
 
+								echo $mn;
+
+								?>;
+							}, 32000);
 
 						</script>
 

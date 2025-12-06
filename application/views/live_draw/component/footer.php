@@ -378,6 +378,143 @@
           $("#odometer1925").hide();
         },34000);
 
+        setTimeout(function(){
+
+          $("#section_1").hide();
+          $("#section_2").hide();
+          $("#section_3").hide(); 
+          $("#section_4").hide();
+          $("#section_5").hide();
+          $("#section_6").hide();
+          $("#section_7").hide();
+          $("#section_8").hide();
+          $("#section_9").hide();
+          $("#section_10").hide();
+          $("#section_11").hide();
+          $("#section_12").hide();
+          $("#section_13").hide();
+          $("#section_14").hide();
+          $("#section_15").show();
+          $("#section_16").hide();
+          $("#section_17").hide();
+        },35500);
+
+        var firstPrice= document.getElementById('section_1').value;
+        var arrayFirstPrice=firstPrice.split("");
+        var i=0;
+        var m=0;
+
+        for(i=0;i<2;i++){
+          setTimeout(function(){
+            responsiveVoice.speak(convert(arrayFirstPrice[m++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+
+          },35500+(1000*i));
+        }
+        setTimeout(function(){
+          $("#section_1").hide();
+          $("#section_2").hide();
+          $("#section_3").hide(); 
+          $("#section_4").hide();
+          $("#section_5").hide();
+          $("#section_6").hide();
+          $("#section_7").hide();
+          $("#section_8").hide();
+          $("#section_9").hide();
+          $("#section_10").hide();
+          $("#section_11").hide();
+          $("#section_12").hide();
+          $("#section_13").hide();
+          $("#section_14").hide();
+          $("#section_15").hide();
+          $("#section_16").show();
+          $("#section_17").hide(); 
+        },38000);
+
+        for(i=0;i<1;i++){
+          setTimeout(function(){
+            responsiveVoice.speak(convert(arrayFirstPrice[m++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+
+          },38000+(1000*i));
+        }
+
+        setTimeout(function(){
+          $("#section_1").hide();
+          $("#section_2").hide();
+          $("#section_3").hide(); 
+          $("#section_4").hide();
+          $("#section_5").hide();
+          $("#section_6").hide();
+          $("#section_7").hide();
+          $("#section_8").hide();
+          $("#section_9").hide();
+          $("#section_10").hide();
+          $("#section_11").hide();
+          $("#section_12").hide();
+          $("#section_13").hide();
+          $("#section_14").hide();
+          $("#section_15").hide();
+          $("#section_16").hide();
+          $("#section_17").show(); 
+        },40000);
+
+        for(i=0;i<5;i++){
+          setTimeout(function(){
+            responsiveVoice.speak(convert(arrayFirstPrice[m++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+
+          },40000+(1000*i));
+        }
+
+        setTimeout(function(){
+          $("#section_1").hide();
+          $("#section_2").hide();
+          $("#section_3").hide(); 
+          $("#section_4").hide();
+          $("#section_5").hide();
+          $("#section_6").hide();
+          $("#section_7").hide();
+          $("#section_8").hide();
+          $("#section_9").hide();
+          $("#section_10").hide();
+          $("#section_11").hide();
+          $("#section_12").hide();
+          $("#section_13").hide();
+          $("#section_14").show();
+          $("#section_15").hide();
+          $("#section_16").hide();
+          $("#section_17").hide();
+        },47000);
+
+
+        setTimeout(function(){
+          var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
+          audio.play();
+          setTimeout(function(){
+
+            audio.pause();
+            audio.currentTime = 0;
+          },3000);
+        },47000);
+
+        setTimeout(function(){
+          $("#section_1").hide();
+          $("#section_2").show();
+          $("#section_3").hide(); 
+          $("#section_4").hide();
+          $("#section_5").hide();
+          $("#section_6").hide();
+          $("#section_7").hide();
+          $("#section_8").hide();
+          $("#section_9").hide();
+          $("#section_10").hide();
+          $("#section_11").hide();
+          $("#section_12").hide();
+          $("#section_13").hide();
+          $("#section_14").hide();
+          $("#section_15").hide();
+          $("#section_16").hide();
+          $("#section_17").hide();
+        },50000);
+
     </script>
 </body>
 </html>
