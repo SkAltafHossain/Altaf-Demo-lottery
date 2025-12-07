@@ -328,55 +328,37 @@
           $(".odometer_zoom").show();
         },33900);
 
-        setTimeout(function(){
-          $("#odometer525").hide();
-          $("#odometer1525").show();
-        },23000);
+        const delays = [
+            { start: 23000, end: 33000 },
+            { start: 23500, end: 33500 },
+            { start: 24000, end: 34000 },
+            { start: 23000, end: 33000 },
+            { start: 23500, end: 33500 },
+        ];
 
-        setTimeout(function(){
-          $("#odometer525").show();
-          $("#odometer1525").hide();
-        },33000);
+        for (let k = 1; k <= 5; k++) {
+            for (let j = 1; j <= 2; j++) {
+                for (let i = 1; i <= 10; i++) {
+                  const odometerId = "#odometer"+i+j+k;
+                  const odometerId1 = "#odometer1"+i+j+k;
+                  if(i > 4 && i != 10){
+                    const delay = delays[i- 4 - 1];
+                    console.log("tag", delay);
+                    // Hide original, show animation
+                    setTimeout(() => {
+                        $("#odometer"+i+j+k).hide();
+                        $("#odometer1"+i+j+k).show();
+                    }, delay.start);
 
-        setTimeout(function(){
-          $("#odometer725").hide();
-          $("#odometer1725").show();
-        },23000);
-
-        setTimeout(function(){
-          $("#odometer725").show();
-          $("#odometer1725").hide();
-        },33000);
-
-        setTimeout(function(){
-          $("#odometer625").hide();
-          $("#odometer1625").show();
-        },23500);
-
-        setTimeout(function(){
-          $("#odometer625").show();
-          $("#odometer1625").hide();
-        },33500);
-
-        setTimeout(function(){
-          $("#odometer825").hide();
-          $("#odometer1825").show();
-        },23500);
-
-        setTimeout(function(){
-          $("#odometer825").show();
-          $("#odometer1825").hide();
-        },33500);
-
-        setTimeout(function(){
-          $("#odometer925").hide();
-          $("#odometer1925").show();
-        },24000);
-
-        setTimeout(function(){
-          $("#odometer925").show();
-          $("#odometer1925").hide();
-        },34000);
+                    // Show original, hide animation
+                    setTimeout(() => {
+                        $("#odometer"+i+j+k).show();
+                        $("#odometer1"+i+j+k).hide();
+                    }, delay.end);
+                  }
+                }
+            }
+        }
 
         setTimeout(function(){
 
@@ -513,9 +495,63 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
-        },50000);
+        },50000);//50000
 
+        setTimeout(function(){
+          $(".odometer2").show();
+          $(".odometer1").hide();
+        },50000);//50000
+
+
+        setTimeout(function(){
+            
+            responsiveVoice.speak("Second price "+sp+" on five digit on ten times","Hindi Male",{pitch: 0.7});
+
+        },52000);//52000
+
+        setTimeout(function(){
+          var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_audio2.mp3');
+          audio.play();
+        },57000); //57000
+
+        const delays2 = [
+            { start: 56500, end: 66500 },
+            { start: 57000, end: 67000 },
+            { start: 57500, end: 67500 },
+            { start: 56500, end: 66500 },
+            { start: 57000, end: 67000 },
+            { start: 57500, end: 67500 },
+            { start: 56500, end: 66500 },
+            { start: 57000, end: 67000 },
+            { start: 57500, end: 67500 },
+            { start: 56500, end: 66500 },
+        ];
+
+        for (let k = 1; k <= 5; k++) {
+            for (let j = 1; j <= 2; j++) {
+                for (let i = 1; i <= 10; i++) {
+                    const odometerId = "#odometer2"+i+j+k;
+                    const odometerId1 = "#odometer3"+i+j+k;
+                    const delay = delays2[i - 1];
+                    
+                    // Hide original, show animation
+                    setTimeout(() => {
+                        $("#odometer12"+i+j+k).show();
+                        $("#odometer2"+i+j+k).hide();
+                        console.log("tag",delay.start);
+                    }, delay.start);
+
+                    // Show original, hide animation
+                    setTimeout(() => {
+                        $("#odometer12"+i+j+k).hide();
+                        $("#odometer2"+i+j+k).show();
+                        console.log("tag",delay.end);
+                    }, delay.end);
+                }
+            }
+        }
+
+        
     </script>
 </body>
 </html>
-

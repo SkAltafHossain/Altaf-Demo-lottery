@@ -314,10 +314,19 @@
 						<script type="text/javascript">
 							
 						  id='odometer2'+<?=$i.$j.$k?>;
+						  console.log("tag",id);
 						  document.getElementById(id).value=<?=$mn?>;
+						  setTimeout(() => {
+								var id='odometer2'+<?=$i.$j.$k?>;
+								document.getElementById(id).innerText=<?php
+
+								echo $mn;
+
+								?>;
+							}, 15000);
 						</script>
 
-						<div class="odometer1" id="odometer1">
+						<div class="odometer1" id="odometer12<?=$i.$j.$k?>">
 	    
 							<div class="digit">
 								<div class="digit-container digit-one"><?php 
