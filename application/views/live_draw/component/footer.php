@@ -61,6 +61,10 @@
         var tp= document.getElementById('shimla_price_33').value;
         var fop= document.getElementById('shimla_price_34').value;
         var fip= document.getElementById('shimla_price_35').value;
+        var start = 5000;
+        var videoTime = 5000
+        var musicTime = 3000;
+        
 
         setTimeout(function(){
           var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
@@ -69,7 +73,7 @@
 
             audio.pause();
             audio.currentTime = 0;
-          },5000);
+          },start);
         });
 
         setTimeout(function(){
@@ -77,7 +81,7 @@
 
             responsiveVoice.speak("Dice Through","Hindi Male",{pitch: 0.7});
 
-        },7000);
+        },start + 2000);
 
         setTimeout(function(){
           $("#section_1").hide();
@@ -97,12 +101,13 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
-        },8500);
+        },start + 3500);
 
         setTimeout(function(){
           var vid = document.getElementById("myVideo"); 
           vid.play()
-        },9000);
+        },start + 4000);
+        var afterStartVideo = start + videoTime;
 
         setTimeout(function(){
           var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
@@ -111,8 +116,8 @@
 
             audio.pause();
             audio.currentTime = 0;
-          },3000);
-        },14000);
+          },musicTime);
+        },afterStartVideo + 4000);
 
         setTimeout(function(){
           $("#section_1").hide();
@@ -132,7 +137,9 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
-        },14000);
+        },afterStartVideo + 4000);
+
+        let first = afterStartVideo + musicTime + 4000;//17000
 
         setTimeout(function(){
           $("#section_1").show();
@@ -152,11 +159,11 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
-        },17000);
+        },first);
 
         setTimeout(function(){
             responsiveVoice.speak("First Price "+fp+" On Five Digits With Series On One Time. ","Hindi Male",{pitch: 0.7});
-        },18000);
+        },first + 1000);
 
         setTimeout(function(){
           var chakkaValue=document.getElementById("chaka").value;
@@ -179,7 +186,7 @@
                   });
               }
           });
-        },23500);
+        },first + 6500);
 
         setTimeout(function(){
             var chakkaValue=document.getElementById("chaka").value;
@@ -203,9 +210,8 @@
                     });
                 }
             });
-        },23500);
+        },first + 6500);
 
-        //307000
         setTimeout(function(){
           var tmpAnimation = 345;
           var chakkaValue=document.getElementById("chaka1").value;
@@ -256,9 +262,8 @@
                   });
               }
           });
-        },24000);
+        },first + 7000);
 
-        //307000
         setTimeout(function(){
             var tmpAnimation = 345;
             var chakkaValue=document.getElementById("chaka1").value;
@@ -308,13 +313,13 @@
                     });
                 }
             });
-        },24000);
+        },first + 7000);
 
 
         setTimeout(function(){
           var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_audio2.mp3');
           audio.play();
-        },23900);
+        },first + 6900);
 
         setTimeout(function(){
           $(".odometer1").hide();
@@ -322,25 +327,23 @@
 
         setTimeout(function(){
           $(".odometer_zoom").hide();
-        },23900);
+        },first + 6900);
 
         setTimeout(function(){
           $(".odometer_zoom").show();
-        },33900);
+        },first + 16900);
 
         const delays = [
-            { start: 23000, end: 33000 },
-            { start: 23500, end: 33500 },
-            { start: 24000, end: 34000 },
-            { start: 23000, end: 33000 },
-            { start: 23500, end: 33500 },
+            { start: first + 6000, end: first + 15600 },
+            { start: first + 6500, end: first + 16100 },
+            { start: first + 7000, end: first + 16600 },
+            { start: first + 6000, end: first + 15600 },
+            { start: first + 6500, end: first + 16100 },
         ];
 
         for (let k = 1; k <= 5; k++) {
             for (let j = 1; j <= 2; j++) {
                 for (let i = 1; i <= 10; i++) {
-                  const odometerId = "#odometer"+i+j+k;
-                  const odometerId1 = "#odometer1"+i+j+k;
                   if(i > 4 && i != 10){
                     const delay = delays[i- 4 - 1];
                     console.log("tag", delay);
@@ -361,7 +364,6 @@
         }
 
         setTimeout(function(){
-
           $("#section_1").hide();
           $("#section_2").hide();
           $("#section_3").hide(); 
@@ -379,7 +381,7 @@
           $("#section_15").show();
           $("#section_16").hide();
           $("#section_17").hide();
-        },35500);
+        },first + 18500);
 
         var firstPrice= document.getElementById('section_1').value;
         var arrayFirstPrice=firstPrice.split("");
@@ -390,7 +392,7 @@
           setTimeout(function(){
             responsiveVoice.speak(convert(arrayFirstPrice[m++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
 
-          },35500+(1000*i));
+          },first + 18500+(1000*i));
         }
         setTimeout(function(){
           $("#section_1").hide();
@@ -410,13 +412,13 @@
           $("#section_15").hide();
           $("#section_16").show();
           $("#section_17").hide(); 
-        },38000);
+        },first + 21000);
 
         for(i=0;i<1;i++){
           setTimeout(function(){
             responsiveVoice.speak(convert(arrayFirstPrice[m++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
 
-          },38000+(1000*i));
+          },first + 21000+(1000*i));
         }
 
         setTimeout(function(){
@@ -437,13 +439,13 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").show(); 
-        },40000);
+        },first + 23000);
 
         for(i=0;i<5;i++){
           setTimeout(function(){
             responsiveVoice.speak(convert(arrayFirstPrice[m++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
 
-          },40000+(1000*i));
+          },first + 23000+(1000*i));
         }
 
         setTimeout(function(){
@@ -464,9 +466,9 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
-        },47000);
+        },first + 30000);
 
-
+        
         setTimeout(function(){
           var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
           audio.play();
@@ -474,8 +476,10 @@
 
             audio.pause();
             audio.currentTime = 0;
-          },3000);
-        },47000);
+          },musicTime);
+        },first + 30000);
+
+        const second = first + musicTime + 30000;//50000
 
         setTimeout(function(){
           $("#section_1").hide();
@@ -495,63 +499,224 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
-        },50000);//50000
+        },(second));
 
         setTimeout(function(){
           $(".odometer2").show();
           $(".odometer1").hide();
-        },50000);//50000
+        },(second));
 
 
         setTimeout(function(){
             
             responsiveVoice.speak("Second price "+sp+" on five digit on ten times","Hindi Male",{pitch: 0.7});
 
-        },52000);//52000
+        },(second + 2000));
 
         setTimeout(function(){
           var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_audio2.mp3');
           audio.play();
-        },57000); //57000
+        },(second + 7000));
 
         const delays2 = [
-            { start: 56500, end: 66500 },
-            { start: 57000, end: 67000 },
-            { start: 57500, end: 67500 },
-            { start: 56500, end: 66500 },
-            { start: 57000, end: 67000 },
-            { start: 57500, end: 67500 },
-            { start: 56500, end: 66500 },
-            { start: 57000, end: 67000 },
-            { start: 57500, end: 67500 },
-            { start: 56500, end: 66500 },
+            { start: (second + 6500), end: (second + 16100) },
+            { start: (second + 7000), end: (second + 16600) },
+            { start: (second + 7500), end: (second + 17100) },
+            { start: (second + 6500), end: (second + 16100) },
+            { start: (second + 7000), end: (second + 16600) },
+            { start: (second + 7500), end: (second + 17100) }, 
+            { start: (second + 6500), end: (second + 16100) },
+            { start: (second + 7000), end: (second + 16600) },
+            { start: (second + 7500), end: (second + 17100) },
+            { start: (second + 6500), end: (second + 16100) },
         ];
-
         for (let k = 1; k <= 5; k++) {
             for (let j = 1; j <= 2; j++) {
                 for (let i = 1; i <= 10; i++) {
-                    const odometerId = "#odometer2"+i+j+k;
-                    const odometerId1 = "#odometer3"+i+j+k;
                     const delay = delays2[i - 1];
-                    
-                    // Hide original, show animation
                     setTimeout(() => {
-                        $("#odometer12"+i+j+k).show();
+                        $("#odometer1a"+i+j+k).show();
                         $("#odometer2"+i+j+k).hide();
-                        console.log("tag",delay.start);
                     }, delay.start);
 
                     // Show original, hide animation
                     setTimeout(() => {
-                        $("#odometer12"+i+j+k).hide();
+                        $("#odometer1a"+i+j+k).hide();
                         $("#odometer2"+i+j+k).show();
-                        console.log("tag",delay.end);
                     }, delay.end);
                 }
             }
         }
 
-        
+        var secondPrice= document.getElementById('section_2').value;
+        var arraySecondPrice=secondPrice.split("");
+        var i=0,j=0;
+        var mSecondPrice=0;
+        var time = second + 18000;
+        for(j=0;j<10;j++){
+
+          for(i=0;i<5;i++){
+          
+            setTimeout(function(){
+
+              responsiveVoice.speak(convert(arraySecondPrice[mSecondPrice++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+
+            },time+(1000*i));
+            
+          }
+
+          time=time+6000;
+        }
+
+        setTimeout(function(){
+  
+          $("#section_1").hide();
+          $("#section_2").hide();
+          $("#section_3").hide(); 
+          $("#section_4").hide();
+          $("#section_5").hide();
+          $("#section_6").hide();
+          $("#section_7").hide();
+          $("#section_8").hide();
+          $("#section_9").hide();
+          $("#section_10").hide();
+          $("#section_11").hide();
+          $("#section_12").hide();
+          $("#section_13").hide();
+          $("#section_14").show();
+          $("#section_15").hide();
+          $("#section_16").hide();
+          $("#section_17").hide();
+
+        },second + 80000);
+
+        setTimeout(function(){
+          var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
+          audio.play();
+          setTimeout(function(){
+
+            audio.pause();
+            audio.currentTime = 0;
+          },musicTime);
+        },second + 80000);
+
+        var third = second + musicTime + 80000 //133000
+
+        setTimeout(function(){  
+          $("#section_1").hide();
+          $("#section_2").hide();
+          $("#section_3").show(); 
+          $("#section_4").hide();
+          $("#section_5").hide();
+          $("#section_6").hide();
+          $("#section_7").hide();
+          $("#section_8").hide();
+          $("#section_9").hide();
+          $("#section_10").hide();
+          $("#section_11").hide();
+          $("#section_12").hide();
+          $("#section_13").hide();
+          $("#section_14").hide();
+          $("#section_15").hide();
+          $("#section_16").hide();
+          $("#section_17").hide();
+        },third);
+
+        setTimeout(function(){
+          $(".odometer").show();
+          $(".odometer1").hide();
+        },third);
+
+        setTimeout(function(){
+            responsiveVoice.speak("Third price "+tp+" on four digit on ten times","Hindi Male",{pitch: 0.7});
+        },third + 2000);
+
+        setTimeout(function(){
+          var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_audio2.mp3');
+          audio.play();
+          
+        },third + 7000);
+
+        const delays3 = [
+            { start: (third + 6500), end: (third + 16100) },
+            { start: (third + 7000), end: (third + 16600) },
+            { start: (third + 7500), end: (third + 17100) },
+            { start: (third + 6500), end: (third + 16100) },
+            { start: (third + 7000), end: (third + 16600) },
+            { start: (third + 7500), end: (third + 17100) }, 
+            { start: (third + 6500), end: (third + 16100) },
+            { start: (third + 7000), end: (third + 16600) },
+            { start: (third + 7500), end: (third + 17100) },
+            { start: (third + 6500), end: (third + 16100) }
+        ];
+        for (let k = 1; k <= 5; k++) {
+            for (let j = 1; j <= 2; j++) {
+                for (let i = 1; i <= 10; i++) {
+                    const delay = delays3[i - 1];
+                    setTimeout(() => {
+                        $("#odometer1b"+i+j+k).show();
+                        $("#odometer3"+i+j+k).hide();
+                    }, delay.start);
+
+                    // Show original, hide animation
+                    setTimeout(() => {
+                        $("#odometer1b"+i+j+k).hide();
+                        $("#odometer3"+i+j+k).show();
+                    }, delay.end);
+                }
+            }
+        } 
+    
+        var thirdPrice= document.getElementById('section_3').value;
+        var arrayThirdPrice=thirdPrice.split("");
+        var i=0,j=0;
+        var mThirdPrice=0;
+        var time=third + 18000;
+        for(j=0;j<10;j++){
+
+          for(i=0;i<4;i++){
+          
+            setTimeout(function(){
+
+              responsiveVoice.speak(convert(arrayThirdPrice[mThirdPrice++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+
+            },time+(1000*i));
+            
+          }
+          time=time+5000;
+        }
+
+        setTimeout(function(){
+          $("#section_1").hide();
+          $("#section_2").hide();
+          $("#section_3").hide(); 
+          $("#section_4").hide();
+          $("#section_5").hide();
+          $("#section_6").hide();
+          $("#section_7").hide();
+          $("#section_8").hide();
+          $("#section_9").hide();
+          $("#section_10").hide();
+          $("#section_11").hide();
+          $("#section_12").hide();
+          $("#section_13").hide();
+          $("#section_14").show();
+          $("#section_15").hide();
+          $("#section_16").hide();
+          $("#section_17").hide();
+        },third + 70000);
+
+        setTimeout(function(){
+          var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
+          audio.play();
+          setTimeout(function(){
+
+            audio.pause();
+            audio.currentTime = 0;
+          },musicTime);
+        },third + 70000);
+
+        var fourth = third + musicTime + 70000; //
     </script>
 </body>
 </html>

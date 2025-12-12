@@ -317,16 +317,16 @@
 						  console.log("tag",id);
 						  document.getElementById(id).value=<?=$mn?>;
 						  setTimeout(() => {
-								var id='odometer2'+<?=$i.$j.$k?>;
-								document.getElementById(id).innerText=<?php
+							var id='odometer2'+<?=$i.$j.$k?>;
+							document.getElementById(id).innerText=<?php
 
-								echo $mn;
+							echo $mn;
 
-								?>;
-							}, 15000);
+							?>;
+						}, 60000);
 						</script>
 
-						<div class="odometer1" id="odometer12<?=$i.$j.$k?>">
+						<div class="odometer1" id="odometer1a<?=$i.$j.$k?>">
 	    
 							<div class="digit">
 								<div class="digit-container digit-one"><?php 
@@ -519,10 +519,18 @@
 						  id='odometer3'+<?=$i.$j.$k?>;
 				          document.getElementById(id).value=<?=$mn?>;
 				          console.log(id+":- "+document.getElementById(id).value) ;
+							setTimeout(() => {
+								var id='odometer3'+<?=$i.$j.$k?>;
+								document.getElementById(id).innerText=<?php
+
+								echo $mn;
+
+								?>;
+							}, 143000);
 
 						</script>
 
-						<div class="odometer1" id="odometer1">
+						<div class="odometer1" id="odometer1b<?=$i.$j.$k?>">
 	    
 							<div class="digit">
 								<div class="digit-container digit-one"><?php 
