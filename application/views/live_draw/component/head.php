@@ -1206,7 +1206,6 @@ main #odometer {
 
 #heading_text{
   position: relative;
-  top: 10px;
   font-weight: bold;
   font-size: 40px;
   color: #f4fdff;
@@ -1751,6 +1750,61 @@ main #odometer {
   position: relative;
   top: 24px;
 }
+
+.clock-card {
+    display: inline-block;
+    background: #000;
+    border-radius: 12px;
+    padding: 12px 18px;
+    box-shadow: 0 0 15px white;
+  }
+
+  .clock {
+    color: red;
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-align: center;
+  }
+
+  .ampm {
+    font-size: 18px;
+    margin-left: 8px;
+    vertical-align: super;
+  }
+
+  #head_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0px 0px;
+  }
+
+  /* LEFT */
+  #head_clock {
+    position: absolute;
+    left: 20px;
+  }
+
+  /* CENTER */
+  #head_title {
+    justify-self: center;
+    text-align: center;
+  }
+
+  /* RIGHT */
+  #head_live {
+    position: absolute;
+    right: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: #b10000;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
 		</style>
 	</head>
 <body>  
