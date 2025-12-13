@@ -72,7 +72,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // Active Database Group (default = local development)
 $active_group = 'default';
 $query_builder = TRUE;
-if (ENVIRONMENT === 'development') {
+// Detect live vs local by domain
+$is_live = isset($_SERVER['HTTP_HOST']) &&
+          in_array($_SERVER['HTTP_HOST'], [
+              'harianastatelottery.com',
+              'www.harianastatelottery.com'
+          ]);
+if ($is_live) {
 	$db['default'] = array(
 		'dsn'	=> '',
 		'hostname' => 'localhost',
