@@ -880,7 +880,6 @@ setTimeout(function(){
 
 //579000
 setTimeout(function(){
-  
   $("#section_1").hide();
   $("#section_2").hide();
   $("#section_3").hide(); 
@@ -898,7 +897,6 @@ setTimeout(function(){
   $("#section_15").hide();
   $("#section_16").hide();
   $("#section_17").hide();
-
 },579000);
 
 setTimeout(function(){

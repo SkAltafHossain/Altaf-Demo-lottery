@@ -526,7 +526,7 @@
 								echo $mn;
 
 								?>;
-							}, 143000);
+							}, 111000); //111000
 
 						</script>
 
@@ -722,12 +722,20 @@
 
 						<script type="text/javascript">
 							
-						  id='odometer5'+<?=$i.$j.$k?>;
-				          document.getElementById(id).value=<?=$mn?>;
-				          console.log(id+":- "+document.getElementById(id).value);
+							id='odometer5'+<?=$i.$j.$k?>;
+							document.getElementById(id).value=<?=$mn?>;
+							console.log(id+":- "+document.getElementById(id).value);
+							setTimeout(() => {
+								var id='odometer5'+<?=$i.$j.$k?>;
+								document.getElementById(id).innerText=<?php
+
+								echo $mn;
+
+								?>;
+							}, 162000);//162000
 						</script>
 
-						<div class="odometer1" id="odometer1">
+						<div class="odometer1" id="odometer1c<?=$i.$j.$k?>">
 	    
 							<div class="digit">
 								<div class="digit-container digit-one"><?php 
@@ -1039,12 +1047,20 @@
 
 						<script type="text/javascript">
 							
-						  id='odometer4'+<?=$i.$j.$k?>;
-				          document.getElementById(id).value=<?=$mn?>;
-				          console.log(id+":- "+document.getElementById(id).value) ;
+							id='odometer4'+<?=$i.$j.$k?>;
+							document.getElementById(id).value=<?=$mn?>;
+							console.log(id+":- "+document.getElementById(id).value) ;
+							setTimeout(() => {
+								var id='odometer4'+<?=$i.$j.$k?>;
+								document.getElementById(id).innerText=<?php
+
+								echo $mn;
+
+								?>;
+							}, 10000);//210000
 						</script>
 
-						<div class="odometer1" id="odometer1">
+						<div class="odometer1" id="odometer1d<?=$i.$j.$k?>">
 	    
 							<div class="digit">
 								<div class="digit-container digit-one"><?php 
