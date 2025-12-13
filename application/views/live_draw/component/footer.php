@@ -88,77 +88,77 @@
         var musicTime = 3000;
         
 
-        // setTimeout(function(){
-        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-        //   audio.play();
-        //   setTimeout(function(){
+        setTimeout(function(){
+          var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
+          audio.play();
+          setTimeout(function(){
 
-        //     audio.pause();
-        //     audio.currentTime = 0;
-        //   },start);
-        // });
+            audio.pause();
+            audio.currentTime = 0;
+          },start);
+        });
 
-        // setTimeout(function(){
-        //     responsiveVoice.speak("Dice Through","Hindi Male",{pitch: 0.7});
-        // },start + 2000);
+        setTimeout(function(){
+            responsiveVoice.speak("Dice Through","Hindi Male",{pitch: 0.7});
+        },start + 2000);
 
-        // setTimeout(function(){
-        //   $("#section_1").hide();
-        //   $("#section_2").hide();
-        //   $("#section_3").hide();
-        //   $("#section_4").hide();
-        //   $("#section_5").hide();
-        //   $("#section_6").hide();
-        //   $("#section_7").show();
-        //   $("#section_8").hide();
-        //   $("#section_9").hide();
-        //   $("#section_10").hide();
-        //   $("#section_11").hide();
-        //   $("#section_12").hide();
-        //   $("#section_13").hide();
-        //   $("#section_14").hide();
-        //   $("#section_15").hide();
-        //   $("#section_16").hide();
-        //   $("#section_17").hide();
-        // },start + 3500);
+        setTimeout(function(){
+          $("#section_1").hide();
+          $("#section_2").hide();
+          $("#section_3").hide();
+          $("#section_4").hide();
+          $("#section_5").hide();
+          $("#section_6").hide();
+          $("#section_7").show();
+          $("#section_8").hide();
+          $("#section_9").hide();
+          $("#section_10").hide();
+          $("#section_11").hide();
+          $("#section_12").hide();
+          $("#section_13").hide();
+          $("#section_14").hide();
+          $("#section_15").hide();
+          $("#section_16").hide();
+          $("#section_17").hide();
+        },start + 3500);
 
-        // setTimeout(function(){
-        //   var vid = document.getElementById("myVideo"); 
-        //   vid.play()
-        // },start + 4000);
-        // var afterStartVideo = start + videoTime;
+        setTimeout(function(){
+          var vid = document.getElementById("myVideo"); 
+          vid.play()
+        },start + 4000);
+        var afterStartVideo = start + videoTime;
 
-        // setTimeout(function(){
-        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-        //   audio.play();
-        //   setTimeout(function(){
+        setTimeout(function(){
+          var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
+          audio.play();
+          setTimeout(function(){
 
-        //     audio.pause();
-        //     audio.currentTime = 0;
-        //   },musicTime);
-        // },afterStartVideo + 4000);
+            audio.pause();
+            audio.currentTime = 0;
+          },musicTime);
+        },afterStartVideo + 4000);
 
-        // setTimeout(function(){
-        //   $("#section_1").hide();
-        //   $("#section_2").hide();
-        //   $("#section_3").hide();
-        //   $("#section_4").hide();
-        //   $("#section_5").hide();
-        //   $("#section_6").hide();
-        //   $("#section_7").hide();
-        //   $("#section_8").show();
-        //   $("#section_9").hide();
-        //   $("#section_10").hide();
-        //   $("#section_11").hide();
-        //   $("#section_12").hide();
-        //   $("#section_13").hide();
-        //   $("#section_14").hide();
-        //   $("#section_15").hide();
-        //   $("#section_16").hide();
-        //   $("#section_17").hide();
-        // },afterStartVideo + 4000);
+        setTimeout(function(){
+          $("#section_1").hide();
+          $("#section_2").hide();
+          $("#section_3").hide();
+          $("#section_4").hide();
+          $("#section_5").hide();
+          $("#section_6").hide();
+          $("#section_7").hide();
+          $("#section_8").show();
+          $("#section_9").hide();
+          $("#section_10").hide();
+          $("#section_11").hide();
+          $("#section_12").hide();
+          $("#section_13").hide();
+          $("#section_14").hide();
+          $("#section_15").hide();
+          $("#section_16").hide();
+          $("#section_17").hide();
+        },afterStartVideo + 4000);
 
-        let first = 0//afterStartVideo + musicTime + 4000;//17000
+        let first = afterStartVideo + musicTime + 4000;//17000
 
         setTimeout(function(){
           $("#section_1").show();
