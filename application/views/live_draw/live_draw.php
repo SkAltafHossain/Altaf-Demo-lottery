@@ -144,7 +144,6 @@
 
 			<div id="head_div">
 				<div id="head_clock">
-					<!-- CLOCK CARD -->
 					<div class="clock-card">
 					<div class="clock">
 						<span id="time">00:00:00</span>
@@ -152,17 +151,16 @@
 					</div>
 					</div>
 				</div>
-				<!-- CENTER : HEADING -->
-			<div id="head_title">
-				<span id="heading_text">Haryana State Lottery</span>
-			</div>
+				<div id="head_title">
+					<span id="heading_text">Haryana State Lottery</span>
+				</div>
 
-			<!-- RIGHT : LIVE TAG -->
-			<div id="head_live">
-				<i class="fas fa-dot-circle"></i>
-				<b>Live from Haryana</b>
+				<div id="head_live">
+					<i class="fas fa-dot-circle"></i>
+					<b>Live from Haryana</b>
+				</div>
 			</div>
-			</div>
+			
 			<div id="side1">
 				<div id="sub_side1">
 					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.png" id="side_logo">
@@ -375,7 +373,7 @@
 
 			<div id="head_div">
 				<center><span id="heading_text">Haryana State Lottery</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 18px; padding-right: 15px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Kerala</b></span>
+				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 18px; padding-right: 15px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Haryana</b></span>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
@@ -579,7 +577,7 @@
 
 			<div id="head_div">
 				<center><span id="heading_text">Haryana State Lottery</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Kerala</b></span>
+				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Haryana</b></span>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
@@ -784,7 +782,7 @@
 
 			<div id="head_div">
 				<center><span id="heading_text">Haryana State Lottery</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Kerala</b></span>
+				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Haryana</b></span>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
@@ -1109,7 +1107,7 @@
 
 			<div id="head_div">
 				<center><span id="heading_text">Haryana State Lottery</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Kerala</b></span>
+				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Haryana</b></span>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
@@ -1327,7 +1325,7 @@
 
 			<div id="head_div">
 				<center><span id="heading_text">Haryana State Lottery</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Kerala</b></span>
+				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Haryana</b></span>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
@@ -1546,7 +1544,7 @@
 
 			<div id="head_div">
 				<center><span id="heading_text">Haryana State Lottery</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Kerala</b></span>
+				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Haryana</b></span>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
@@ -1764,7 +1762,7 @@
 
 			<div id="head_div">
 				<center><span id="heading_text">Haryana State Lottery</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Kerala</b></span>
+				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Haryana</b></span>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
@@ -1983,7 +1981,7 @@
 
 			<div id="head_div">
 				<center><span id="heading_text">Haryana State Lottery</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Kerala</b></span>
+				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Haryana</b></span>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
@@ -2262,7 +2260,7 @@
 
 			<div id="head_div_15">
 				<center><span id="heading_text">Haryana State Lottery</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Kerala</b></span>
+				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Haryana</b></span>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
@@ -2467,7 +2465,7 @@
 
 			<div id="head_div_16">
 				<center><span id="heading_text">Haryana State Lottery</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Kerala</b></span>
+				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Haryana</b></span>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">

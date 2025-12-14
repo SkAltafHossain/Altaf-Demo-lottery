@@ -1757,6 +1757,7 @@ main #odometer {
     border-radius: 12px;
     padding: 12px 18px;
     box-shadow: 0 0 15px white;
+    display: none !important;
   }
 
   .clock {

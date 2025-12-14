@@ -85,7 +85,7 @@
         text-align: center;
         font-size: 15px;
         font-family: serif;
-        
+        font-weight: bold; 
     }
     
     .column {
