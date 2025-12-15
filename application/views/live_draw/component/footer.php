@@ -84,7 +84,7 @@
         var fop= document.getElementById('shimla_price_34').value;
         var fip= document.getElementById('shimla_price_35').value;
         var start = 5000;
-        var videoTime = 5000
+        var videoTime = 10000
         var musicTime = 3000;
         
 
@@ -125,7 +125,8 @@
         setTimeout(function(){
           var vid = document.getElementById("myVideo"); 
           vid.play()
-        },start + 4000);
+        },start + 3000);
+
         var afterStartVideo = start + videoTime;
 
         setTimeout(function(){

@@ -2124,9 +2124,15 @@
 			$key = array_rand($arr);
 		?>
 		
-		<video id="myVideo" width="111%" hight = "100vh" style="margin-left: -40px">
-          <source src="<?=base_url()?>webroot/live_draw/assets/video/<?=$arr[$key]?>.mp4" type="video/mp4">
-        </video>
+		<video id="myVideo"
+			style="
+				width: 110vw;
+				height: 100vh;
+				object-fit: cover;
+				background: black;
+			">
+			<source src="<?= base_url() ?>webroot/live_draw/assets/video/<?=$arr[$key]?>.mp4" type="video/mp4">
+		</video>
 		<!--<video src="<?=base_url()?>webroot/live_draw/assets/video/<?=$arr[$key]?>.mp4" id="screenshot">-->
 	</section>
 
