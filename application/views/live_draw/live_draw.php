@@ -108,7 +108,7 @@
 								echo $mn;
 
 								?>;
-							}, 32000);
+							}, 35000);
 
 						</script>
 
@@ -338,7 +338,7 @@
 							echo $mn;
 
 							?>;
-						}, 60000);
+						}, 66000);
 						</script>
 
 						<div class="odometer1" id="odometer1a<?=$i.$j.$k?>">
@@ -541,7 +541,7 @@
 								echo $mn;
 
 								?>;
-							}, 111000); //111000
+							}, 117000); //117000
 
 						</script>
 
@@ -747,7 +747,7 @@
 								echo $mn;
 
 								?>;
-							}, 162000);//162000
+							}, 168000);//168000
 						</script>
 
 						<div class="odometer1" id="odometer1c<?=$i.$j.$k?>">
@@ -1060,7 +1060,7 @@
 								
 						</p>
 
-						<script type="text/javascript">ß
+						<script type="text/javascript">
 							
 							id='odometer4'+<?=$i.$j.$k?>;
 							document.getElementById(id).value=<?=$mn?>;
@@ -1072,7 +1072,7 @@
 								echo $mn;
 
 								?>;
-							}, 210000);//210000
+							}, 219000);//219000
 						</script>
 
 						<div class="odometer1" id="odometer1d<?=$i.$j.$k?>">
@@ -1290,7 +1290,7 @@
 								document.getElementById(id).innerText=<?php
 									echo $mn;
 								?>;	
-						  }, 291000);//291000
+						  }, 300000);//300000
 						</script>
 
 						<div class="odometer1" id="odometer1e<?=$i.$j.$k?>">
@@ -1508,7 +1508,7 @@
 								document.getElementById(id).innerText=<?php
 									echo $mn;
 								?>;	
-							}, 372000);//372000
+							}, 376000);//376000
 							
 						</script>
 
@@ -1727,7 +1727,7 @@
 								document.getElementById(id).innerText=<?php
 									echo $mn;
 								?>;	
-							}, 453000);//453000
+							}, 452000);//452000
 						</script>
 
 						<div class="odometer1" id="odometer1g<?=$i.$j.$k?>">
@@ -1945,7 +1945,7 @@
 								document.getElementById(id).innerText=<?php
 									echo $mn;
 								?>;	
-							}, 534000);//534000
+							}, 528000);//528000
 				          
 						</script>
 

@@ -127,7 +127,7 @@
           vid.play()
         },start + 3000);
 
-        var afterStartVideo = start + videoTime;
+        var afterStartVideo = start + videoTime; //15000
 
         setTimeout(function(){
           var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
@@ -159,7 +159,7 @@
           $("#section_17").hide();
         },afterStartVideo + 4000);
 
-        let first = afterStartVideo + musicTime + 4000;//17000
+        let first = afterStartVideo + musicTime + 4000;//23000
 
         setTimeout(function(){
           $("#section_1").show();
@@ -499,7 +499,7 @@
           },musicTime);
         },first + 30000);
 
-        const second = first + musicTime + 30000;//50000
+        const second = first + musicTime + 30000;//56000
 
         setTimeout(function(){
           $("#section_1").hide();
@@ -620,7 +620,7 @@
           },musicTime);
         },second + 48000);
 
-        var third = second + musicTime + 48000 //101000
+        var third = second + musicTime + 48000 //107000
 
         setTimeout(function(){  
           $("#section_1").hide();
@@ -736,7 +736,7 @@
           },musicTime);
         },third + 48000);
 
-        var fourth = third + musicTime + 48000; //152000
+        var fourth = third + musicTime + 48000; //158000
 
         setTimeout(function(){
           $("#section_1").hide();
@@ -847,7 +847,7 @@
           },musicTime);
         },fourth + 48000);
 
-        var fifth = fourth + musicTime + 48000; //200000
+        var fifth = fourth + musicTime + 48000; //209000
 
         setTimeout(function(){
           $("#section_1").hide();
@@ -959,7 +959,7 @@
           },musicTime);
         },fifth + 78000);
 
-        var sixth = fifth + musicTime + 78000; //281000
+        var sixth = fifth + musicTime + 78000; //290000
         setTimeout(function(){
           $("#section_1").hide();
           $("#section_2").hide();
@@ -986,26 +986,22 @@
         },sixth);
 
         setTimeout(function(){
-            responsiveVoice.speak("Fifth price "+fip+" on four digit on hundred times","Hindi Male",{pitch: 0.7});
-        },sixth + 2000);
-
-        setTimeout(function(){
           var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_audio2.mp3');
           audio.play();
           
-        },sixth + 7000);
+        },sixth + 2000);
 
         const delays6 = [
-            { start: (sixth + 6500), end: (sixth + 16100) },
-            { start: (sixth + 7000), end: (sixth + 16600) },
-            { start: (sixth + 7500), end: (sixth + 17100) },
-            { start: (sixth + 6500), end: (sixth + 16100) },
-            { start: (sixth + 7000), end: (sixth + 16600) },
-            { start: (sixth + 7500), end: (sixth + 17100) }, 
-            { start: (sixth + 6500), end: (sixth + 16100) },
-            { start: (sixth + 7000), end: (sixth + 16600) },
-            { start: (sixth + 7500), end: (sixth + 17100) },
-            { start: (sixth + 6500), end: (sixth + 16100) }
+            { start: (sixth + 1500), end: (sixth + 11100) },
+            { start: (sixth + 2000), end: (sixth + 11600) },
+            { start: (sixth + 2500), end: (sixth + 12100) },
+            { start: (sixth + 1500), end: (sixth + 11100) },
+            { start: (sixth + 2000), end: (sixth + 11600) },
+            { start: (sixth + 2500), end: (sixth + 12100) }, 
+            { start: (sixth + 1500), end: (sixth + 11100) },
+            { start: (sixth + 2000), end: (sixth + 11600) },
+            { start: (sixth + 2500), end: (sixth + 12100) },
+            { start: (sixth + 2500), end: (sixth + 12100) },
         ];
         for (let k = 1; k <= 5; k++) {
             for (let j = 1; j <= 2; j++) {
@@ -1025,19 +1021,18 @@
             }
         }
 
-        var fifthPrice1= document.getElementById('section_10').value;
-        var arrayFifthPrice1=fifthPrice1.split("");
+        var sixthPrice= document.getElementById('section_10').value;
+        var arraySixthPrice=sixthPrice.split("");
         var i=0,j=0;
-        var mFifthPrice1=0;
-        var time=sixth + 18000;
-        for(j=0;j<20;j++){
-
+        var mSixthPrice=0;
+        var time2=sixth + 13000;
+        for(j=0;j<20;j++){        
           for(i=0;i<4;i++){
             setTimeout(function(){
-              responsiveVoice.speak(convert(arrayFifthPrice1[mFifthPrice1++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
-            },time+(500*i));
+              responsiveVoice.speak(convert(arraySixthPrice[mSixthPrice++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+            },time2+(500*i));
           }
-          time=time+3000;
+          time2=time2+3000;
         }
 
         setTimeout(function(){          
@@ -1058,7 +1053,7 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
-        },sixth + 78000);
+        },sixth + 73000);
 
         setTimeout(function(){
           var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
@@ -1068,9 +1063,9 @@
             audio.pause();
             audio.currentTime = 0;
           },musicTime);
-        },sixth + 78000);
+        },sixth + 73000);
 
-        var seventh = sixth + musicTime + 78000; //362000
+        var seventh = sixth + musicTime + 73000; //366000
         setTimeout(function(){
           $("#section_1").hide();
           $("#section_2").hide();
@@ -1097,26 +1092,22 @@
         },seventh);
 
         setTimeout(function(){
-            responsiveVoice.speak("Fifth price "+fip+" on four digit on hundred times","Hindi Male",{pitch: 0.7});
-        },seventh + 2000);
-
-        setTimeout(function(){
           var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_audio2.mp3');
           audio.play();
           
-        },seventh + 7000);
+        },seventh + 2000);
 
         const delays7 = [
-            { start: (seventh + 6500), end: (seventh + 16100) },
-            { start: (seventh + 7000), end: (seventh + 16600) },
-            { start: (seventh + 7500), end: (seventh + 17100) },
-            { start: (seventh + 6500), end: (seventh + 16100) },
-            { start: (seventh + 7000), end: (seventh + 16600) },
-            { start: (seventh + 7500), end: (seventh + 17100) }, 
-            { start: (seventh + 6500), end: (seventh + 16100) },
-            { start: (seventh + 7000), end: (seventh + 16600) },
-            { start: (seventh + 7500), end: (seventh + 17100) },
-            { start: (seventh + 6500), end: (seventh + 16100) }
+            { start: (seventh + 1500), end: (seventh + 11100) },
+            { start: (seventh + 2000), end: (seventh + 11600) },
+            { start: (seventh + 2500), end: (seventh + 12100) },
+            { start: (seventh + 1500), end: (seventh + 11100) },
+            { start: (seventh + 2000), end: (seventh + 11600) },
+            { start: (seventh + 2500), end: (seventh + 12100) },
+            { start: (seventh + 1500), end: (seventh + 11100) },
+            { start: (seventh + 2000), end: (seventh + 11600) },
+            { start: (seventh + 2500), end: (seventh + 12100) },
+            { start: (seventh + 1500), end: (seventh + 11100) },
         ];
         for (let k = 1; k <= 5; k++) {
             for (let j = 1; j <= 2; j++) {
@@ -1136,19 +1127,19 @@
             }
         }
 
-        var fifthPrice1= document.getElementById('section_11').value;
-        var arrayFifthPrice1=fifthPrice1.split("");
+        var seventhPrice= document.getElementById('section_11').value;
+        var arraySeventhPrice=seventhPrice.split("");
         var i=0,j=0;
-        var mFifthPrice1=0;
-        var time=seventh + 18000;
+        var mSeventhPrice=0;
+        var time3=seventh + 13000;
         for(j=0;j<20;j++){
 
           for(i=0;i<4;i++){
             setTimeout(function(){
-              responsiveVoice.speak(convert(arrayFifthPrice1[mFifthPrice1++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
-            },time+(500*i));
+              responsiveVoice.speak(convert(arraySeventhPrice[mSeventhPrice++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+            },time3+(500*i));
           }
-          time=time+3000;
+          time3=time3+3000;
         }
 
         setTimeout(function(){          
@@ -1169,7 +1160,7 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
-        },seventh + 78000);
+        },seventh + 73000);
 
         setTimeout(function(){
           var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
@@ -1179,9 +1170,9 @@
             audio.pause();
             audio.currentTime = 0;
           },musicTime);
-        },seventh + 78000);
+        },seventh + 73000);
 
-        var eighth = seventh + musicTime + 78000; //443000
+        var eighth = seventh + musicTime + 73000; //442000
         setTimeout(function(){
           $("#section_1").hide();
           $("#section_2").hide();
@@ -1208,26 +1199,22 @@
         },eighth);
 
         setTimeout(function(){
-            responsiveVoice.speak("Fifth price "+fip+" on four digit on hundred times","Hindi Male",{pitch: 0.7});
-        },eighth + 2000);
-
-        setTimeout(function(){
           var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_audio2.mp3');
           audio.play();
           
-        },eighth + 7000);
+        },eighth + 2000);
 
         const delays8 = [
-            { start: (eighth + 6500), end: (eighth + 16100) },
-            { start: (eighth + 7000), end: (eighth + 16600) },
-            { start: (eighth + 7500), end: (eighth + 17100) },
-            { start: (eighth + 6500), end: (eighth + 16100) },
-            { start: (eighth + 7000), end: (eighth + 16600) },
-            { start: (eighth + 7500), end: (eighth + 17100) }, 
-            { start: (eighth + 6500), end: (eighth + 16100) },
-            { start: (eighth + 7000), end: (eighth + 16600) },
-            { start: (eighth + 7500), end: (eighth + 17100) },
-            { start: (eighth + 6500), end: (eighth + 16100) }
+            { start: (eighth + 1500), end: (eighth + 11100) },
+            { start: (eighth + 2000), end: (eighth + 11600) },
+            { start: (eighth + 2500), end: (eighth + 12100) },
+            { start: (eighth + 1500), end: (eighth + 11100) },
+            { start: (eighth + 2000), end: (eighth + 11600) },
+            { start: (eighth + 2500), end: (eighth + 12100) },
+            { start: (eighth + 1500), end: (eighth + 11100) },
+            { start: (eighth + 2000), end: (eighth + 11600) },
+            { start: (eighth + 2500), end: (eighth + 12100) },
+            { start: (eighth + 1500), end: (eighth + 11100) },
         ];
         for (let k = 1; k <= 5; k++) {
             for (let j = 1; j <= 2; j++) {
@@ -1247,19 +1234,19 @@
             }
         }
 
-        var fifthPrice1= document.getElementById('section_12').value;
-        var arrayFifthPrice1=fifthPrice1.split("");
+        var eigthPrice4= document.getElementById('section_12').value;
+        var arrayEigthPrice4=eigthPrice4.split("");
         var i=0,j=0;
-        var mFifthPrice1=0;
-        var time=eighth + 18000;
+        var mEigthPrice4=0;
+        var time4=eighth + 13000;
         for(j=0;j<20;j++){
 
           for(i=0;i<4;i++){
             setTimeout(function(){
-              responsiveVoice.speak(convert(arrayFifthPrice1[mFifthPrice1++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
-            },time+(500*i));
+              responsiveVoice.speak(convert(arrayEigthPrice4[mEigthPrice4++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+            },time4+(500*i));
           }
-          time=time+3000;
+          time4=time4+3000;
         }
 
         setTimeout(function(){          
@@ -1280,7 +1267,7 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
-        },eighth + 78000);
+        },eighth + 73000);
 
         setTimeout(function(){
           var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
@@ -1290,9 +1277,9 @@
             audio.pause();
             audio.currentTime = 0;
           },musicTime);
-        },eighth + 78000);
+        },eighth + 73000);
 
-        var ninth = eighth + musicTime + 78000; //524000
+        var ninth = eighth + musicTime + 73000; //518000
         setTimeout(function(){
           $("#section_1").hide();
           $("#section_2").hide();
@@ -1319,26 +1306,22 @@
         },ninth);
 
         setTimeout(function(){
-            responsiveVoice.speak("Fifth price "+fip+" on four digit on hundred times","Hindi Male",{pitch: 0.7});
-        },ninth + 2000);
-
-        setTimeout(function(){
           var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_audio2.mp3');
           audio.play();
           
-        },ninth + 7000);
+        },ninth + 2000);
 
         const delays9 = [
-            { start: (ninth + 6500), end: (ninth + 16100) },
-            { start: (ninth + 7000), end: (ninth + 16600) },
-            { start: (ninth + 7500), end: (ninth + 17100) },
-            { start: (ninth + 6500), end: (ninth + 16100) },
-            { start: (ninth + 7000), end: (ninth + 16600) },
-            { start: (ninth + 7500), end: (ninth + 17100) }, 
-            { start: (ninth + 6500), end: (ninth + 16100) },
-            { start: (ninth + 7000), end: (ninth + 16600) },
-            { start: (ninth + 7500), end: (ninth + 17100) },
-            { start: (ninth + 6500), end: (ninth + 16100) }
+            { start: (ninth + 1500), end: (ninth + 11100) },
+            { start: (ninth + 2000), end: (ninth + 11600) },
+            { start: (ninth + 2500), end: (ninth + 12100) },
+            { start: (ninth + 1500), end: (ninth + 11100) },
+            { start: (ninth + 2000), end: (ninth + 11600) },
+            { start: (ninth + 2500), end: (ninth + 12100) },
+            { start: (ninth + 1500), end: (ninth + 11100) },
+            { start: (ninth + 2000), end: (ninth + 11600) },
+            { start: (ninth + 2500), end: (ninth + 12100) },
+            { start: (ninth + 1500), end: (ninth + 11100) },
         ];
         for (let k = 1; k <= 5; k++) {
             for (let j = 1; j <= 2; j++) {
@@ -1358,19 +1341,19 @@
             }
         }
 
-        var fifthPrice1= document.getElementById('section_13').value;
-        var arrayFifthPrice1=fifthPrice1.split("");
+        var ninthPrice5= document.getElementById('section_13').value;
+        var arrayNinthPrice5=ninthPrice5.split("");
         var i=0,j=0;
-        var mFifthPrice1=0;
-        var time=ninth + 18000;
+        var mNinthPrice5=0;
+        var time5=ninth + 13000;
         for(j=0;j<20;j++){
 
           for(i=0;i<4;i++){
             setTimeout(function(){
-              responsiveVoice.speak(convert(arrayFifthPrice1[mFifthPrice1++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
-            },time+(500*i));
+              responsiveVoice.speak(convert(arrayNinthPrice5[mNinthPrice5++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+            },time5+(500*i));
           }
-          time=time+3000;
+          time5=time5+3000;
         }
 
         setTimeout(function(){          
@@ -1391,7 +1374,7 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
-        },ninth + 78000);
+        },ninth + 73000);
 
         setTimeout(function(){
           var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
@@ -1401,7 +1384,7 @@
             audio.pause();
             audio.currentTime = 0;
           },musicTime);
-        },ninth + 78000);
+        },ninth + 73000);
 
     </script>
 </body>
