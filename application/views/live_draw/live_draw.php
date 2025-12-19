@@ -2250,11 +2250,11 @@
 	</section>
 
 	<section id="section_8">
-		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider3.jpg" id="screenshot">
+		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider3.jpeg" id="screenshot">
 	</section>
 
 	<section id="section_14">
-		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider2.jpg" id="screenshot">
+		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider2.jpeg" id="screenshot">
 
 	</section>
 
