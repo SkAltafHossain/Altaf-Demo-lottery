@@ -23,6 +23,7 @@
 		<!------- Row 1 ------->
 
 		<script type="text/javascript">
+			var time = 10000;
 		  
 		  document.getElementById('section_1').value='<?php
 
@@ -108,7 +109,7 @@
 								echo $mn;
 
 								?>;
-							}, 35000);
+							}, 35000 + time);
 
 						</script>
 
@@ -157,7 +158,7 @@
 
 				<div id="head_live">
 					<i class="fas fa-dot-circle"></i>
-					<b>Live from Chandi</b>
+					<b>Live from Chandigarh</b>
 				</div>
 			</div>
 			
@@ -338,7 +339,7 @@
 							echo $mn;
 
 							?>;
-						}, 66000);
+						}, 66000 + time);
 						</script>
 
 						<div class="odometer1" id="odometer1a<?=$i.$j.$k?>">
@@ -372,8 +373,22 @@
 			?>
 
 			<div id="head_div">
-				<center><span id="heading_text">Haryana State Lottery</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 18px; padding-right: 15px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Chandigarh</b></span>
+				<div id="head_clock">
+					<div class="clock-card">
+					<div class="clock">
+						<span id="time">00:00:00</span>
+						<span class="ampm" id="ampm">AM</span>
+					</div>
+					</div>
+				</div>
+				<div id="head_title">
+					<span id="heading_text">Haryana State Lottery</span>
+				</div>
+
+				<div id="head_live">
+					<i class="fas fa-dot-circle"></i>
+					<b>Live from Chandigarh</b>
+				</div>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
@@ -541,7 +556,7 @@
 								echo $mn;
 
 								?>;
-							}, 117000); //117000
+							}, 117000 + time); //117000
 
 						</script>
 
@@ -576,8 +591,22 @@
 			?>
 
 			<div id="head_div">
-				<center><span id="heading_text">Haryana State Lottery</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Chandigarh</b></span>
+				<div id="head_clock">
+					<div class="clock-card">
+					<div class="clock">
+						<span id="time">00:00:00</span>
+						<span class="ampm" id="ampm">AM</span>
+					</div>
+					</div>
+				</div>
+				<div id="head_title">
+					<span id="heading_text">Haryana State Lottery</span>
+				</div>
+
+				<div id="head_live">
+					<i class="fas fa-dot-circle"></i>
+					<b>Live from Chandigarh</b>
+				</div>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
@@ -747,7 +776,7 @@
 								echo $mn;
 
 								?>;
-							}, 168000);//168000
+							}, 168000 + time);//168000
 						</script>
 
 						<div class="odometer1" id="odometer1c<?=$i.$j.$k?>">
@@ -781,8 +810,22 @@
 			?>
 
 			<div id="head_div">
-				<center><span id="heading_text">Haryana State Lottery</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Chandigarh</b></span>
+				<div id="head_clock">
+					<div class="clock-card">
+					<div class="clock">
+						<span id="time">00:00:00</span>
+						<span class="ampm" id="ampm">AM</span>
+					</div>
+					</div>
+				</div>
+				<div id="head_title">
+					<span id="heading_text">Haryana State Lottery</span>
+				</div>
+
+				<div id="head_live">
+					<i class="fas fa-dot-circle"></i>
+					<b>Live from Chandigarh</b>
+				</div>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
@@ -1072,7 +1115,7 @@
 								echo $mn;
 
 								?>;
-							}, 219000);//219000
+							}, 219000 + time);//219000
 						</script>
 
 						<div class="odometer1" id="odometer1d<?=$i.$j.$k?>">
@@ -1106,8 +1149,22 @@
 			?>
 
 			<div id="head_div">
-				<center><span id="heading_text">Haryana State Lottery</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Chandigarh</b></span>
+				<div id="head_clock">
+					<div class="clock-card">
+					<div class="clock">
+						<span id="time">00:00:00</span>
+						<span class="ampm" id="ampm">AM</span>
+					</div>
+					</div>
+				</div>
+				<div id="head_title">
+					<span id="heading_text">Haryana State Lottery</span>
+				</div>
+
+				<div id="head_live">
+					<i class="fas fa-dot-circle"></i>
+					<b>Live from Chandigarh</b>
+				</div>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
@@ -1290,7 +1347,7 @@
 								document.getElementById(id).innerText=<?php
 									echo $mn;
 								?>;	
-						  }, 300000);//300000
+						  }, 300000 + time);//300000
 						</script>
 
 						<div class="odometer1" id="odometer1e<?=$i.$j.$k?>">
@@ -1324,8 +1381,22 @@
 			?>
 
 			<div id="head_div">
-				<center><span id="heading_text">Haryana State Lottery</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Chandigarh</b></span>
+				<div id="head_clock">
+					<div class="clock-card">
+					<div class="clock">
+						<span id="time">00:00:00</span>
+						<span class="ampm" id="ampm">AM</span>
+					</div>
+					</div>
+				</div>
+				<div id="head_title">
+					<span id="heading_text">Haryana State Lottery</span>
+				</div>
+
+				<div id="head_live">
+					<i class="fas fa-dot-circle"></i>
+					<b>Live from Chandigarh</b>
+				</div>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
@@ -1508,7 +1579,7 @@
 								document.getElementById(id).innerText=<?php
 									echo $mn;
 								?>;	
-							}, 376000);//376000
+							}, 376000 +time);//376000
 							
 						</script>
 
@@ -1543,8 +1614,22 @@
 			?>
 
 			<div id="head_div">
-				<center><span id="heading_text">Haryana State Lottery</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Chandigarh</b></span>
+				<div id="head_clock">
+					<div class="clock-card">
+					<div class="clock">
+						<span id="time">00:00:00</span>
+						<span class="ampm" id="ampm">AM</span>
+					</div>
+					</div>
+				</div>
+				<div id="head_title">
+					<span id="heading_text">Haryana State Lottery</span>
+				</div>
+
+				<div id="head_live">
+					<i class="fas fa-dot-circle"></i>
+					<b>Live from Chandigarh</b>
+				</div>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
@@ -1727,7 +1812,7 @@
 								document.getElementById(id).innerText=<?php
 									echo $mn;
 								?>;	
-							}, 452000);//452000
+							}, 452000 + time);//452000
 						</script>
 
 						<div class="odometer1" id="odometer1g<?=$i.$j.$k?>">
@@ -1761,8 +1846,22 @@
 			?>
 
 			<div id="head_div">
-				<center><span id="heading_text">Haryana State Lottery</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Chandigarh</b></span>
+				<div id="head_clock">
+					<div class="clock-card">
+					<div class="clock">
+						<span id="time">00:00:00</span>
+						<span class="ampm" id="ampm">AM</span>
+					</div>
+					</div>
+				</div>
+				<div id="head_title">
+					<span id="heading_text">Haryana State Lottery</span>
+				</div>
+
+				<div id="head_live">
+					<i class="fas fa-dot-circle"></i>
+					<b>Live from Chandigarh</b>
+				</div>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
@@ -1945,7 +2044,7 @@
 								document.getElementById(id).innerText=<?php
 									echo $mn;
 								?>;	
-							}, 528000);//528000
+							}, 528000 + time);//528000
 				          
 						</script>
 
@@ -1980,8 +2079,22 @@
 			?>
 
 			<div id="head_div">
-				<center><span id="heading_text">Haryana State Lottery</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Chandigarh</b></span>
+				<div id="head_clock">
+					<div class="clock-card">
+					<div class="clock">
+						<span id="time">00:00:00</span>
+						<span class="ampm" id="ampm">AM</span>
+					</div>
+					</div>
+				</div>
+				<div id="head_title">
+					<span id="heading_text">Haryana State Lottery</span>
+				</div>
+
+				<div id="head_live">
+					<i class="fas fa-dot-circle"></i>
+					<b>Live from Chandigarh</b>
+				</div>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
@@ -2112,7 +2225,7 @@
         
     </style>
 	<section id="section_6">
-		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider3.jpg" id="screenshot">
+		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider1.jpeg" id="screenshot">
 	</section>
 
 	<section id="section_7">
@@ -2265,8 +2378,22 @@
 			?>
 
 			<div id="head_div_15">
-				<center><span id="heading_text">Haryana State Lottery</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Chandigarh</b></span>
+				<div id="head_clock">
+					<div class="clock-card">
+					<div class="clock">
+						<span id="time">00:00:00</span>
+						<span class="ampm" id="ampm">AM</span>
+					</div>
+					</div>
+				</div>
+				<div id="head_title">
+					<span id="heading_text">Haryana State Lottery</span>
+				</div>
+
+				<div id="head_live">
+					<i class="fas fa-dot-circle"></i>
+					<b>Live from Chandigarh</b>
+				</div>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
@@ -2470,8 +2597,22 @@
 			?>
 
 			<div id="head_div_16">
-				<center><span id="heading_text">Haryana State Lottery</span></center>
-				<span style="background: #ffffff; border-radius: 5px; position:absolute; padding-left: 15px; padding-right: 18px; padding-bottom: 5px; padding-top: 5px; margin-top: -35px; margin-left: 1145px; color: #b10000;"><i class="fas fa-dot-circle" style="font-size: 18px; color: #b10000;"></i> <b style="font-size: 20px;">Live from Chandigarh</b></span>
+				<div id="head_clock">
+					<div class="clock-card">
+					<div class="clock">
+						<span id="time">00:00:00</span>
+						<span class="ampm" id="ampm">AM</span>
+					</div>
+					</div>
+				</div>
+				<div id="head_title">
+					<span id="heading_text">Haryana State Lottery</span>
+				</div>
+
+				<div id="head_live">
+					<i class="fas fa-dot-circle"></i>
+					<b>Live from Chandigarh</b>
+				</div>
 			</div>
 			<div id="side1">
 				<div id="sub_side1">

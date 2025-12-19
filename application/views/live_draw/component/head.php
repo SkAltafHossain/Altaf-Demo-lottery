@@ -1276,7 +1276,6 @@ main #odometer {
   width: 100%;
   height: 100%;
   position: relative;
-  bottom: 74px;
 }  
 
 .dots {
