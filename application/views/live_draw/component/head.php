@@ -32,10 +32,10 @@
               animation-direction: alternate;
             }
             .sakir p{
-                color:red;
+                color:#FFFB00;
                 font-size:30px;
                 margin-bottom:0px;
-                font-weight:700;
+                font-weight:800;
             }
             @keyframes myfirst {
               0%   {left: 25px; top: 0;}
@@ -636,7 +636,7 @@ main #odometer {
 
 }
 #result_div_1{
-  background-color: #02466ac7;
+  background-color: #cf2626;
   position: relative;
   bottom: 1061px;
   width: 100%;
@@ -687,7 +687,7 @@ main #odometer {
   font-size: 25px !important;
   position: relative;
   font-size: larger;
-  background-color: #e1ca17;
+  background-color: #126d91ff;
   color: white;
   padding: 17px;
   left: 290px;
@@ -697,7 +697,7 @@ main #odometer {
   font-size: 25px !important;
   position: relative;
   font-size: larger;
-  background-color: #e1ca17;
+  background-color: #126d91ff;
   color: white;
   padding: 17px;
   left: 500px;
@@ -707,7 +707,7 @@ main #odometer {
   position: relative;
   font-size: 30px;
   font-weight: bold;
-  background-color: #e1ca17;
+  background-color: #126d91ff;
   color: white;
   padding: 35px;
   left: 1059px;

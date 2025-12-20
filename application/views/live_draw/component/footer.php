@@ -88,15 +88,15 @@
         var musicTime = 3000;
         
 
-        setTimeout(function(){
-          var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-          audio.play();
-          setTimeout(function(){
+        // setTimeout(function(){
+        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
+        //   audio.play();
+        //   setTimeout(function(){
 
-            audio.pause();
-            audio.currentTime = 0;
-          },start);
-        });
+        //     audio.pause();
+        //     audio.currentTime = 0;
+        //   },start);
+        // });
 
         setTimeout(function(){
             responsiveVoice.speak("Dice Through","Hindi Male",{pitch: 0.7});
@@ -129,15 +129,15 @@
 
         var afterStartVideo = start + videoTime; //15000
 
-        setTimeout(function(){
-          var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-          audio.play();
-          setTimeout(function(){
+        // setTimeout(function(){
+        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
+        //   audio.play();
+        //   setTimeout(function(){
 
-            audio.pause();
-            audio.currentTime = 0;
-          },musicTime);
-        },afterStartVideo + 4000);
+        //     audio.pause();
+        //     audio.currentTime = 0;
+        //   },musicTime);
+        // },afterStartVideo + 4000);
 
         setTimeout(function(){
           $("#section_1").hide();
@@ -489,15 +489,15 @@
         },first + 30000);
 
         
-        setTimeout(function(){
-          var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-          audio.play();
-          setTimeout(function(){
+        // setTimeout(function(){
+        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
+        //   audio.play();
+        //   setTimeout(function(){
 
-            audio.pause();
-            audio.currentTime = 0;
-          },musicTime);
-        },first + 30000);
+        //     audio.pause();
+        //     audio.currentTime = 0;
+        //   },musicTime);
+        // },first + 30000);
 
         const second = first + musicTime + 30000;//56000
 
@@ -610,15 +610,15 @@
 
         },second + 48000);
 
-        setTimeout(function(){
-          var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-          audio.play();
-          setTimeout(function(){
+        // setTimeout(function(){
+        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
+        //   audio.play();
+        //   setTimeout(function(){
 
-            audio.pause();
-            audio.currentTime = 0;
-          },musicTime);
-        },second + 48000);
+        //     audio.pause();
+        //     audio.currentTime = 0;
+        //   },musicTime);
+        // },second + 48000);
 
         var third = second + musicTime + 48000 //107000
 
@@ -726,15 +726,15 @@
           $("#section_17").hide();
         },third + 48000);
 
-        setTimeout(function(){
-          var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-          audio.play();
-          setTimeout(function(){
+        // setTimeout(function(){
+        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
+        //   audio.play();
+        //   setTimeout(function(){
 
-            audio.pause();
-            audio.currentTime = 0;
-          },musicTime);
-        },third + 48000);
+        //     audio.pause();
+        //     audio.currentTime = 0;
+        //   },musicTime);
+        // },third + 48000);
 
         var fourth = third + musicTime + 48000; //158000
 
@@ -837,15 +837,15 @@
           $("#section_17").hide();
         },fourth + 48000);
 
-        setTimeout(function(){
-          var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-          audio.play();
-          setTimeout(function(){
+        // setTimeout(function(){
+        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
+        //   audio.play();
+        //   setTimeout(function(){
 
-            audio.pause();
-            audio.currentTime = 0;
-          },musicTime);
-        },fourth + 48000);
+        //     audio.pause();
+        //     audio.currentTime = 0;
+        //   },musicTime);
+        // },fourth + 48000);
 
         var fifth = fourth + musicTime + 48000; //209000
 
@@ -949,15 +949,15 @@
           $("#section_17").hide();
         },fifth + 78000);
 
-        setTimeout(function(){
-          var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-          audio.play();
-          setTimeout(function(){
+        // setTimeout(function(){
+        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
+        //   audio.play();
+        //   setTimeout(function(){
 
-            audio.pause();
-            audio.currentTime = 0;
-          },musicTime);
-        },fifth + 78000);
+        //     audio.pause();
+        //     audio.currentTime = 0;
+        //   },musicTime);
+        // },fifth + 78000);
 
         var sixth = fifth + musicTime + 78000; //290000
         setTimeout(function(){
@@ -1055,15 +1055,15 @@
           $("#section_17").hide();
         },sixth + 73000);
 
-        setTimeout(function(){
-          var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-          audio.play();
-          setTimeout(function(){
+        // setTimeout(function(){
+        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
+        //   audio.play();
+        //   setTimeout(function(){
 
-            audio.pause();
-            audio.currentTime = 0;
-          },musicTime);
-        },sixth + 73000);
+        //     audio.pause();
+        //     audio.currentTime = 0;
+        //   },musicTime);
+        // },sixth + 73000);
 
         var seventh = sixth + musicTime + 73000; //366000
         setTimeout(function(){
@@ -1162,15 +1162,15 @@
           $("#section_17").hide();
         },seventh + 73000);
 
-        setTimeout(function(){
-          var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-          audio.play();
-          setTimeout(function(){
+        // setTimeout(function(){
+        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
+        //   audio.play();
+        //   setTimeout(function(){
 
-            audio.pause();
-            audio.currentTime = 0;
-          },musicTime);
-        },seventh + 73000);
+        //     audio.pause();
+        //     audio.currentTime = 0;
+        //   },musicTime);
+        // },seventh + 73000);
 
         var eighth = seventh + musicTime + 73000; //442000
         setTimeout(function(){
@@ -1269,15 +1269,15 @@
           $("#section_17").hide();
         },eighth + 73000);
 
-        setTimeout(function(){
-          var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-          audio.play();
-          setTimeout(function(){
+        // setTimeout(function(){
+        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
+        //   audio.play();
+        //   setTimeout(function(){
 
-            audio.pause();
-            audio.currentTime = 0;
-          },musicTime);
-        },eighth + 73000);
+        //     audio.pause();
+        //     audio.currentTime = 0;
+        //   },musicTime);
+        // },eighth + 73000);
 
         var ninth = eighth + musicTime + 73000; //518000
         setTimeout(function(){
@@ -1376,15 +1376,15 @@
           $("#section_17").hide();
         },ninth + 73000);
 
-        setTimeout(function(){
-          var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-          audio.play();
-          setTimeout(function(){
+        // setTimeout(function(){
+        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
+        //   audio.play();
+        //   setTimeout(function(){
 
-            audio.pause();
-            audio.currentTime = 0;
-          },musicTime);
-        },ninth + 73000);
+        //     audio.pause();
+        //     audio.currentTime = 0;
+        //   },musicTime);
+        // },ninth + 73000);
 
     </script>
 </body>
