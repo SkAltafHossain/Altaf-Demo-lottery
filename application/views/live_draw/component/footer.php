@@ -199,7 +199,7 @@
           var element = $("#chaka");
           tmpAnimation = tmpAnimation + 4;
           $({degrees: tmpAnimation - 2560}).animate({degrees: tmpAnimation}, {
-              duration: 5000,
+              duration: 12000,
               step: function(now) {
                   element.css({
                       transform: 'rotate(' + now + 'deg)'
@@ -223,7 +223,7 @@
             var element = $("#chaka_15");
             tmpAnimation = tmpAnimation + 4;
             $({degrees: tmpAnimation - 2560}).animate({degrees: tmpAnimation}, {
-                duration: 5000,
+                duration: 12000,
                 step: function(now) {
                     element.css({
                         transform: 'rotate(' + now + 'deg)'
@@ -275,7 +275,7 @@
           var element = $("#chaka1");
           tmpAnimation = tmpAnimation + 3;
           $({degrees: tmpAnimation - 2560}).animate({degrees: tmpAnimation}, {
-              duration:7000,
+              duration:14000,
               step: function(now) {
                   element.css({
                       transform: 'rotate(' + now + 'deg)'
@@ -326,7 +326,7 @@
             var element = $("#chaka16");
             tmpAnimation = tmpAnimation + 3;
             $({degrees: tmpAnimation - 2560}).animate({degrees: tmpAnimation}, {
-                duration: 7000,
+                duration: 14000,
                 step: function(now) {
                     element.css({
                         transform: 'rotate(' + now + 'deg)'
@@ -401,7 +401,7 @@
           $("#section_15").show();
           $("#section_16").hide();
           $("#section_17").hide();
-        },first + 18500);
+        },first + 21500);
 
         var firstPrice= document.getElementById('section_1').value;
         var arrayFirstPrice=firstPrice.split("");
@@ -412,7 +412,7 @@
           setTimeout(function(){
             responsiveVoice.speak(convert(arrayFirstPrice[m++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
 
-          },first + 18500+(1000*i));
+          },first + 21500+(1000*i));
         }
         setTimeout(function(){
           $("#section_1").hide();
@@ -432,13 +432,13 @@
           $("#section_15").hide();
           $("#section_16").show();
           $("#section_17").hide(); 
-        },first + 21000);
+        },first + 24000);
 
         for(i=0;i<1;i++){
           setTimeout(function(){
             responsiveVoice.speak(convert(arrayFirstPrice[m++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
 
-          },first + 21000+(1000*i));
+          },first + 24000+(1000*i));
         }
 
         setTimeout(function(){
@@ -459,13 +459,13 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").show(); 
-        },first + 23000);
+        },first + 26000);
 
         for(i=0;i<5;i++){
           setTimeout(function(){
             responsiveVoice.speak(convert(arrayFirstPrice[m++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
 
-          },first + 23000+(1000*i));
+          },first + 26000+(1000*i));
         }
 
         setTimeout(function(){
@@ -486,7 +486,7 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
-        },first + 30000);
+        },first + 33000);
 
         
         // setTimeout(function(){
@@ -499,7 +499,7 @@
         //   },musicTime);
         // },first + 30000);
 
-        const second = first + musicTime + 30000;//56000
+        const second = first + musicTime + 33000;//56000
 
         setTimeout(function(){
           $("#section_1").hide();
