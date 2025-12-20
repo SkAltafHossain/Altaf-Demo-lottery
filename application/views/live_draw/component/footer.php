@@ -98,9 +98,9 @@
         //   },start);
         // });
 
-        setTimeout(function(){
-            responsiveVoice.speak("Dice Through","Hindi Male",{pitch: 0.7});
-        },start + 2000);
+        // setTimeout(function(){
+        //     responsiveVoice.speak("Dice Through","Hindi Male",{pitch: 0.7});
+        // },start + 2000);
 
         setTimeout(function(){
           $("#section_1").hide();
