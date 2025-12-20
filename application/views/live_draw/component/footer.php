@@ -199,7 +199,7 @@
           var element = $("#chaka");
           tmpAnimation = tmpAnimation + 4;
           $({degrees: tmpAnimation - 2560}).animate({degrees: tmpAnimation}, {
-              duration: 8000,
+              duration: 5000,
               step: function(now) {
                   element.css({
                       transform: 'rotate(' + now + 'deg)'
@@ -223,7 +223,7 @@
             var element = $("#chaka_15");
             tmpAnimation = tmpAnimation + 4;
             $({degrees: tmpAnimation - 2560}).animate({degrees: tmpAnimation}, {
-                duration: 8000,
+                duration: 5000,
                 step: function(now) {
                     element.css({
                         transform: 'rotate(' + now + 'deg)'
@@ -275,7 +275,7 @@
           var element = $("#chaka1");
           tmpAnimation = tmpAnimation + 3;
           $({degrees: tmpAnimation - 2560}).animate({degrees: tmpAnimation}, {
-              duration:12000,
+              duration:7000,
               step: function(now) {
                   element.css({
                       transform: 'rotate(' + now + 'deg)'
@@ -326,7 +326,7 @@
             var element = $("#chaka16");
             tmpAnimation = tmpAnimation + 3;
             $({degrees: tmpAnimation - 2560}).animate({degrees: tmpAnimation}, {
-                duration: 12000,
+                duration: 7000,
                 step: function(now) {
                     element.css({
                         transform: 'rotate(' + now + 'deg)'
