@@ -48,4 +48,10 @@ class Home_Controller extends CI_Controller {
 		}
     }
 
+    public function privacy_policy()
+    {
+        $this->data['page_title'] = 'Privacy Policy | Haryana State Lottery';
+        $this->data['subview'] = 'privacy_policy';
+        $this->load->view('user/layout/default', $this->data);
+    }
 }

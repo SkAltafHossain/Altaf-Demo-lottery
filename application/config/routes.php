@@ -18,6 +18,7 @@ $route['old-result'] = 'user/result/Result_Controller/old_result';
 $route['live_demo'] = 'user/live_demo/Live_demo_Controller/live_demo';  
 $route['claiem'] = 'user/contact/Contact_Controller/claiem';  
 $route['contact'] = 'user/contact/Contact_Controller/contact'; 
+$route['privacy-policy'] = 'user/Home_Controller/privacy_policy';
 
 /*==admin==*/  
 
