@@ -83,9 +83,12 @@
         var tp= document.getElementById('shimla_price_33').value;
         var fop= document.getElementById('shimla_price_34').value;
         var fip= document.getElementById('shimla_price_35').value;
-        var start = 15000;
+        var start = 1000;
         var videoTime = 10000
         var musicTime = 3000;
+        var voice = "Hindi Male";
+        var pitch = 1;
+        var rate =1;
         
 
         // setTimeout(function(){
@@ -99,7 +102,7 @@
         // });
 
         // setTimeout(function(){
-        //     responsiveVoice.speak("Dice Through","Hindi Male",{pitch: 0.7});
+        //     responsiveVoice.speak("Dice Through",voice,{pitch: pitch});
         // },start + 2000);
 
         setTimeout(function(){
@@ -182,7 +185,7 @@
         },first);
 
         setTimeout(function(){
-            responsiveVoice.speak("First Price "+fp+" On Five Digits With Series On One Time. ","Hindi Male",{pitch: 0.7});
+            responsiveVoice.speak("First Price "+fp+" On Five Digits With Series On One Time. ",voice,{pitch: pitch});
         },first + 1000);
 
         setTimeout(function(){
@@ -410,7 +413,7 @@
 
         for(i=0;i<2;i++){
           setTimeout(function(){
-            responsiveVoice.speak(convert(arrayFirstPrice[m++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+            responsiveVoice.speak(convert(arrayFirstPrice[m++]),voice,{pitch: pitch},{rate:rate});
 
           },first + 21500+(1000*i));
         }
@@ -436,7 +439,7 @@
 
         for(i=0;i<1;i++){
           setTimeout(function(){
-            responsiveVoice.speak(convert(arrayFirstPrice[m++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+            responsiveVoice.speak(convert(arrayFirstPrice[m++]),voice,{pitch: pitch},{rate: rate});
 
           },first + 24000+(1000*i));
         }
@@ -463,7 +466,7 @@
 
         for(i=0;i<5;i++){
           setTimeout(function(){
-            responsiveVoice.speak(convert(arrayFirstPrice[m++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+            responsiveVoice.speak(convert(arrayFirstPrice[m++]),voice,{pitch: pitch},{rate: rate});
 
           },first + 26000+(1000*i));
         }
@@ -529,7 +532,7 @@
 
         setTimeout(function(){
             
-            responsiveVoice.speak("Second price "+sp+" on five digit on ten times","Hindi Male",{pitch: 0.7});
+            responsiveVoice.speak("Second price "+sp+" on five digit on ten times",voice,{pitch: pitch});
 
         },(second + 2000));
 
@@ -579,7 +582,7 @@
           
             setTimeout(function(){
 
-              responsiveVoice.speak(convert(arraySecondPrice[mSecondPrice++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+              responsiveVoice.speak(convert(arraySecondPrice[mSecondPrice++]),voice,{pitch: pitch},{rate: rate});
 
             },time+(500*i));
             
@@ -648,7 +651,7 @@
         },third);
 
         setTimeout(function(){
-            responsiveVoice.speak("Third price "+tp+" on four digit on ten times","Hindi Male",{pitch: 0.7});
+            responsiveVoice.speak("Third price "+tp+" on four digit on ten times",voice,{pitch: pitch});
         },third + 2000);
 
         setTimeout(function(){
@@ -698,7 +701,7 @@
           
             setTimeout(function(){
 
-              responsiveVoice.speak(convert(arrayThirdPrice[mThirdPrice++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+              responsiveVoice.speak(convert(arrayThirdPrice[mThirdPrice++]),voice,{pitch: pitch},{rate: rate});
 
             },time+(500*i));
             
@@ -764,7 +767,7 @@
         },fourth);
 
         setTimeout(function(){
-          responsiveVoice.speak("Fourth price "+fop+" on four digit on ten times","Hindi Male",{pitch: 0.7});
+          responsiveVoice.speak("Fourth price "+fop+" on four digit on ten times",voice,{pitch: pitch});
         },fourth + 2000);
 
         setTimeout(function(){
@@ -811,7 +814,7 @@
         for(j=0;j<10;j++){
           for(i=0;i<4;i++){
             setTimeout(function(){
-              responsiveVoice.speak(convert(arrayFourthPrice[mFourthPrice++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+              responsiveVoice.speak(convert(arrayFourthPrice[mFourthPrice++]),voice,{pitch: pitch},{rate: rate});
             },time+(500*i)); 
           }
           time=time+3000;
@@ -875,7 +878,7 @@
         },fifth);
 
         setTimeout(function(){
-            responsiveVoice.speak("Fifth price "+fip+" on four digit on hundred times","Hindi Male",{pitch: 0.7});
+            responsiveVoice.speak("Fifth price "+fip+" on four digit on hundred times",voice,{pitch: pitch});
         },fifth + 2000);
 
         setTimeout(function(){
@@ -923,7 +926,7 @@
 
           for(i=0;i<4;i++){
             setTimeout(function(){
-              responsiveVoice.speak(convert(arrayFifthPrice1[mFifthPrice1++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+              responsiveVoice.speak(convert(arrayFifthPrice1[mFifthPrice1++]),voice,{pitch: pitch},{rate: rate});
             },time+(500*i));
           }
           time=time+3000;
@@ -1029,7 +1032,7 @@
         for(j=0;j<20;j++){        
           for(i=0;i<4;i++){
             setTimeout(function(){
-              responsiveVoice.speak(convert(arraySixthPrice[mSixthPrice++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+              responsiveVoice.speak(convert(arraySixthPrice[mSixthPrice++]),voice,{pitch: pitch},{rate: rate});
             },time2+(500*i));
           }
           time2=time2+3000;
@@ -1136,7 +1139,7 @@
 
           for(i=0;i<4;i++){
             setTimeout(function(){
-              responsiveVoice.speak(convert(arraySeventhPrice[mSeventhPrice++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+              responsiveVoice.speak(convert(arraySeventhPrice[mSeventhPrice++]),voice,{pitch: pitch},{rate: rate});
             },time3+(500*i));
           }
           time3=time3+3000;
@@ -1243,7 +1246,7 @@
 
           for(i=0;i<4;i++){
             setTimeout(function(){
-              responsiveVoice.speak(convert(arrayEigthPrice4[mEigthPrice4++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+              responsiveVoice.speak(convert(arrayEigthPrice4[mEigthPrice4++]),voice,{pitch: pitch},{rate: rate});
             },time4+(500*i));
           }
           time4=time4+3000;
@@ -1350,7 +1353,7 @@
 
           for(i=0;i<4;i++){
             setTimeout(function(){
-              responsiveVoice.speak(convert(arrayNinthPrice5[mNinthPrice5++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+              responsiveVoice.speak(convert(arrayNinthPrice5[mNinthPrice5++]),voice,{pitch: pitch},{rate: rate});
             },time5+(500*i));
           }
           time5=time5+3000;
