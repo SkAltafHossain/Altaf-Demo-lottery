@@ -86,21 +86,9 @@
         var start = 15000;
         var videoTime = 10000
         var musicTime = 3000;
-        
+        var rate = 1;
+        var pitch = 1;
 
-        // setTimeout(function(){
-        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-        //   audio.play();
-        //   setTimeout(function(){
-
-        //     audio.pause();
-        //     audio.currentTime = 0;
-        //   },start);
-        // });
-
-        // setTimeout(function(){
-        //     responsiveVoice.speak("Dice Through","Hindi Male",{pitch: 0.7});
-        // },start + 2000);
 
         setTimeout(function(){
           $("#section_1").hide();
@@ -128,16 +116,6 @@
         },start + 3000);
 
         var afterStartVideo = start + videoTime; //15000
-
-        // setTimeout(function(){
-        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-        //   audio.play();
-        //   setTimeout(function(){
-
-        //     audio.pause();
-        //     audio.currentTime = 0;
-        //   },musicTime);
-        // },afterStartVideo + 4000);
 
         setTimeout(function(){
           $("#section_1").hide();
@@ -182,7 +160,7 @@
         },first);
 
         setTimeout(function(){
-            responsiveVoice.speak("First Price "+fp+" On Five Digits With Series On One Time. ","Hindi Male",{pitch: 0.7});
+            responsiveVoice.speak("First Price "+fp+" On Five Digits With Series On One Time. ","Hindi Male",{pitch: pitch}, {rate: rate});
         },first + 1000);
 
         setTimeout(function(){
@@ -410,7 +388,7 @@
 
         for(i=0;i<2;i++){
           setTimeout(function(){
-            responsiveVoice.speak(convert(arrayFirstPrice[m++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+            responsiveVoice.speak(convert(arrayFirstPrice[m++]),"Hindi Male",{pitch: pitch}, {rate: rate});
 
           },first + 21500+(1000*i));
         }
@@ -436,7 +414,7 @@
 
         for(i=0;i<1;i++){
           setTimeout(function(){
-            responsiveVoice.speak(convert(arrayFirstPrice[m++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+            responsiveVoice.speak(convert(arrayFirstPrice[m++]),"Hindi Male",{pitch: pitch}, {rate: rate});
 
           },first + 24000+(1000*i));
         }
@@ -463,7 +441,7 @@
 
         for(i=0;i<5;i++){
           setTimeout(function(){
-            responsiveVoice.speak(convert(arrayFirstPrice[m++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+            responsiveVoice.speak(convert(arrayFirstPrice[m++]),"Hindi Male",{pitch: pitch}, {rate: rate});
 
           },first + 26000+(1000*i));
         }
@@ -487,17 +465,6 @@
           $("#section_16").hide();
           $("#section_17").hide();
         },first + 33000);
-
-        
-        // setTimeout(function(){
-        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-        //   audio.play();
-        //   setTimeout(function(){
-
-        //     audio.pause();
-        //     audio.currentTime = 0;
-        //   },musicTime);
-        // },first + 30000);
 
         const second = first + musicTime + 33000;//56000
 
@@ -529,7 +496,7 @@
 
         setTimeout(function(){
             
-            responsiveVoice.speak("Second price "+sp+" on five digit on ten times","Hindi Male",{pitch: 0.7});
+            responsiveVoice.speak("Second price "+sp+" on five digit on ten times","Hindi Male",{pitch: pitch}, {rate: rate});
 
         },(second + 2000));
 
@@ -578,8 +545,15 @@
           for(i=0;i<5;i++){
           
             setTimeout(function(){
+              // let text = convert(arraySecondPrice[mSecondPrice++]);
 
-              responsiveVoice.speak(convert(arraySecondPrice[mSecondPrice++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+              // let audio = new Audio(
+              //     "<?= base_url('live_draw/tts/hindi'); ?>?text=" + encodeURIComponent(text)
+              // );
+
+              // audio.play();
+
+              responsiveVoice.speak(convert(arraySecondPrice[mSecondPrice++]),"Hindi Male",{pitch: pitch}, {rate: rate});
 
             },time+(500*i));
             
@@ -648,7 +622,7 @@
         },third);
 
         setTimeout(function(){
-            responsiveVoice.speak("Third price "+tp+" on four digit on ten times","Hindi Male",{pitch: 0.7});
+            responsiveVoice.speak("Third price "+tp+" on four digit on ten times","Hindi Male",{pitch: pitch}, {rate: rate});
         },third + 2000);
 
         setTimeout(function(){
@@ -698,7 +672,7 @@
           
             setTimeout(function(){
 
-              responsiveVoice.speak(convert(arrayThirdPrice[mThirdPrice++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+              responsiveVoice.speak(convert(arrayThirdPrice[mThirdPrice++]),"Hindi Male",{pitch: pitch}, {rate: rate});
 
             },time+(500*i));
             
@@ -764,7 +738,7 @@
         },fourth);
 
         setTimeout(function(){
-          responsiveVoice.speak("Fourth price "+fop+" on four digit on ten times","Hindi Male",{pitch: 0.7});
+          responsiveVoice.speak("Fourth price "+fop+" on four digit on ten times","Hindi Male",{pitch: pitch}, {rate: rate});
         },fourth + 2000);
 
         setTimeout(function(){
@@ -811,7 +785,7 @@
         for(j=0;j<10;j++){
           for(i=0;i<4;i++){
             setTimeout(function(){
-              responsiveVoice.speak(convert(arrayFourthPrice[mFourthPrice++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+              responsiveVoice.speak(convert(arrayFourthPrice[mFourthPrice++]),"Hindi Male",{pitch: pitch}, {rate: rate});
             },time+(500*i)); 
           }
           time=time+3000;
@@ -875,7 +849,7 @@
         },fifth);
 
         setTimeout(function(){
-            responsiveVoice.speak("Fifth price "+fip+" on four digit on hundred times","Hindi Male",{pitch: 0.7});
+            responsiveVoice.speak("Fifth price "+fip+" on four digit on hundred times","Hindi Male",{pitch: pitch}, {rate: rate});
         },fifth + 2000);
 
         setTimeout(function(){
@@ -923,7 +897,7 @@
 
           for(i=0;i<4;i++){
             setTimeout(function(){
-              responsiveVoice.speak(convert(arrayFifthPrice1[mFifthPrice1++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+              responsiveVoice.speak(convert(arrayFifthPrice1[mFifthPrice1++]),"Hindi Male",{pitch: pitch}, {rate: rate});
             },time+(500*i));
           }
           time=time+3000;
@@ -1029,7 +1003,7 @@
         for(j=0;j<20;j++){        
           for(i=0;i<4;i++){
             setTimeout(function(){
-              responsiveVoice.speak(convert(arraySixthPrice[mSixthPrice++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+              responsiveVoice.speak(convert(arraySixthPrice[mSixthPrice++]),"Hindi Male",{pitch: pitch}, {rate: rate});
             },time2+(500*i));
           }
           time2=time2+3000;
@@ -1136,7 +1110,7 @@
 
           for(i=0;i<4;i++){
             setTimeout(function(){
-              responsiveVoice.speak(convert(arraySeventhPrice[mSeventhPrice++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+              responsiveVoice.speak(convert(arraySeventhPrice[mSeventhPrice++]),"Hindi Male",{pitch: pitch}, {rate: rate});
             },time3+(500*i));
           }
           time3=time3+3000;
@@ -1243,7 +1217,7 @@
 
           for(i=0;i<4;i++){
             setTimeout(function(){
-              responsiveVoice.speak(convert(arrayEigthPrice4[mEigthPrice4++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+              responsiveVoice.speak(convert(arrayEigthPrice4[mEigthPrice4++]),"Hindi Male",{pitch: pitch}, {rate: rate});
             },time4+(500*i));
           }
           time4=time4+3000;
@@ -1350,7 +1324,7 @@
 
           for(i=0;i<4;i++){
             setTimeout(function(){
-              responsiveVoice.speak(convert(arrayNinthPrice5[mNinthPrice5++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+              responsiveVoice.speak(convert(arrayNinthPrice5[mNinthPrice5++]),"Hindi Male",{pitch: pitch}, {rate: rate});
             },time5+(500*i));
           }
           time5=time5+3000;
