@@ -34,6 +34,7 @@ $route['admin/dashboard'] = 'admin/DashboardController';
 // live Draw //
 $route['live-draw'] = 'live_draw/Livedraw_Controller';
 $route['live-draw/altaf'] = 'live_draw/Livedraw_Controller/altaf';
+$route['live_draw/tts/hindi'] = 'live_draw/Tts/hindi';
 
 //$route['admin/manageadmin'] = 'admin/admin/adminController/manageadmin';
 //*....... Users All........*// 
