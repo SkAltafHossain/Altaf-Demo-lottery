@@ -83,27 +83,33 @@
         var tp= document.getElementById('shimla_price_33').value;
         var fop= document.getElementById('shimla_price_34').value;
         var fip= document.getElementById('shimla_price_35').value;
-        var start = 1000;
+        var start = 20000;
         var videoTime = 10000
         var musicTime = 3000;
         var voice = "Hindi Male";
         var pitch = 1;
         var rate =1;
-        
+        const arr = {
+        second: "girl"
+      };
+      const keys = Object.keys(arr);
+      const key = keys[Math.floor(Math.random() * keys.length)];
+      const audioFile = arr[key];
+       
+        function playNumber(num) {
+          new Audio("<?=base_url()?>webroot/live_draw/assets/audio/"+audioFile+"/"+num+".mp3").play();
+        }
 
-        // setTimeout(function(){
-        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-        //   audio.play();
-        //   setTimeout(function(){
+        function playChar(char) {
+          if (!char) return;
+          char = char.toLowerCase();
+          const audio = new Audio(
+            "<?=base_url()?>webroot/live_draw/assets/audio/" +
+            audioFile + "/" + char + ".mp3"
+          );
 
-        //     audio.pause();
-        //     audio.currentTime = 0;
-        //   },start);
-        // });
-
-        // setTimeout(function(){
-        //     responsiveVoice.speak("Dice Through",voice,{pitch: pitch});
-        // },start + 2000);
+          audio.play();
+        }
 
         setTimeout(function(){
           $("#section_1").hide();
@@ -131,16 +137,6 @@
         },start + 3000);
 
         var afterStartVideo = start + videoTime; //15000
-
-        // setTimeout(function(){
-        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-        //   audio.play();
-        //   setTimeout(function(){
-
-        //     audio.pause();
-        //     audio.currentTime = 0;
-        //   },musicTime);
-        // },afterStartVideo + 4000);
 
         setTimeout(function(){
           $("#section_1").hide();
@@ -185,7 +181,7 @@
         },first);
 
         setTimeout(function(){
-            responsiveVoice.speak("First Price "+fp+" On Five Digits With Series On One Time. ",voice,{pitch: pitch});
+            new Audio("<?=base_url()?>webroot/live_draw/assets/audio/"+audioFile+"/firstPrize.mp3").play();
         },first + 1000);
 
         setTimeout(function(){
@@ -413,8 +409,7 @@
 
         for(i=0;i<2;i++){
           setTimeout(function(){
-            responsiveVoice.speak(convert(arrayFirstPrice[m++]),voice,{pitch: pitch},{rate:rate});
-
+            playNumber(parseInt(arrayFirstPrice[m++]));
           },first + 21500+(1000*i));
         }
         setTimeout(function(){
@@ -439,8 +434,7 @@
 
         for(i=0;i<1;i++){
           setTimeout(function(){
-            responsiveVoice.speak(convert(arrayFirstPrice[m++]),voice,{pitch: pitch},{rate: rate});
-
+            playChar(arrayFirstPrice[m++]);
           },first + 24000+(1000*i));
         }
 
@@ -466,8 +460,7 @@
 
         for(i=0;i<5;i++){
           setTimeout(function(){
-            responsiveVoice.speak(convert(arrayFirstPrice[m++]),voice,{pitch: pitch},{rate: rate});
-
+            playNumber(parseInt(arrayFirstPrice[m++]));
           },first + 26000+(1000*i));
         }
 
@@ -490,17 +483,6 @@
           $("#section_16").hide();
           $("#section_17").hide();
         },first + 33000);
-
-        
-        // setTimeout(function(){
-        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-        //   audio.play();
-        //   setTimeout(function(){
-
-        //     audio.pause();
-        //     audio.currentTime = 0;
-        //   },musicTime);
-        // },first + 30000);
 
         const second = first + musicTime + 33000;//56000
 
@@ -531,10 +513,8 @@
 
 
         setTimeout(function(){
-            
-            responsiveVoice.speak("Second price "+sp+" on five digit on ten times",voice,{pitch: pitch});
-
-        },(second + 2000));
+            new Audio("<?=base_url()?>webroot/live_draw/assets/audio/"+audioFile+"/secondPrize.mp3").play();
+        },(second + 1000));
 
         setTimeout(function(){
           var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_audio2.mp3');
@@ -581,13 +561,9 @@
           for(i=0;i<5;i++){
           
             setTimeout(function(){
-
-              responsiveVoice.speak(convert(arraySecondPrice[mSecondPrice++]),voice,{pitch: pitch},{rate: rate});
-
+              playNumber(parseInt(arraySecondPrice[mSecondPrice++]));
             },time+(500*i));
-            
           }
-
           time=time+3000;
         }
 
@@ -612,16 +588,6 @@
           $("#section_17").hide();
 
         },second + 48000);
-
-        // setTimeout(function(){
-        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-        //   audio.play();
-        //   setTimeout(function(){
-
-        //     audio.pause();
-        //     audio.currentTime = 0;
-        //   },musicTime);
-        // },second + 48000);
 
         var third = second + musicTime + 48000 //107000
 
@@ -651,8 +617,8 @@
         },third);
 
         setTimeout(function(){
-            responsiveVoice.speak("Third price "+tp+" on four digit on ten times",voice,{pitch: pitch});
-        },third + 2000);
+            new Audio("<?=base_url()?>webroot/live_draw/assets/audio/"+audioFile+"/thirdPrize.mp3").play();
+        },third + 1000);
 
         setTimeout(function(){
           var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_audio2.mp3');
@@ -696,15 +662,10 @@
         var mThirdPrice=0;
         var time = third + 18000;
         for(j=0;j<10;j++){
-
           for(i=0;i<4;i++){
-          
             setTimeout(function(){
-
-              responsiveVoice.speak(convert(arrayThirdPrice[mThirdPrice++]),voice,{pitch: pitch},{rate: rate});
-
+              playNumber(parseInt(arrayThirdPrice[mThirdPrice++]));
             },time+(500*i));
-            
           }
           time=time+3000;
         }
@@ -728,16 +689,6 @@
           $("#section_16").hide();
           $("#section_17").hide();
         },third + 48000);
-
-        // setTimeout(function(){
-        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-        //   audio.play();
-        //   setTimeout(function(){
-
-        //     audio.pause();
-        //     audio.currentTime = 0;
-        //   },musicTime);
-        // },third + 48000);
 
         var fourth = third + musicTime + 48000; //158000
 
@@ -767,8 +718,8 @@
         },fourth);
 
         setTimeout(function(){
-          responsiveVoice.speak("Fourth price "+fop+" on four digit on ten times",voice,{pitch: pitch});
-        },fourth + 2000);
+            new Audio("<?=base_url()?>webroot/live_draw/assets/audio/"+audioFile+"/fourthPrize.mp3").play();
+        },fourth + 1000);
 
         setTimeout(function(){
           var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_audio2.mp3');
@@ -814,7 +765,7 @@
         for(j=0;j<10;j++){
           for(i=0;i<4;i++){
             setTimeout(function(){
-              responsiveVoice.speak(convert(arrayFourthPrice[mFourthPrice++]),voice,{pitch: pitch},{rate: rate});
+              playNumber(parseInt(arrayFourthPrice[mFourthPrice++]));
             },time+(500*i)); 
           }
           time=time+3000;
@@ -839,16 +790,6 @@
           $("#section_16").hide();
           $("#section_17").hide();
         },fourth + 48000);
-
-        // setTimeout(function(){
-        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-        //   audio.play();
-        //   setTimeout(function(){
-
-        //     audio.pause();
-        //     audio.currentTime = 0;
-        //   },musicTime);
-        // },fourth + 48000);
 
         var fifth = fourth + musicTime + 48000; //209000
 
@@ -878,8 +819,8 @@
         },fifth);
 
         setTimeout(function(){
-            responsiveVoice.speak("Fifth price "+fip+" on four digit on hundred times",voice,{pitch: pitch});
-        },fifth + 2000);
+            new Audio("<?=base_url()?>webroot/live_draw/assets/audio/"+audioFile+"/fifthPrize.mp3").play();
+        },fifth + 1000);
 
         setTimeout(function(){
           var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_audio2.mp3');
@@ -923,10 +864,9 @@
         var mFifthPrice1=0;
         var time=fifth + 18000;
         for(j=0;j<20;j++){
-
           for(i=0;i<4;i++){
             setTimeout(function(){
-              responsiveVoice.speak(convert(arrayFifthPrice1[mFifthPrice1++]),voice,{pitch: pitch},{rate: rate});
+              playNumber(parseInt(arrayFifthPrice1[mFifthPrice1++]));
             },time+(500*i));
           }
           time=time+3000;
@@ -951,16 +891,6 @@
           $("#section_16").hide();
           $("#section_17").hide();
         },fifth + 78000);
-
-        // setTimeout(function(){
-        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-        //   audio.play();
-        //   setTimeout(function(){
-
-        //     audio.pause();
-        //     audio.currentTime = 0;
-        //   },musicTime);
-        // },fifth + 78000);
 
         var sixth = fifth + musicTime + 78000; //290000
         setTimeout(function(){
@@ -1032,7 +962,7 @@
         for(j=0;j<20;j++){        
           for(i=0;i<4;i++){
             setTimeout(function(){
-              responsiveVoice.speak(convert(arraySixthPrice[mSixthPrice++]),voice,{pitch: pitch},{rate: rate});
+              playNumber(parseInt(arraySixthPrice[mSixthPrice++]));
             },time2+(500*i));
           }
           time2=time2+3000;
@@ -1057,16 +987,6 @@
           $("#section_16").hide();
           $("#section_17").hide();
         },sixth + 73000);
-
-        // setTimeout(function(){
-        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-        //   audio.play();
-        //   setTimeout(function(){
-
-        //     audio.pause();
-        //     audio.currentTime = 0;
-        //   },musicTime);
-        // },sixth + 73000);
 
         var seventh = sixth + musicTime + 73000; //366000
         setTimeout(function(){
@@ -1139,7 +1059,7 @@
 
           for(i=0;i<4;i++){
             setTimeout(function(){
-              responsiveVoice.speak(convert(arraySeventhPrice[mSeventhPrice++]),voice,{pitch: pitch},{rate: rate});
+              playNumber(convert(arraySeventhPrice[mSeventhPrice++]));
             },time3+(500*i));
           }
           time3=time3+3000;
@@ -1164,16 +1084,6 @@
           $("#section_16").hide();
           $("#section_17").hide();
         },seventh + 73000);
-
-        // setTimeout(function(){
-        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-        //   audio.play();
-        //   setTimeout(function(){
-
-        //     audio.pause();
-        //     audio.currentTime = 0;
-        //   },musicTime);
-        // },seventh + 73000);
 
         var eighth = seventh + musicTime + 73000; //442000
         setTimeout(function(){
@@ -1246,7 +1156,7 @@
 
           for(i=0;i<4;i++){
             setTimeout(function(){
-              responsiveVoice.speak(convert(arrayEigthPrice4[mEigthPrice4++]),voice,{pitch: pitch},{rate: rate});
+              playNumber(convert(arrayEigthPrice4[mEigthPrice4++]));
             },time4+(500*i));
           }
           time4=time4+3000;
@@ -1271,16 +1181,6 @@
           $("#section_16").hide();
           $("#section_17").hide();
         },eighth + 73000);
-
-        // setTimeout(function(){
-        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-        //   audio.play();
-        //   setTimeout(function(){
-
-        //     audio.pause();
-        //     audio.currentTime = 0;
-        //   },musicTime);
-        // },eighth + 73000);
 
         var ninth = eighth + musicTime + 73000; //518000
         setTimeout(function(){
@@ -1353,7 +1253,7 @@
 
           for(i=0;i<4;i++){
             setTimeout(function(){
-              responsiveVoice.speak(convert(arrayNinthPrice5[mNinthPrice5++]),voice,{pitch: pitch},{rate: rate});
+              playNumber(convert(arrayNinthPrice5[mNinthPrice5++]));
             },time5+(500*i));
           }
           time5=time5+3000;
@@ -1378,16 +1278,6 @@
           $("#section_16").hide();
           $("#section_17").hide();
         },ninth + 73000);
-
-        // setTimeout(function(){
-        //   var audio = new Audio('<?=base_url()?>webroot/live_draw/assets/images/lottery_adio1.mp3');
-        //   audio.play();
-        //   setTimeout(function(){
-
-        //     audio.pause();
-        //     audio.currentTime = 0;
-        //   },musicTime);
-        // },ninth + 73000);
 
     </script>
 </body>
