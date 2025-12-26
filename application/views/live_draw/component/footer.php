@@ -78,18 +78,19 @@
             return num;  
         } 
 
-        var fp= document.getElementById('shimla_price_31').value;
-        var sp= document.getElementById('shimla_price_32').value;
-        var tp= document.getElementById('shimla_price_33').value;
-        var fop= document.getElementById('shimla_price_34').value;
-        var fip= document.getElementById('shimla_price_35').value;
-        var start = 20000;
-        var videoTime = 10000
-        var musicTime = 3000;
-        var voice = "Hindi Male";
-        var pitch = 1;
-        var rate =1;
-        const arr = {
+      var fp= document.getElementById('shimla_price_31').value;
+      var sp= document.getElementById('shimla_price_32').value;
+      var tp= document.getElementById('shimla_price_33').value;
+      var fop= document.getElementById('shimla_price_34').value;
+      var fip= document.getElementById('shimla_price_35').value;
+      var start = 15000;
+      var videoTime = 10000
+      var musicTime = 3000;
+      var voice = "Hindi Male";
+      var pitch = 1;
+      var rate =1;
+      const arr = {
+        first: "boy",
         second: "girl"
       };
       const keys = Object.keys(arr);
