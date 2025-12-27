@@ -1061,7 +1061,7 @@
 
           for(i=0;i<4;i++){
             setTimeout(function(){
-              playNumber(convert(arraySeventhPrice[mSeventhPrice++]));
+              playNumber(parseInt(arraySeventhPrice[mSeventhPrice++]));
             },time3+(500*i));
           }
           time3=time3+3000;
@@ -1158,7 +1158,7 @@
 
           for(i=0;i<4;i++){
             setTimeout(function(){
-              playNumber(convert(arrayEigthPrice4[mEigthPrice4++]));
+              playNumber(parseInt(arrayEigthPrice4[mEigthPrice4++]));
             },time4+(500*i));
           }
           time4=time4+3000;
@@ -1255,7 +1255,7 @@
 
           for(i=0;i<4;i++){
             setTimeout(function(){
-              playNumber(convert(arrayNinthPrice5[mNinthPrice5++]));
+              playNumber(parseInt(arrayNinthPrice5[mNinthPrice5++]));
             },time5+(500*i));
           }
           time5=time5+3000;
