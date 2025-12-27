@@ -30,7 +30,7 @@ class Result_Controller extends CI_Controller{
 			$html = $this->load->view('user/result_pdf/result_pdf',$data,true);
 			$mpdf->WriteHTML($html);  
 			$mpdf->Output();
-			$mpdf->Output('Shimla.pdf'); // opens in browser
+			$mpdf->Output('Haryana.pdf'); // opens in browser
             //$mpdf->Output('arjun.pdf','D'); // it downloads the file into the user system, with give name
 		
 	}
@@ -47,7 +47,7 @@ class Result_Controller extends CI_Controller{
 		$html = $this->load->view('user/result_pdf/result_pdf',$data,true);
 		$mpdf->WriteHTML($html);  
 		//$mpdf->Output();
-		$mpdf->Output('Shimla.pdf','D');
+		$mpdf->Output('Haryana.pdf','D');
     }
     public function oldday_result_date3()
 	{
@@ -62,7 +62,7 @@ class Result_Controller extends CI_Controller{
 		$html = $this->load->view('user/result_pdf/result_pdf',$data,true);
 		$mpdf->WriteHTML($html);  
 		//$mpdf->Output();
-		$mpdf->Output('Shimla.pdf','D');
+		$mpdf->Output('Haryana.pdf','D');
     }
     public function oldday_result_date7()
 	{
@@ -77,6 +77,6 @@ class Result_Controller extends CI_Controller{
 		$html = $this->load->view('user/result_pdf/result_pdf',$data,true);
 		$mpdf->WriteHTML($html);  
 		//$mpdf->Output();
-		$mpdf->Output('Shimla.pdf','D');
+		$mpdf->Output('Haryana.pdf','D');
     }
 }
