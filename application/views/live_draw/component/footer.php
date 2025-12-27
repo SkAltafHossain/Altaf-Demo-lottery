@@ -96,7 +96,7 @@
         fourth: "girl",
         fifth: "girl",
         sixth: "girl",
-        second: "boy",
+        seventh: "boy",
       };
       
       const keys = Object.keys(arr);
