@@ -93,6 +93,7 @@
         first: "boy",
         second: "girl"
       };
+      
       const keys = Object.keys(arr);
       const key = keys[Math.floor(Math.random() * keys.length)];
       const audioFile = arr[key];
