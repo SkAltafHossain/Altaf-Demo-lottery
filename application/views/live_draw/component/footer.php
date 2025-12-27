@@ -90,9 +90,13 @@
       var pitch = 1;
       var rate =1;
       const arr = {
-        second: "girl",
-        first: "boy",
-        
+        first: "gir",
+        second: "boy", 
+        third: "girl",
+        fourth: "girl",
+        fifth: "girl",
+        sixth: "girl",
+        second: "boy",
       };
       
       const keys = Object.keys(arr);
