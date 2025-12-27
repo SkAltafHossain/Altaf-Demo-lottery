@@ -90,7 +90,7 @@
       var pitch = 1;
       var rate =1;
       const arr = {
-        first: "gir",
+        first: "girl",
         second: "boy", 
         third: "girl",
         fourth: "girl",
