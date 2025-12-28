@@ -61,7 +61,7 @@
         </div>
         </div>
     </form>
-    <form class="from-group" action="oldday_result_date7" method="POST" id="form3">
+    <form class="from-group" action="oldday_result_date8" method="POST" id="form3">
                <div class="row equal">
         <div class="col-md-8" id="leftone">
             <div class="boxthing colour-1">

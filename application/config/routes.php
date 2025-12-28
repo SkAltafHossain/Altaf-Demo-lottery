@@ -12,9 +12,10 @@ $route['today-result'] = 'user/Home_Controller/home';
 $route['today_result/([a-zA-Z0-9]+)'] ='user/result/Result_Controller/result/$1';
 
 $route['old-result'] = 'user/result/Result_Controller/old_result'; 
- $route['oldday_result_date11'] = 'user/result/Result_Controller/oldday_result_date11';   
- $route['oldday_result_date3'] = 'user/result/Result_Controller/oldday_result_date3';   
- $route['oldday_result_date7'] = 'user/result/Result_Controller/oldday_result_date7';   
+$route['oldday_result_date11'] = 'user/result/Result_Controller/oldday_result_date11';   
+$route['oldday_result_date3'] = 'user/result/Result_Controller/oldday_result_date3';   
+$route['oldday_result_date7'] = 'user/result/Result_Controller/oldday_result_date7';  
+$route['oldday_result_date8'] = 'user/result/Result_Controller/oldday_result_date8';  
 $route['live_demo'] = 'user/live_demo/Live_demo_Controller/live_demo';  
 $route['claiem'] = 'user/contact/Contact_Controller/claiem';  
 $route['contact'] = 'user/contact/Contact_Controller/contact'; 

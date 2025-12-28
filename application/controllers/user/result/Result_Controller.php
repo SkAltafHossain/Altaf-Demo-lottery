@@ -71,7 +71,23 @@ class Result_Controller extends CI_Controller{
 	    $pvf_date=$this->input->post('pdate');	    
 	    $result_pdf=$this->Result_Model->old_result_details($t,$pvf_date);
 	    $data['result_pdf']=$result_pdf;
-	 //    echo"<pre>";
+	    // echo"<pre>";
+		// print_r($data);die();
+		$mpdf = new \Mpdf\Mpdf();
+		$html = $this->load->view('user/result_pdf/result_pdf',$data,true);
+		$mpdf->WriteHTML($html);  
+		//$mpdf->Output();
+		$mpdf->Output('Haryana.pdf','D');
+    }
+
+	public function oldday_result_date8()
+	{
+		$t=4;
+	    $time=$this->input->post('time');
+	    $pvf_date=$this->input->post('pdate');	    
+	    $result_pdf=$this->Result_Model->old_result_details($t,$pvf_date);
+	    $data['result_pdf']=$result_pdf;
+	    // echo"<pre>";
 		// print_r($data);die();
 		$mpdf = new \Mpdf\Mpdf();
 		$html = $this->load->view('user/result_pdf/result_pdf',$data,true);
