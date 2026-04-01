@@ -4,6 +4,16 @@
 	<div class="middle-section">
 	    <div class="container">
 	    <form class="from-group">  
+        <!-- Added Buttons Section -->
+        <div class="row mb-4">
+            <div class="col-12 col-sm-6 mb-3 mb-sm-0">
+                <a href="<?=base_url('last-digit')?>" class="btn btn-primary btn-lg btn-block py-2">First Prize Last Digit</a>
+            </div>
+            <div class="col-12 col-sm-6">
+                <a href="<?=base_url('last-two-digit')?>" class="btn btn-success btn-lg btn-block py-2">First Prize Last Two Digits</a>
+            </div>
+        </div>
+        
 	        <center>
 	            <h2>TODAYS RESULT</h2>
 	            <span id="filenotfound" style="color: #cfaaaaff; display: none; ">File Not Updated Please Try Again Later!</span>

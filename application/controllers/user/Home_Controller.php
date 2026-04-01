@@ -54,4 +54,32 @@ class Home_Controller extends CI_Controller {
         $this->data['subview'] = 'privacy_policy';
         $this->load->view('user/layout/default', $this->data);
     }
+
+    public function last_digit()
+    {
+        // Load the API model to get data
+        $this->load->model('api/Api_Model');
+        
+        // Get first price last digit data
+        $results = $this->Api_Model->get_all_first_price_last();
+        
+        $this->data['page_title'] = 'First Prize Last Digit | Haryana State Lottery';
+        $this->data['subview'] = 'home/first_prize_last_digit';
+        $this->data['results'] = $results;
+        $this->load->view('user/layout/default', $this->data);
+    }
+
+    public function last_two_digit()
+    {
+        // Load the API model to get data
+        $this->load->model('api/Api_Model');
+        
+        // Get first price jodi data (for two digits)
+        $results = $this->Api_Model->get_all_first_price_jodi();
+        
+        $this->data['page_title'] = 'First Prize Last Two Digits | Haryana State Lottery';
+        $this->data['subview'] = 'home/first_prize_last_two_digit';
+        $this->data['results'] = $results;
+        $this->load->view('user/layout/default', $this->data);
+    }
 }

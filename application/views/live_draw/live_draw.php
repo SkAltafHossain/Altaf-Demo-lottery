@@ -83,7 +83,8 @@
 								$mn=fmod((int)$first_price3,10);							
 							}
 							$start = $mn;
-							for($od=$mn;$od<50+$mn;$od++){
+							$a = rand(50, 99);
+							for($od=$mn;$od<$a+$mn;$od++){
 
 								if($start==9){
 									$start=0;
