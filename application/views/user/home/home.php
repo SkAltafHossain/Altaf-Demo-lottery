@@ -36,7 +36,7 @@
 	                <div class="boxthing colour-2">
 	                   <button class="btn btn-primary btn-lg green-button" type="button">DBF</button>
 	                  <!--  <button class="btn btn-warning btn-lg" type="button" onclick="result()">PDF</button> -->	
-	                  <a href="<?=base_url('today_result/1')?>" onclick="file_not_found('1')" class="btn btn-warning btn-lg red-button" target= "_blank">PDF</a>
+	                  <a href="<?=base_url('today_result/1')?>" onclick="file_not_found('1')" class="btn btn-primary btn-lg red-button" target= "_blank">PDF</a>
 	                </div>
 	            </div>
 	            

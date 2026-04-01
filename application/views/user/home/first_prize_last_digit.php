@@ -10,7 +10,7 @@
                         <table class="table table-bordered table-striped">
                             <thead class="thead-dark">
                                 <tr>
-                                    <th class="text-center">Date</th>
+                                    <th class="text-center" >Date</th>
                                     <th class="text-center">11:30 AM</th>
                                     <th class="text-center">03:00 PM</th>
                                     <th class="text-center">05:00 PM</th>
@@ -20,8 +20,8 @@
                             <tbody>
                                 <?php foreach($results as $row): ?>
                                     <tr>
-                                        <td class="text-center">
-                                            <?php 
+                                        <td class="text-center" style="color: white; font-weight: bold;">
+                                            <?php
                                             // Format date
                                             $date = isset($row['date']) ? $row['date'] : (isset($row['result_date']) ? $row['result_date'] : '');
                                             if(!empty($date)) {
@@ -36,7 +36,7 @@
                                             // Display last digit for 11:30 AM
                                             $morning = isset($row['11:30 AM']) ? $row['11:30 AM'] : '-';
                                             if($morning != '-') {
-                                                echo '<span class="badge badge-primary">' . $morning . '</span>';
+                                                echo '<span style="color: white; padding: 8px 12px; display: inline-block; min-width: 40px; text-align: center; font-weight: bold;">' . $morning . '</span>';
                                             } else {
                                                 echo '<span class="text-muted">' . $morning . '</span>';
                                             }
@@ -47,7 +47,7 @@
                                             // Display last digit for 03:00 PM
                                             $day = isset($row['03:00 PM']) ? $row['03:00 PM'] : '-';
                                             if($day != '-') {
-                                                echo '<span class="badge badge-success">' . $day . '</span>';
+                                                echo '<span style="color: white; padding: 8px 12px; display: inline-block; min-width: 40px; text-align: center; font-weight: bold;">' . $day . '</span>';
                                             } else {
                                                 echo '<span class="text-muted">' . $day . '</span>';
                                             }
@@ -58,7 +58,7 @@
                                             // Display last digit for 05:00 PM
                                             $evening = isset($row['05:00 PM']) ? $row['05:00 PM'] : '-';
                                             if($evening != '-') {
-                                                echo '<span class="badge badge-info">' . $evening . '</span>';
+                                                echo '<span style="color: white; padding: 8px 12px; display: inline-block; min-width: 40px; text-align: center; font-weight: bold;">' . $evening . '</span>';
                                             } else {
                                                 echo '<span class="text-muted">' . $evening . '</span>';
                                             }
@@ -69,7 +69,7 @@
                                             // Display last digit for 08:30 PM
                                             $night = isset($row['08:30 PM']) ? $row['08:30 PM'] : '-';
                                             if($night != '-') {
-                                                echo '<span class="badge badge-warning">' . $night . '</span>';
+                                                echo '<span style="color: white; padding: 8px 12px; display: inline-block; min-width: 40px; text-align: center; font-weight: bold;">' . $night . '</span>';
                                             } else {
                                                 echo '<span class="text-muted">' . $night . '</span>';
                                             }
@@ -109,12 +109,12 @@
     background-color: #343a40;
     color: white;
     font-weight: bold;
-    border: 1px solid #dee2e6;
+    border: 1px solid black;
 }
 
 .table td {
     vertical-align: middle;
-    border: 1px solid #dee2e6;
+    border: 1px solid black;
 }
 
 .badge {
