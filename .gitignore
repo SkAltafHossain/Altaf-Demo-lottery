@@ -1,0 +1,8 @@
+# Large media files
+webroot/live_draw/assets/images/*.jpg
+webroot/live_draw/assets/video/*.mp4
+uploads/price_pdfs/*.pdf
+
+# System files
+.DS_Store
+Thumbs.db
