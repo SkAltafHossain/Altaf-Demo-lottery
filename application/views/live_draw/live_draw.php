@@ -14,7 +14,7 @@
 	<section id="section_1">
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Haryana State Lottery</p>
+    		        <p>Altaf Lottery</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -154,7 +154,7 @@
 					</div>
 				</div>
 				<div id="head_title">
-					<span id="heading_text">Haryana State Lottery</span>
+					<span id="heading_text">Altaf Lottery</span>
 				</div>
 
 				<div id="head_live">
@@ -166,7 +166,7 @@
 			<div id="side1">
 				<div id="sub_side1">
 					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.png" id="side_logo">
-					<p id="shimla1">Haryana State Lottery</p>
+					<p id="shimla1">Altaf Lottery</p>
 				</div>
 				<div id="sub_side2">
 					<p id="shimla_price_1">1st Prize</p>
@@ -275,7 +275,7 @@
 	    
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Haryana State Lottery</p>
+    		        <p>Altaf Lottery</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -383,7 +383,7 @@
 					</div>
 				</div>
 				<div id="head_title">
-					<span id="heading_text">Haryana State Lottery</span>
+					<span id="heading_text">Altaf Lottery</span>
 				</div>
 
 				<div id="head_live">
@@ -394,7 +394,7 @@
 			<div id="side1">
 				<div id="sub_side1">
 					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.png" id="side_logo">
-					<p id="shimla1">Haryana State Lottery</p>
+					<p id="shimla1">Altaf Lottery</p>
 				</div>
 				<div id="sub_side2">
 					<p id="shimla_price_1">2nd Prize</p>
@@ -495,7 +495,7 @@
 	<section id="section_3">
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Haryana State Lottery</p>
+    		        <p>Altaf Lottery</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -601,7 +601,7 @@
 					</div>
 				</div>
 				<div id="head_title">
-					<span id="heading_text">Haryana State Lottery</span>
+					<span id="heading_text">Altaf Lottery</span>
 				</div>
 
 				<div id="head_live">
@@ -612,7 +612,7 @@
 			<div id="side1">
 				<div id="sub_side1">
 					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.png" id="side_logo">
-					<p id="shimla1">Haryana State Lottery</p>
+					<p id="shimla1">Altaf Lottery</p>
 				</div>
 				<div id="sub_side2">
 					<p id="shimla_price_1">3rd Prize</p>
@@ -716,7 +716,7 @@
 	<section id="section_9">
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Haryana State Lottery</p>
+    		        <p>Altaf Lottery</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -820,7 +820,7 @@
 					</div>
 				</div>
 				<div id="head_title">
-					<span id="heading_text">Haryana State Lottery</span>
+					<span id="heading_text">Altaf Lottery</span>
 				</div>
 
 				<div id="head_live">
@@ -831,7 +831,7 @@
 			<div id="side1">
 				<div id="sub_side1">
 					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.png" id="side_logo">
-					<p id="shimla1">Haryana State Lottery</p>
+					<p id="shimla1">Altaf Lottery</p>
 				</div>
 				<div id="sub_side2">
 					<p id="shimla_price_1">4th Prize</p>
@@ -1051,7 +1051,7 @@
 	<section id="section_4">
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Haryana State Lottery</p>
+    		        <p>Altaf Lottery</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -1159,7 +1159,7 @@
 					</div>
 				</div>
 				<div id="head_title">
-					<span id="heading_text">Haryana State Lottery</span>
+					<span id="heading_text">Altaf Lottery</span>
 				</div>
 
 				<div id="head_live">
@@ -1170,7 +1170,7 @@
 			<div id="side1">
 				<div id="sub_side1">
 					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.png" id="side_logo">
-					<p id="shimla1">Haryana State Lottery</p>
+					<p id="shimla1">Altaf Lottery</p>
 				</div>
 				<div id="sub_side2">
 					<p id="shimla_price_1">5th Prize</p>
@@ -1288,7 +1288,7 @@
 	<section id="section_10">
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Haryana State Lottery</p>
+    		        <p>Altaf Lottery</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -1391,7 +1391,7 @@
 					</div>
 				</div>
 				<div id="head_title">
-					<span id="heading_text">Haryana State Lottery</span>
+					<span id="heading_text">Altaf Lottery</span>
 				</div>
 
 				<div id="head_live">
@@ -1402,7 +1402,7 @@
 			<div id="side1">
 				<div id="sub_side1">
 					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.png" id="side_logo">
-					<p id="shimla1">Haryana State Lottery</p>
+					<p id="shimla1">Altaf Lottery</p>
 				</div>
 				<div id="sub_side2">
 					<p id="shimla_price_1">5th Prize</p>
@@ -1520,7 +1520,7 @@
 	<section id="section_11">
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Haryana State Lottery</p>
+    		        <p>Altaf Lottery</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -1624,7 +1624,7 @@
 					</div>
 				</div>
 				<div id="head_title">
-					<span id="heading_text">Haryana State Lottery</span>
+					<span id="heading_text">Altaf Lottery</span>
 				</div>
 
 				<div id="head_live">
@@ -1635,7 +1635,7 @@
 			<div id="side1">
 				<div id="sub_side1">
 					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.png" id="side_logo">
-					<p id="shimla1">Haryana State Lottery</p>
+					<p id="shimla1">Altaf Lottery</p>
 				</div>
 				<div id="sub_side2">
 					<p id="shimla_price_1">5th Prize</p>
@@ -1753,7 +1753,7 @@
 	<section id="section_12">
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Haryana State Lottery</p>
+    		        <p>Altaf Lottery</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -1856,7 +1856,7 @@
 					</div>
 				</div>
 				<div id="head_title">
-					<span id="heading_text">Haryana State Lottery</span>
+					<span id="heading_text">Altaf Lottery</span>
 				</div>
 
 				<div id="head_live">
@@ -1867,7 +1867,7 @@
 			<div id="side1">
 				<div id="sub_side1">
 					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.png" id="side_logo">
-					<p id="shimla1">Haryana State Lottery</p>
+					<p id="shimla1">Altaf Lottery</p>
 				</div>
 				<div id="sub_side2">
 					<p id="shimla_price_1">5th Prize</p>
@@ -1986,7 +1986,7 @@
 
             <div id="altaf">
     		   <div class="sakir">
-    		        <p>Haryana State Lottery</p>
+    		        <p>Altaf Lottery</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -2089,7 +2089,7 @@
 					</div>
 				</div>
 				<div id="head_title">
-					<span id="heading_text">Haryana State Lottery</span>
+					<span id="heading_text">Altaf Lottery</span>
 				</div>
 
 				<div id="head_live">
@@ -2100,7 +2100,7 @@
 			<div id="side1">
 				<div id="sub_side1">
 					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.png" id="side_logo">
-					<p id="shimla1">Haryana State Lottery</p>
+					<p id="shimla1">Altaf Lottery</p>
 				</div>
 				<div id="sub_side2">
 					<p id="shimla_price_1">5th Prize</p>
@@ -2237,17 +2237,13 @@
 				"m"=>"13", "n"=>"14", "o"=>"15", "p"=>"16", "q"=>"17", "r"=>"18",
 				"s"=>"19", "t"=>"20", "u"=>"21", "v"=>"22", "w"=>"23", "x"=>"24",
 				"y"=>"25", "z"=>"26", "A"=>"27", "B"=>"28", "C"=>"29", "D"=>"30",
-				"E"=>"31", "F"=>"32", "G"=>"33", "H"=>"34", "I"=>"35", "J"=>"36",
-				"K"=>"37", "L"=>"38", "M"=>"39", "N"=>"40", "O"=>"41", "P"=>"42",
-				"Q"=>"43", "R"=>"44", "S"=>"45", "T"=>"46", "U"=>"47", "V"=>"48",
-				"W"=>"49", "X"=>"50", "Y"=>"51", "Z"=>"52", "aa"=>"53", "ab"=>"54",
-				"ac"=>"55", "ad"=>"56"
+				"E"=>"31", "F"=>"32"
 			);
 
 			$key = array_rand($arr);
 		?>
 		
-		<video id="myVideo"
+		<!-- <video id="myVideo"
 			style="
 				width: 110vw;
 				height: 100vh;
@@ -2255,7 +2251,8 @@
 				background: black;
 			">
 			<source src="<?= base_url() ?>webroot/live_draw/assets/video/<?=$arr[$key]?>.mp4" type="video/mp4">
-		</video>
+		</video> -->
+		<img src="<?=base_url()?>webroot/live_draw/assets/images/<?=$arr[$key]?>.jpg" id="screenshot">
 		<!--<video src="<?=base_url()?>webroot/live_draw/assets/video/<?=$arr[$key]?>.mp4" id="screenshot">-->
 	</section>
 
@@ -2397,7 +2394,7 @@
 					</div>
 				</div>
 				<div id="head_title">
-					<span id="heading_text">Haryana State Lottery</span>
+					<span id="heading_text">Altaf Lottery</span>
 				</div>
 
 				<div id="head_live">
@@ -2408,7 +2405,7 @@
 			<div id="side1">
 				<div id="sub_side1">
 					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.png" id="side_logo">
-					<p id="shimla1">Haryana State Lottery</p>
+					<p id="shimla1">Altaf Lottery</p>
 				</div>
 				<div id="sub_side2">
 					<p id="shimla_price_1">1st Prize</p>
@@ -2616,7 +2613,7 @@
 					</div>
 				</div>
 				<div id="head_title">
-					<span id="heading_text">Haryana State Lottery</span>
+					<span id="heading_text">Altaf Lottery</span>
 				</div>
 
 				<div id="head_live">
@@ -2627,7 +2624,7 @@
 			<div id="side1">
 				<div id="sub_side1">
 					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_lottery_1.png" id="side_logo">
-					<p id="shimla1">Haryana State Lottery</p>
+					<p id="shimla1">Altaf Lottery</p>
 				</div>
 				<div id="sub_side2">
 					<p id="shimla_price_1">1st Prize</p>

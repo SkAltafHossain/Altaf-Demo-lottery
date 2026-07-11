@@ -50,7 +50,7 @@ class Home_Controller extends CI_Controller {
 
     public function privacy_policy()
     {
-        $this->data['page_title'] = 'Privacy Policy | Haryana State Lottery';
+        $this->data['page_title'] = 'Privacy Policy | Altaf Lottery';
         $this->data['subview'] = 'privacy_policy';
         $this->load->view('user/layout/default', $this->data);
     }
@@ -63,7 +63,7 @@ class Home_Controller extends CI_Controller {
         // Get first price last digit data
         $results = $this->Api_Model->get_all_first_price_last();
         
-        $this->data['page_title'] = 'First Prize Last Digit | Haryana State Lottery';
+        $this->data['page_title'] = 'First Prize Last Digit | Altaf Lottery';
         $this->data['subview'] = 'home/first_prize_last_digit';
         $this->data['results'] = $results;
         $this->load->view('user/layout/default', $this->data);
@@ -77,7 +77,7 @@ class Home_Controller extends CI_Controller {
         // Get first price jodi data (for two digits)
         $results = $this->Api_Model->get_all_first_price_jodi();
         
-        $this->data['page_title'] = 'First Prize Last Two Digits | Haryana State Lottery';
+        $this->data['page_title'] = 'First Prize Last Two Digits | Altaf Lottery';
         $this->data['subview'] = 'home/first_prize_last_two_digit';
         $this->data['results'] = $results;
         $this->load->view('user/layout/default', $this->data);

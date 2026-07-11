@@ -13,9 +13,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" href="<?=base_url()?>webroot/user/images/logo_lottery_1.png">
 		<meta charset="utf-8">
-		<title>Haryana State Lottery</title>
-		<meta name="keywords" content="Haryana State Lottery">
-        <meta name="description" content="Best Lottery Agency in Haryana">
+		<title>Altaf Lottery</title>
+		<meta name="keywords" content="Altaf Lottery">
+        <meta name="description" content="Best Lottery Agency">
 		<!--<link rel="stylesheet" href="<?=base_url()?>webroot/user/css/style.css">-->
 		<link rel="stylesheet" href="<?=base_url()?>webroot/user/css/bootstrap.min.css">
 		<link href="<?=base_url()?>webroot/user/css/odometer-theme-default.css" rel="stylesheet">
@@ -27,40 +27,41 @@
 		<style>
 		
 body{
-    background: -webkit-linear-gradient(180deg, #c40051e3, #ff9500);
+    background: #ffffff;
 }		
 		    
 #navbar {
-  background: -webkit-linear-gradient(180deg, #e1005efd, #ff7300ff); /* blue → soft purple */
+  background: #ffffff;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 .navbar-nav .nav-link{
-        color: #ffffff !important;
+        color: #000000 !important;
         text-transform: uppercase;
         font-weight: bold;
         letter-spacing: 0.5px;
 }
 .navbar-nav .nav-link:hover{
-    color:#ffffff !important;
+    color:#000000 !important;
 }
 footer{
-    background: -webkit-linear-gradient(180deg, #be004fff, #d96200ff); /* blue → soft purple */
+    background: #ffffff;
     padding:15px 0px;
     text-align:center;
-    color:#FFF;
+    color:#000;
     text-transform: uppercase;
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 footer p{
     margin-bottom:10px;
 }
 footer a{
    text-transform: uppercase;
-   color:#FFF;
+   color:#000;
    text-decoration:none;
    font-weight:bold;
 }
 footer a:hover{
-    color:#ffffff;
+    color:#000;
     text-decoration:none;
 }
 footer .bottom-content{
@@ -70,9 +71,10 @@ footer .bottom-content{
 .middle-section{
     width:100%;
     height:auto;
-    background: -webkit-linear-gradient(180deg, #c40051e3, #ff9500);
+    background: #ffffff;
     padding-top:20px;
     padding-bottom:20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .middle-section h1{
     color: #ffffff; 
@@ -277,7 +279,7 @@ footer .bottom-content{
   padding: 40px 0;
   font: 300 60px 'Oswald', sans-serif;
   text-transform: uppercase;
-  color:white;
+  color:black;
   font-size:28px;
   line-height:35px;
   letter-spacing: 1px;
@@ -353,7 +355,7 @@ footer .bottom-content{
   display:flex;
   justify-content:flex-start;
   align-items:center;
-  color:white;
+  color:black;
   margin-bottom:20px;
 }
 
@@ -376,7 +378,7 @@ footer .bottom-content{
 }
 
 .contact-text a {
-  color: white;
+  color: black;
   text-decoration: none;
   transition-duration: 0.2s;
 }

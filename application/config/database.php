@@ -106,7 +106,7 @@ if ($is_live) {
 		'hostname' => 'localhost',
 		'username' => 'root',		// XAMPP default username
 		'password' => '',			// XAMPP default password (empty)
-		'database' => 'haryanalottery_state',		// Your local database name
+		'database' => 'altaf_state',		// Your local database name
 		'dbdriver' => 'mysqli',
 		'dbprefix' => '',
 		'pconnect' => FALSE,

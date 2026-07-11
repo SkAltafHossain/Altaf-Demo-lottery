@@ -6,7 +6,7 @@
             <div class="card shadow-sm">
                 <div class="card-body">
                     <h4 class="mb-3">1. Introduction</h4>
-                    <p>Welcome to Haryana State Lottery. We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and protect your information when you use our services.</p>
+                    <p>Welcome to Altaf Lottery. We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and protect your information when you use our services.</p>
                     
                     <h4 class="mt-4 mb-3">2. Information We Collect</h4>
                     <p>We may collect the following types of information:</p>

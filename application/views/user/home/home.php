@@ -3,166 +3,40 @@
 	<!-- Today Result Start -->
 	<div class="middle-section">
 	    <div class="container">
-	    <form class="from-group">  
-        <!-- Added Buttons Section -->
-        <div class="row mb-4">
-            <div class="col-12 col-sm-6 mb-3 mb-sm-0">
-                <a href="<?=base_url('last-digit')?>" class="btn btn-primary btn-lg btn-block py-2">First Prize Last Digit</a>
-            </div>
-            <div class="col-12 col-sm-6">
-                <a href="<?=base_url('last-two-digit')?>" class="btn btn-success btn-lg btn-block py-2">First Prize Last Two Digits</a>
-            </div>
-        </div>
-        
-	        <center>
-	            <h2>TODAYS RESULT</h2>
-	            <span id="filenotfound" style="color: #cfaaaaff; display: none; ">File Not Updated Please Try Again Later!</span>
-	            <h4> <?=date("d/m/Y");?></h4>
-	        </center>
-	         
-
-	        <div class="row equal">
-	            <div class="col-md-8" id="left_box">       
-	                <div class="boxthing colour-1">
-	                <h5>ROYAL TIGER MORNING</h5>
-	              	<font id="time">11:30 AM</font> 
-	                     <!-- <input type="text" name="time" id="time" value="11:00 AM" style="border: none; background: transparent;"> -->
-	                </div>
-	            </div>
-	            <?php 
-	            if($time1){
-	            ?>
-	            <div class="col-md-2" id="right_box">
-	                <div class="boxthing colour-2">
-	                   <button class="btn btn-primary btn-lg green-button" type="button">DBF</button>
-	                  <!--  <button class="btn btn-warning btn-lg" type="button" onclick="result()">PDF</button> -->	
-	                  <a href="<?=base_url('today_result/1')?>" onclick="file_not_found('1')" class="btn btn-primary btn-lg red-button" target= "_blank">PDF</a>
-	                </div>
-	            </div>
-	            
-	            <?php
-	            }else{ 
-	            
-	            ?>
-	            
-	             <div class="col-md-2" id="right_box">
-	                <div class="boxthing colour-2">
-	                   <button class="btn btn-primary btn-lg green-button" type="button">DBF</button>
-	                  <!--  <button class="btn btn-warning btn-lg" type="button" onclick="result()">PDF</button> -->	
-	                  <a class="btn btn-primary btn-lg red-button" onclick="file_not_found('0')" target= "_blank">PDF</a>
-	                </div>
-	            </div>	
-	          <?php
-	            }?>
-	            
-	        </div>
-	        <div class="row equal">
-	            <div class="col-md-8" id="left_box">       
-	                <div class="boxthing colour-1">
-	                <h5>ROYAL TIGER DAY</h5>
-	              	<font id="time">03:00 PM</font> 
-	                     <!-- <input type="text" name="time" id="time" value="11:00 AM" style="border: none; background: transparent;"> -->
-	                </div>
-	            </div>
-	            <?php 
-	            if($time2){
-	            ?>
-	            <div class="col-md-2" id="right_box">
-	                <div class="boxthing colour-2">
-	                   <button class="btn btn-primary btn-lg green-button" type="button">DBF</button>
-	                  <!--  <button class="btn btn-warning btn-lg" type="button" onclick="result()">PDF</button> -->	
-	                  <a href="<?=base_url('today_result/2')?>" onclick="file_not_found('1')" class="btn btn-primary btn-lg red-button" target= "_blank">PDF</a>
-	                </div>
-	            </div>
-	            <?php
-	            }else{ 
-	            
-	            ?>
-	             <div class="col-md-2" id="right_box">
-	                <div class="boxthing colour-2">
-	                   <button class="btn btn-primary btn-lg green-button" type="button" >DBF</button>
-	                  <!--  <button class="btn btn-warning btn-lg" type="button" onclick="result()">PDF</button> -->	
-	                  <a class="btn btn-primary btn-lg red-button" onclick="file_not_found('0')" target= "_blank">PDF</a>
-	                </div>
-	            </div>	
-	          
-	            <?php
-	            }?>
-	        </div>
-	        <div class="row equal">
-	            <div class="col-md-8" id="left_box">       
-	                <div class="boxthing colour-1">
-	                <h5>ROYAL TIGER EVENING</h5>
-	              	<font id="time">05:00 PM</font> 
-	                     <!-- <input type="text" name="time" id="time" value="11:00 AM" style="border: none; background: transparent;"> -->
-	                </div>
-	            </div>
-	            <?php 
-	            if($time3){
-	            ?>
-	            <div class="col-md-2" id="right_box">
-	                <div class="boxthing colour-2">
-	                   <button class="btn btn-primary btn-lg green-button" type="button">DBF</button>
-	                  <!--  <button class="btn btn-warning btn-lg" type="button" onclick="result()">PDF</button> -->	
-	                  <a href="<?=base_url('today_result/3')?>" onclick="file_not_found('1')" class="btn btn-primary btn-lg red-button" target= "_blank">PDF</a>
-	                </div>
-	            </div>
-	            <?php
-	            }else{ 
-	            
-	            ?>
-	             <div class="col-md-2" id="right_box">
-	                <div class="boxthing colour-2">
-	                   <button class="btn btn-primary btn-lg green-button" type="button">DBF</button>
-	                  <!--  <button class="btn btn-warning btn-lg" type="button" onclick="result()">PDF</button> -->	
-	                  <a class="btn btn-primary btn-lg red-button" onclick="file_not_found('0')" target= "_blank">PDF</a>
-	                </div>
-	            </div>	
-	          <?php
-	            }?>
-	            
+	        <div class="project-details text-center mb-5">
+	            <h2>Welcome to Our Project</h2>
+	            <p class="lead">Your trusted platform for lottery results and updates. Stay informed with our daily result announcements and access PDF reports for detailed information.</p>
 	        </div>
 
-			<div class="row equal">
-	            <div class="col-md-8" id="left_box">       
-	                <div class="boxthing colour-1">
-	                <h5>ROYAL TIGER NIGHT</h5>
-	              	<font id="time">08:30 PM</font> 
-	                     <!-- <input type="text" name="time" id="time" value="11:00 AM" style="border: none; background: transparent;"> -->
+	        <div class="row mb-4">
+	            <div class="col-md-4 mb-3">
+	                <div class="time-box text-center p-4 bg-primary text-white rounded cursor-pointer" onclick="changePDF('10am')" style="cursor: pointer;">
+	                    <h3>10:00 AM</h3>
+	                    <p>Morning Result</p>
 	                </div>
 	            </div>
-	            <?php 
-	            if($time4){
-	            ?>
-	            <div class="col-md-2" id="right_box">
-	                <div class="boxthing colour-2">
-	                   <button class="btn btn-primary btn-lg green-button" type="button">DBF</button>
-	                  <!--  <button class="btn btn-warning btn-lg" type="button" onclick="result()">PDF</button> -->	
-	                  <a href="<?=base_url('today_result/4')?>" onclick="file_not_found('1')" class="btn btn-primary btn-lg red-button" target= "_blank">PDF</a>
+	            <div class="col-md-4 mb-3">
+	                <div class="time-box text-center p-4 bg-success text-white rounded cursor-pointer" onclick="changePDF('1pm')" style="cursor: pointer;">
+	                    <h3>1:00 PM</h3>
+	                    <p>Afternoon Result</p>
 	                </div>
 	            </div>
-	            <?php
-	            }else{ 
-	            
-	            ?>
-	             <div class="col-md-2" id="right_box">
-	                <div class="boxthing colour-2">
-	                   <button class="btn btn-primary btn-lg green-button" type="button">DBF</button>
-	                  <!--  <button class="btn btn-warning btn-lg" type="button" onclick="result()">PDF</button> -->	
-	                  <a class="btn btn-primary btn-lg red-button" onclick="file_not_found('0')" target= "_blank">PDF</a>
+	            <div class="col-md-4 mb-3">
+	                <div class="time-box text-center p-4 bg-info text-white rounded cursor-pointer" onclick="changePDF('4pm')" style="cursor: pointer;">
+	                    <h3>4:00 PM</h3>
+	                    <p>Evening Result</p>
 	                </div>
-	            </div>	
-	          <?php
-	            }?>
-	            
+	            </div>
 	        </div>
-	     
-	    </form>
-	    
+
+	        <div class="pdf-display text-center">
+	            <h3 class="mb-3">Result PDF</h3>
+	            <iframe id="pdfFrame" src="" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 5px;"></iframe>
+	            <p id="pdfMessage" class="mt-3 text-muted">Click on a time box above to view the PDF result</p>
+	        </div>
+	    </div>
 	</div>
-	</div>
-	
-	
+
 	<!-- Today Result End -->
 <style>
 .disabled{
@@ -172,4 +46,29 @@
     pointer-events: none;
    cursor: default;
 }
+.time-box:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+.time-box {
+    transition: all 0.3s ease;
+}
 </style>
+<script>
+function changePDF(time) {
+    var pdfFrame = document.getElementById('pdfFrame');
+    var pdfMessage = document.getElementById('pdfMessage');
+    
+    // Define PDF URLs for each time slot
+    var pdfUrls = {
+        '10am': '<?=base_url('today_result/1')?>',
+        '1pm': '<?=base_url('today_result/2')?>',
+        '4pm': '<?=base_url('today_result/3')?>'
+    };
+    
+    // Update the iframe with the selected PDF
+    pdfFrame.src = pdfUrls[time];
+    pdfMessage.style.display = 'none';
+}
+</script>

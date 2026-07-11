@@ -1,119 +1,85 @@
 <div class="middle-section">
     <div class="container">
-    <center> <h2 class="oldhnew">Old Result</h2> </center>  
-          <form class="from-group" action="oldday_result_date11" method="POST" id="form">
-        <div class="row equal">
-        <div class="col-md-8" id="leftone">
-            <div class="boxthing colour-1">  
-                <h5>ROYAL TIGER MORNING</h5>
-                <!-- <p>11:00 AM</p> -->
-                <input type="text" name="time" id="time" value="11:30 AM" style="border: none; background: transparent;">
-            </div>
-        </div> 
-        <div class="col-md-3" id="rightone">
-            <div class="boxthing colour-2">
-            	<input type="date" max="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -1 day')); ?>" min="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -31 day')); ?>">
-                <button class="btn btn-primary btn-lg green-button" type="submit" >DBF</button>
-                <input type="date" name="pdate" id="pdate" max="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -1 day'));?>" min="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -31 day')); ?>" class="validate[required]" data-errormessage-value-missing="Date is required" data-prompt-position="bottomLeft">
-                <button class="btn btn-primary btn-lg red-button" type="submit" >PDF</button>
-               <!--  <a href="<?=base_url('today_result/'.$value->id)?>"class="btn btn-warning btn-lg" target= "_blank">PDF</a> -->
-            </div>  
+        <div class="project-details text-center mb-5">
+            <h2>Old Results</h2>
+            <p class="lead">Select a date to view historical lottery results. Access PDF reports for detailed information from past draws.</p>
         </div>
-        </div>
-    </form>
-     <form class="from-group" action="oldday_result_date3" method="POST"id="form2">
-      <div class="row equal">
-        <div class="col-md-8" id="leftone">
-            <div class="boxthing colour-1">
-                <h5>ROYAL TIGER DAY</h5>
-                <!-- <p>03:00 PM</p> -->
-              <input type="text" name="time" id="time" value="03:30 PM" style="border: none; background: transparent;"> 
-            </div>
-        </div> 
-        <div class="col-md-3" id="rightone">
-            <div class="boxthing colour-2">
-                <input type="date" max="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -1 day')); ?>"  min="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -31 day')); ?>">
-                <button class="btn btn-primary btn-lg green-button" type="submit">DBF</button>
-                <input type="date"  name="pdate" id="pdate" max="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -1 day'));?>"min="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -31 day')); ?>" class="validate[required]" data-errormessage-value-missing="Date is required" data-prompt-position="bottomLeft">
-                <button class="btn btn-primary btn-lg red-button" type="submit">PDF</button>
-               <!--  <a href="<?=base_url('today_result/'.$value->id)?>"class="btn btn-warning btn-lg" target= "_blank">PDF</a> -->
+
+        <div class="date-selector text-center mb-4">
+            <h3 class="mb-3">Select Date</h3>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <input type="date" name="pdate" id="pdate" max="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -1 day'));?>" min="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -31 day')); ?>" class="form-control validate[required]" data-errormessage-value-missing="Date is required" data-prompt-position="bottomLeft">
+                </div>
             </div>
         </div>
-        </div>
-    </form>
-         <form class="from-group" action="oldday_result_date7" method="POST" id="form3">
-               <div class="row equal">
-        <div class="col-md-8" id="leftone">
-            <div class="boxthing colour-1">
-                <h5>ROYAL TIGER EVENING</h5>
-                <!-- <p>05:00 PM</p> -->
-                <input type="text" name="time" id="time" value="05:00 PM" style="border: none; background: transparent;">
+
+        <div class="row mb-4">
+            <div class="col-md-4 mb-3">
+                <div class="time-box text-center p-4 bg-primary text-white rounded cursor-pointer" onclick="selectTime('11:30')" style="cursor: pointer;">
+                    <h3>11:30 AM</h3>
+                    <p>Morning Result</p>
+                </div>
             </div>
-        </div> 
-        <div class="col-md-3" id="rightone">
-            <div class="boxthing colour-2">
-                <input type="date" max="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -1 day')); ?>"  min="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -31 day')); ?>">
-                <button class="btn btn-primary btn-lg green-button" type="submit">DBF</button>
-                <input type="date"  name="pdate" id="pdate" max="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -1 day'));?>" min="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -31 day')); ?>" class="validate[required]" data-errormessage-value-missing="Date is required" data-prompt-position="bottomLeft">
-                <button class="btn btn-primary btn-lg red-button" type="submit">PDF</button>
-               <!--  <a href="<?=base_url('today_result/'.$value->id)?>"class="btn btn-warning btn-lg" target= "_blank">PDF</a> -->
+            <div class="col-md-4 mb-3">
+                <div class="time-box text-center p-4 bg-success text-white rounded cursor-pointer" onclick="selectTime('15:30')" style="cursor: pointer;">
+                    <h3>03:30 PM</h3>
+                    <p>Day Result</p>
+                </div>
             </div>
-        </div>
-        </div>
-    </form>
-    <form class="from-group" action="oldday_result_date8" method="POST" id="form3">
-               <div class="row equal">
-        <div class="col-md-8" id="leftone">
-            <div class="boxthing colour-1">
-                <h5>ROYAL TIGER NIGHT</h5>
-                <!-- <p>08:30 PM</p> -->
-                <input type="text" name="time" id="time" value="08:30 PM" style="border: none; background: transparent;">
-            </div>
-        </div> 
-        <div class="col-md-3" id="rightone">
-            <div class="boxthing colour-2">
-                <input type="date" max="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -1 day')); ?>"  min="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -31 day')); ?>">
-                <button class="btn btn-primary btn-lg green-button" type="submit">DBF</button>
-                <input type="date"  name="pdate" id="pdate" max="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -1 day'));?>" min="<?php echo $carent_date=date('Y-m-d', strtotime(date('Y-m-d').' -31 day')); ?>" class="validate[required]" data-errormessage-value-missing="Date is required" data-prompt-position="bottomLeft">
-                <button class="btn btn-primary btn-lg red-button" type="submit">PDF</button>
-               <!--  <a href="<?=base_url('today_result/'.$value->id)?>"class="btn btn-warning btn-lg" target= "_blank">PDF</a> -->
+            <div class="col-md-4 mb-3">
+                <div class="time-box text-center p-4 bg-info text-white rounded cursor-pointer" onclick="selectTime('17:00')" style="cursor: pointer;">
+                    <h3>05:00 PM</h3>
+                    <p>Evening Result</p>
+                </div>
             </div>
         </div>
+
+        <div class="pdf-display text-center">
+            <h3 class="mb-3">Result PDF</h3>
+            <iframe id="pdfFrame" src="" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 5px;"></iframe>
+            <p id="pdfMessage" class="mt-3 text-muted">Select a date and time to view the PDF result</p>
         </div>
-    </form>
-</div>
+    </div>
 </div>
 
-	
-
-<style type="text/css">
-.formErrorContent 
-    {
-        position: absolute;
-        top: 17px !important;
-        width: auto !important;
-        left: 0px !important;
-        z-index: 11 !important;
-        text-transform: none !important;
-        background-color: #f2dede !important;
-        color: #a94442!important;
-        padding: 3px 10px !important;
-        font-size: 13px !important;
-        font-weight: 500 !important;
-        border-radius: 3px !important;
-        border-color: #ebccd1;
-    }
-    .formErrorArrowBottom:after {
-        content: '';
-        position: absolute;
-        bottom: 6px !important;
-        left: -16px;
-        width: 0;
-        height: 0;
-        border: 10px solid transparent;
-        border-top-color: #f2dede!important;
-        border-bottom: 0;
-        margin-bottom: -11px;
-        transform: rotate(180deg);
-    }
+<style>
+.time-box {
+    transition: all 0.3s ease;
+}
+.time-box:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
 </style>
+
+<script>
+var selectedTime = '';
+
+function selectTime(time) {
+    selectedTime = time;
+    var date = document.getElementById('pdate').value;
+    if(date) {
+        loadPDF(date, time);
+    } else {
+        alert('Please select a date first');
+    }
+}
+
+function loadPDF(date, time) {
+    var pdfFrame = document.getElementById('pdfFrame');
+    var pdfMessage = document.getElementById('pdfMessage');
+    
+    // Map time to corresponding action
+    var actions = {
+        '11:30': 'oldday_result_date11',
+        '15:30': 'oldday_result_date3',
+        '17:00': 'oldday_result_date7'
+    };
+    
+    var action = actions[time] || 'oldday_result_date11';
+    pdfFrame.src = '<?=base_url()?>' + action + '?pdate=' + date;
+    pdfMessage.style.display = 'none';
+}
+</script>

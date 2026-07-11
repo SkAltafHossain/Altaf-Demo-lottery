@@ -116,7 +116,7 @@
                 <table>
                     <tr>
                         <td>
-                            <span id="header_text" style="font-weight: bold;">Haryana State Lottery</span>
+                            <span id="header_text" style="font-weight: bold;">Altaf Lottery</span>
                         </td>
                         
 
@@ -137,7 +137,7 @@
     <div id="div_last" align="center">
         <div class="row" style="margin-top: 15px; margin-left: 20px; margin-right: 20px;">
           <div class="column left" style = "text-align: left; font-size: 15px; font-weight: bold"><?=$result_pdf->time_t?></div>
-          <div class="column middle" style = "text-align: center;"><span id="div1">Haryana State Lottery</span></div>
+          <div class="column middle" style = "text-align: center;"><span id="div1">Altaf Lottery</span></div>
           <div class="column right" style = "text-align: right; font-size: 15px; font-weight: bold"><?=$result_pdf->time_t?></div>
         </div>
         <div align="center"><span id="div2" >ROYAL TIGER</span></div>
@@ -339,7 +339,7 @@
     </div>
 
     <div align="center">
-        <div align="center" style="padding-top: 15px; padding-bottom: 8px;"><span id="div7">ISSUED BY:THE DIRECTOR Haryana State Lottery</span></div>
+        <div align="center" style="padding-top: 15px; padding-bottom: 8px;"><span id="div7">ISSUED BY:THE DIRECTOR Altaf Lottery</span></div>
         <hr style="height:2px;border-width:0;color:gray;background-color:gray">
         <div align="center" style="padding-top: 8px; padding-bottom: 10px;"><span id="div8"> <?=$result_pdf->time_t." Result ".  $result_pdf->date_1 ?></span></div>
     </div>

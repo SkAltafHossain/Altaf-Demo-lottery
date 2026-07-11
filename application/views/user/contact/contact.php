@@ -7,7 +7,7 @@
 
       <form id="contact-form" class="form-horizontal" role="form">
 
-        <img src="<?=base_url()?>webroot/user/images/contact_image_1.gif" class="img-fluid" style="position: relative; bottom: 75px;">
+        <img src="<?=base_url()?>webroot/user/images/contact_image.gif" class="img-fluid" style="position: relative; bottom: 75px; max-width: 300px; filter: hue-rotate(90deg) saturate(2);">
 
       </form>
 
@@ -18,11 +18,11 @@
         <ul class="contact-list">
           <li class="list-item">
               <i class="fa fa-home fa-2x"></i>
-            <span class="contact-text place">Haryana - 491223</span>
+            <span class="contact-text place">Bangalore - 560001</span>
           </li>
 
           <li class="list-item">
-              <i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:99999Haryana@gmail.com" target="_blank">99999Haryana@gmail.com</a></span></i></li>
+              <i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:altaflottery@gmail.com" target="_blank">altaflottery@gmail.com</a></span></i></li>
 
         </ul> 
 
