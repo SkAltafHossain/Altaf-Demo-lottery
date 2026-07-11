@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+    DirectoryIndex fornt.php
+    RewriteEngine on
+    # Send request via fornt.php (custom front controller)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ fornt.php?/$1 [L] 
+</IfModule>
