@@ -11,7 +11,7 @@
       gtag('config', 'G-QNPPL18CXB');
     </script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" href="<?=base_url()?>webroot/user/images/logo_lottery_1.png">
+		<link rel="icon" href="<?=base_url()?>webroot/user/images/logo_new.svg">
 		<meta charset="utf-8">
 		<title>Altaf Lottery</title>
 		<meta name="keywords" content="Altaf Lottery">
