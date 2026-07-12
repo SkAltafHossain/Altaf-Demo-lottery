@@ -10,7 +10,7 @@
 			$this->load->helper(array('common_helper', 'string', 'form', 'security', 'text'));		
 			if(($this->session->userdata('adminDetails')==NULL))
 			{
-			   return redirect('/');
+			   return redirect('admin');
 			}
         } 
 		public function today_report()

@@ -12,16 +12,15 @@
     <!-- USER END -->
 
         <!-- SETTING -->
-    <li class="">
+    <!-- <li class="">
             <a href="javascript:void(0)"><i class="fa fa-cog"></i> <span class="nav-label">Report</span> <span class="fa arrow arr"></span></a>
             <ul class="nav nav-second-level collapse">
                 <li class=""><a href="<?=base_url('today_report')?>"><i class="fa fa-flag" aria-hidden="true"></i> <span class="nav-label">Today Report </span></a></li>
       
-        <!-- AboutUs -->
             <li class=""><a href="<?=base_url('all_report')?>"><i class="fa fa-address-card" aria-hidden="true"></i> <span class="nav-label">All Report</span></a></li>        
      
         </ul>
-    </li> 
+    </li>  -->
         <!-- SETTING END -->
     <li class="<?=$controller_name=='AdminController' ? 'active' : ''?>">
         <a href="<?=base_url('admin/changepassword')?>"><i class="fa fa-key"></i> <span class="nav-label">Change Password</span></a>

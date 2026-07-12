@@ -10,7 +10,7 @@
 			$this->load->model('result/Result_Model'); // Load Result_Model in the constructor
 			if(($this->session->userdata('adminDetails')==NULL))
 			{
-			   return redirect('/');
+			   return redirect('admin');
 			}
         } 
 		public function view_price()  
