@@ -159,7 +159,7 @@
 
 				<div id="head_live">
 					<i class="fas fa-dot-circle"></i>
-					<b>Live from Chandigarh</b>
+					<b>Live from Kolkata</b>
 				</div>
 			</div>
 			
@@ -388,7 +388,7 @@
 
 				<div id="head_live">
 					<i class="fas fa-dot-circle"></i>
-					<b>Live from Chandigarh</b>
+					<b>Live from Kolkata</b>
 				</div>
 			</div>
 			<div id="side1">
@@ -414,7 +414,7 @@
 		</div>
 
 		<div id="gov">
-			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.png" class="img-responsive">
+			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.jpg" class="img-responsive">
 		</div>
 
 		<div id="result_div_2">
@@ -606,7 +606,7 @@
 
 				<div id="head_live">
 					<i class="fas fa-dot-circle"></i>
-					<b>Live from Chandigarh</b>
+					<b>Live from Kolkata</b>
 				</div>
 			</div>
 			<div id="side1">
@@ -632,7 +632,7 @@
 		</div>
 
 		<div id="gov">
-			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.png" class="img-responsive">
+			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.jpg" class="img-responsive">
 		</div>
 
 		<div id="result_div_2">
@@ -825,7 +825,7 @@
 
 				<div id="head_live">
 					<i class="fas fa-dot-circle"></i>
-					<b>Live from Chandigarh</b>
+					<b>Live from Kolkata</b>
 				</div>
 			</div>
 			<div id="side1">
@@ -851,7 +851,7 @@
 		</div>
 
 		<div id="gov">
-			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.png" class="img-responsive">
+			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.jpg" class="img-responsive">
 		</div>
 
 		<div id="result_div_2">
@@ -1164,7 +1164,7 @@
 
 				<div id="head_live">
 					<i class="fas fa-dot-circle"></i>
-					<b>Live from Chandigarh</b>
+					<b>Live from Kolkata</b>
 				</div>
 			</div>
 			<div id="side1">
@@ -1192,7 +1192,7 @@
 		</div>
 
 		<div id="gov">
-			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.png" class="img-responsive">
+			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.jpg" class="img-responsive">
 		</div>
 
 		<div id="result_div_2">
@@ -1396,7 +1396,7 @@
 
 				<div id="head_live">
 					<i class="fas fa-dot-circle"></i>
-					<b>Live from Chandigarh</b>
+					<b>Live from Kolkata</b>
 				</div>
 			</div>
 			<div id="side1">
@@ -1424,7 +1424,7 @@
 		</div>
 
 		<div id="gov">
-			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.png" class="img-responsive">
+			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.jpg" class="img-responsive">
 		</div>
 
 		<div id="result_div_2">
@@ -1629,7 +1629,7 @@
 
 				<div id="head_live">
 					<i class="fas fa-dot-circle"></i>
-					<b>Live from Chandigarh</b>
+					<b>Live from Kolkata</b>
 				</div>
 			</div>
 			<div id="side1">
@@ -1657,7 +1657,7 @@
 		</div>
 
 		<div id="gov">
-			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.png" class="img-responsive">
+			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.jpg" class="img-responsive">
 		</div>
 
 		<div id="result_div_2">
@@ -1861,7 +1861,7 @@
 
 				<div id="head_live">
 					<i class="fas fa-dot-circle"></i>
-					<b>Live from Chandigarh</b>
+					<b>Live from Kolkata</b>
 				</div>
 			</div>
 			<div id="side1">
@@ -1889,7 +1889,7 @@
 		</div>
 
 		<div id="gov">
-			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.png" class="img-responsive">
+			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.jpg" class="img-responsive">
 		</div>
 
 		<div id="result_div_2">
@@ -2094,7 +2094,7 @@
 
 				<div id="head_live">
 					<i class="fas fa-dot-circle"></i>
-					<b>Live from Chandigarh</b>
+					<b>Live from Kolkata</b>
 				</div>
 			</div>
 			<div id="side1">
@@ -2122,7 +2122,7 @@
 		</div>
 
 		<div id="gov">
-			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.png" class="img-responsive">
+			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.jpg" class="img-responsive">
 		</div>
 
 		<div id="result_div_2">
@@ -2226,7 +2226,7 @@
         
     </style>
 	<section id="section_6">
-		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider1.jpeg" id="screenshot">
+		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider1.jpg" id="screenshot">
 	</section>
 
 	<section id="section_7">
@@ -2234,10 +2234,6 @@
 			$arr = array( 
 				"a"=>"1", "b"=>"2", "c"=>"3", "d"=>"4", "e"=>"5", "f"=>"6",
 				"g"=>"7", "h"=>"8", "i"=>"9", "j"=>"10", "k"=>"11", "l"=>"12",
-				"m"=>"13", "n"=>"14", "o"=>"15", "p"=>"16", "q"=>"17", "r"=>"18",
-				"s"=>"19", "t"=>"20", "u"=>"21", "v"=>"22", "w"=>"23", "x"=>"24",
-				"y"=>"25", "z"=>"26", "A"=>"27", "B"=>"28", "C"=>"29", "D"=>"30",
-				"E"=>"31", "F"=>"32"
 			);
 
 			$key = array_rand($arr);
@@ -2257,11 +2253,11 @@
 	</section>
 
 	<section id="section_8">
-		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider3.jpeg" id="screenshot">
+		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider3.jpg" id="screenshot">
 	</section>
 
 	<section id="section_14">
-		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider2.jpeg" id="screenshot">
+		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider2.jpg" id="screenshot">
 
 	</section>
 
@@ -2399,7 +2395,7 @@
 
 				<div id="head_live">
 					<i class="fas fa-dot-circle"></i>
-					<b>Live from Chandigarh</b>
+					<b>Live from Kolkata</b>
 				</div>
 			</div>
 			<div id="side1">
@@ -2618,7 +2614,7 @@
 
 				<div id="head_live">
 					<i class="fas fa-dot-circle"></i>
-					<b>Live from Chandigarh</b>
+					<b>Live from Kolkata</b>
 				</div>
 			</div>
 			<div id="side1">

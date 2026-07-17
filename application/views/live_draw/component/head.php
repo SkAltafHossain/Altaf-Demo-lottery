@@ -636,7 +636,7 @@ main #odometer {
 
 }
 #result_div_1{
-  background-color: #9855cfff;
+  background-color: rgb(16, 5, 225);
   position: relative;
   bottom: 1061px;
   width: 100%;
@@ -644,7 +644,7 @@ main #odometer {
   display: inline-block;
 }
 #result_div_2{
-  background-image: linear-gradient(#9855cfff, #9855cfff);
+  background-image: linear-gradient(rgb(32, 22, 232), rgb(16, 5, 225));
   position: relative;
   bottom: 994px;
   width: 100%;
@@ -653,7 +653,7 @@ main #odometer {
 }
 
 #result_div_3{
-  background-image: linear-gradient(#9855cfff, #9855cfff);
+  background-image: linear-gradient(rgb(32, 22, 232), rgb(16, 5, 225));
   position: relative;
   bottom: 1061px;
   width: 100%;
@@ -661,7 +661,7 @@ main #odometer {
   display: inline-block;
 }
 #result_div_17{
-  background-image: linear-gradient(#9855cfff, #9855cfff);
+  background-image: linear-gradient(rgb(32, 22, 232), rgb(16, 5, 225));
     position: relative;
     bottom: 688px;
     width: 145%;
@@ -674,7 +674,7 @@ main #odometer {
   display: none;
 }
 #result_div_3_16{
-  background-image: linear-gradient(#9855cfff, #9855cfff);
+  background-image: linear-gradient(rgb(32, 22, 232), rgb(16, 5, 225));
   position: relative;
   bottom: 920px;
   width: 100%;
@@ -687,7 +687,7 @@ main #odometer {
   font-size: 25px !important;
   position: relative;
   font-size: larger;
-  background-color: #126d91ff;
+  background-color: rgb(235, 195, 36);
   color: white;
   padding: 17px;
   left: 290px;
@@ -697,7 +697,7 @@ main #odometer {
   font-size: 25px !important;
   position: relative;
   font-size: larger;
-  background-color: #126d91ff;
+  background-color: rgb(235, 195, 36);
   color: white;
   padding: 17px;
   left: 500px;
@@ -707,7 +707,7 @@ main #odometer {
   position: relative;
   font-size: 30px;
   font-weight: bold;
-  background-color: #126d91ff;
+  background-color: rgb(235, 195, 36);
   color: white;
   padding: 35px;
   left: 1059px;
@@ -937,7 +937,7 @@ main #odometer {
 }
 
 #head_div{
-  background-image: linear-gradient(#9855cfff, #9855cfff);
+  background-image: linear-gradient(rgb(32, 22, 232), rgb(16, 5, 225));
   position: relative;
   bottom: 524px;
   width: 1374PX;
@@ -946,7 +946,7 @@ main #odometer {
 }
 
 #head_div_15{
-  background-image: linear-gradient(#9855cfff, #9855cfff);
+  background-image: linear-gradient(rgb(32, 22, 232), rgb(16, 5, 225));
   position: relative;
   bottom: 524px;
   width: 2023PX;
@@ -955,7 +955,7 @@ main #odometer {
 }
 
 #head_div_16{
-  background-image: linear-gradient(#9855cfff, #9855cfff);
+  background-image: linear-gradient(rgb(32, 22, 232), rgb(16, 5, 225));
   position: relative;
   bottom: 621px;
   width: 2023PX;
