@@ -15,6 +15,7 @@ class Home_Controller extends CI_Controller {
     }   
     public function home()
     {
+    	$this->data['time'] = $this->Home_Model->get_time();
     	$this->data['time1'] = $this->Home_Model->get_time1();
     	$this->data['time2'] = $this->Home_Model->get_time2();
     	$this->data['time3'] = $this->Home_Model->get_time3();

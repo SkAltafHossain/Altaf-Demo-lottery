@@ -7,6 +7,7 @@ class Home_Model extends CI_model
   	{
   		$this->db->select('*');
         $this->db->where('status','Active');
+        $this->db->order_by('id', 'ASC');
         $parent = $this->db->get('tbl_time');
    
         $time = $parent->result();

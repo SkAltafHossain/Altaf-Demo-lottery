@@ -24,8 +24,21 @@ class Result_Controller extends CI_Controller{
     {   
             $result_pdf=$this->Result_Model->result_details($time);
 			$data['result_pdf']=$result_pdf;
-		    // echo"<pre>";
-		    // print_r($data);die();
+		    
+		    // Check if result data exists
+		    if (empty($result_pdf)) {
+		        // Return a PDF with "No Result Available" message
+		        $mpdf = new \Mpdf\Mpdf();
+		        $html = '<div style="text-align:center; padding:50px; font-family:Arial;">
+		                    <h2>No Result Available</h2>
+		                    <p>Result for this time slot is not available yet.</p>
+		                    <p>Please check back later.</p>
+		                </div>';
+		        $mpdf->WriteHTML($html);
+		        $mpdf->Output();
+		        return;
+		    }
+		    
 			$mpdf = new \Mpdf\Mpdf();
 			$html = $this->load->view('user/result_pdf/result_pdf',$data,true);
 			$mpdf->WriteHTML($html);  
