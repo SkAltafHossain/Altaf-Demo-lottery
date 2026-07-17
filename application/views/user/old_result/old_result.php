@@ -15,24 +15,20 @@
         </div>
 
         <div class="row mb-4">
-            <div class="col-md-4 mb-3">
-                <div class="time-box text-center p-4 bg-primary text-white rounded cursor-pointer" onclick="selectTime('11:30')" style="cursor: pointer;">
-                    <h3>11:30 AM</h3>
-                    <p>Morning Result</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="time-box text-center p-4 bg-success text-white rounded cursor-pointer" onclick="selectTime('15:30')" style="cursor: pointer;">
-                    <h3>03:30 PM</h3>
-                    <p>Day Result</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="time-box text-center p-4 bg-info text-white rounded cursor-pointer" onclick="selectTime('17:00')" style="cursor: pointer;">
-                    <h3>05:00 PM</h3>
-                    <p>Evening Result</p>
-                </div>
-            </div>
+            <?php if(isset($time) && !empty($time)): ?>
+                <?php foreach($time as $index => $t): ?>
+                    <div class="col-md-4 mb-3">
+                        <?php 
+                            $bgColors = ['bg-primary', 'bg-success', 'bg-info'];
+                            $bgColor = isset($bgColors[$index]) ? $bgColors[$index] : 'bg-secondary';
+                        ?>
+                        <div class="time-box text-center p-4 <?php echo $bgColor; ?> text-white rounded cursor-pointer" onclick="selectTime(<?php echo $t->id; ?>, '<?php echo $t->time; ?>')" style="cursor: pointer;">
+                            <h3><?php echo $t->time; ?></h3>
+                            <p><?php echo $t->title; ?> Result</p>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            <?php endif; ?>
         </div>
 
         <div class="pdf-display text-center">
@@ -57,29 +53,23 @@
 <script>
 var selectedTime = '';
 
-function selectTime(time) {
-    selectedTime = time;
+function selectTime(timeId, timeLabel) {
+    selectedTime = timeId;
     var date = document.getElementById('pdate').value;
     if(date) {
-        loadPDF(date, time);
+        loadPDF(date, timeId);
     } else {
         alert('Please select a date first');
     }
 }
 
-function loadPDF(date, time) {
+function loadPDF(date, timeId) {
     var pdfFrame = document.getElementById('pdfFrame');
     var pdfMessage = document.getElementById('pdfMessage');
     
-    // Map time to corresponding action
-    var actions = {
-        '11:30': 'oldday_result_date11',
-        '15:30': 'oldday_result_date3',
-        '17:00': 'oldday_result_date7'
-    };
-    
-    var action = actions[time] || 'oldday_result_date11';
-    pdfFrame.src = '<?=base_url()?>' + action + '?pdate=' + date;
+    // Use single endpoint with time ID parameter
+    var pdfUrl = '<?=base_url('old-result')?>?pdate=' + date + '&time=' + timeId;
+    pdfFrame.src = pdfUrl;
     pdfMessage.style.display = 'none';
 }
 </script>

@@ -16,6 +16,36 @@ class Result_Controller extends CI_Controller{
     	$this->data['time'] = $this->Home_Model->get_time();
 	   $this->data['page_title']='Lottery | Old Result';  
 	   $this->data['subview']='old_result/old_result';
+	   
+	   // Check if this is a PDF request
+	   $pdate = $this->input->get('pdate');
+	   $time = $this->input->get('time');
+	   
+	   if ($pdate && $time) {
+	       // Generate PDF for old result
+	       $result_pdf = $this->Result_Model->old_result_details($time, $pdate);
+	       
+	       if (empty($result_pdf)) {
+	           // Return PDF with no result message
+	           $mpdf = new \Mpdf\Mpdf();
+	           $html = '<div style="text-align:center; padding:50px; font-family:Arial;">
+	                       <h2>No Result Available</h2>
+	                       <p>Result for this date and time slot is not available.</p>
+	                   </div>';
+	           $mpdf->WriteHTML($html);
+	           $mpdf->Output();
+	           return;
+	       }
+	       
+	       $data['result_pdf'] = $result_pdf;
+	       $mpdf = new \Mpdf\Mpdf();
+	       $html = $this->load->view('user/result_pdf/result_pdf', $data, true);
+	       $mpdf->WriteHTML($html);
+	       $mpdf->Output();
+	       $mpdf->Output('Haryana.pdf'); // opens in browser
+	       return;
+	   }
+	   
 		// echo "<pre>";
 		// print_r($this->data);die();
 		$this->load->view('user/layout/default', $this->data);   
