@@ -119,6 +119,12 @@
 				$for_price=$this->input->post('for_price');
 				$th_price=$this->input->post('five_price');
 				$time=$this->input->post('time');
+				
+				// Get existing date to preserve it
+				$this->db->where('uniqcode', $uniqcode);
+				$existing_data = $this->db->get('tbl_price_manegment')->row();
+				$existing_date = $existing_data->date;
+				
 				$data=array(
 				'title' => $title,
 				'drow_number' => $drow_number,   
@@ -128,7 +134,7 @@
 				'for_price' => $for_price,
 				'five_price' => $th_price,
 				'time'=>$time,
-				'date' => date('Y-m-d')
+				'date' => $existing_date
 				);	
 				// echo"<pre>";
 				// print_r($data);die();			
