@@ -13,8 +13,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" href="<?=base_url()?>webroot/user/images/logo.png">
 		<meta charset="utf-8">
-		<title>Altaf Lottery</title>
-		<meta name="keywords" content="Altaf Lottery">
+		<title>Manipur Singham Lottery</title>
+		<meta name="keywords" content="Manipur Singham Lottery">
         <meta name="description" content="Best Lottery Agency">
 		<!--<link rel="stylesheet" href="<?=base_url()?>webroot/user/css/style.css">-->
 		<link rel="stylesheet" href="<?=base_url()?>webroot/user/css/bootstrap.min.css">

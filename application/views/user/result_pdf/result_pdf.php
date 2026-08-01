@@ -116,7 +116,7 @@
                 <table>
                     <tr>
                         <td>
-                            <span id="header_text" style="font-weight: bold;">Altaf Lottery</span>
+                            <span id="header_text" style="font-weight: bold;">Manipur Singham Lottery</span>
                         </td>
                         
 
@@ -137,10 +137,10 @@
     <div id="div_last" align="center">
         <div class="row" style="margin-top: 15px; margin-left: 20px; margin-right: 20px;">
           <div class="column left" style = "text-align: left; font-size: 15px; font-weight: bold"><?=$result_pdf->time_t?></div>
-          <div class="column middle" style = "text-align: center;"><span id="div1">Altaf Lottery</span></div>
+          <div class="column middle" style = "text-align: center;"><span id="div1">Manipur Singham Lottery</span></div>
           <div class="column right" style = "text-align: right; font-size: 15px; font-weight: bold"><?=$result_pdf->time_t?></div>
         </div>
-        <div align="center"><span id="div2" >Altaf Lion</span></div>
+        <div align="center"><span id="div2" >Manipur Singham Lion</span></div>
         <div align="center" style="padding-top: - 10px; padding-bottom: 10px"><span id="div3"><?=$result_pdf->title?></span></div>
         <div align="center"><span id="div4"><?=$result_pdf->drow_number?> Draw held on  <?=$result_pdf->date_1 ?>   Price ₹6/-</span></div>
         <div align="center" style="padding-top: 10px; padding-bottom: 10px;"><span id="div5">1st Prize 1 Crore/- <?=$result_pdf->first_price?></span></div>    
@@ -339,7 +339,7 @@
     </div>
 
     <div align="center">
-        <div align="center" style="padding-top: 15px; padding-bottom: 8px;"><span id="div7">ISSUED BY:THE DIRECTOR Altaf Lottery</span></div>
+        <div align="center" style="padding-top: 15px; padding-bottom: 8px;"><span id="div7">ISSUED BY:THE DIRECTOR Manipur Singham Lottery</span></div>
         <hr style="height:2px;border-width:0;color:gray;background-color:gray">
         <div align="center" style="padding-top: 8px; padding-bottom: 10px;"><span id="div8"> <?=$result_pdf->time_t." Result ".  $result_pdf->date_1 ?></span></div>
     </div>

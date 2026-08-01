@@ -22,7 +22,7 @@
           </li>
 
           <li class="list-item">
-              <i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:altaflottery@gmail.com" target="_blank">altaflottery@gmail.com</a></span></i></li>
+              <i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:manipursinghamlottery@gmail.com" target="_blank">manipursinghamlottery@gmail.com</a></span></i></li>
 
         </ul> 
 

@@ -68,7 +68,7 @@
                     
                 </li>
                 <li>
-                    <span class="m-r-sm text-muted welcome-message"><span style="color: #999c9e">Welcome to</span> <b>Altaf Lottery ADMIN SYSTEM</b></span>
+                    <span class="m-r-sm text-muted welcome-message"><span style="color: #999c9e">Welcome to</span> <b>Manipur Singham Lottery ADMIN SYSTEM</b></span>
                 </li>            
                 <li>
                     <a class="logout-icon" href="<?=base_url('admin/AdminController/logout')?>">
