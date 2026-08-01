@@ -4,7 +4,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="<?=base_url()?>webroot/user/images/logo_new.svg">
+    <link rel="icon" href="<?=base_url()?>webroot/user/images/logo.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title><?=$page_title?></title>    
@@ -56,7 +56,7 @@
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
-                    <div class="logo"><img alt="image" class="img-responsive" src="<?=base_url()?>webroot/user/images/logo_new.svg" /></div>
+                    <div class="logo"><img alt="image" class="img-responsive" src="<?=base_url()?>webroot/user/images/logo.png" /></div>
                     <div class="logo-element">
                         <!-- <img alt="image" class="img-responsive" src="<?=base_url()?>webroot/admin/img/logo-icon.png" /> -->
                         Logo

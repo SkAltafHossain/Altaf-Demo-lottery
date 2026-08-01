@@ -165,7 +165,7 @@
 			
 			<div id="side1">
 				<div id="sub_side1">
-					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_new.svg" id="side_logo">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo.png" id="side_logo">
 					<p id="shimla1">Altaf Lottery</p>
 				</div>
 				<div id="sub_side2">
@@ -393,7 +393,7 @@
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
-					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_new.svg" id="side_logo">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo.png" id="side_logo">
 					<p id="shimla1">Altaf Lottery</p>
 				</div>
 				<div id="sub_side2">
@@ -611,7 +611,7 @@
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
-					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_new.svg" id="side_logo">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo.png" id="side_logo">
 					<p id="shimla1">Altaf Lottery</p>
 				</div>
 				<div id="sub_side2">
@@ -830,7 +830,7 @@
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
-					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_new.svg" id="side_logo">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo.png" id="side_logo">
 					<p id="shimla1">Altaf Lottery</p>
 				</div>
 				<div id="sub_side2">
@@ -1169,7 +1169,7 @@
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
-					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_new.svg" id="side_logo">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo.png" id="side_logo">
 					<p id="shimla1">Altaf Lottery</p>
 				</div>
 				<div id="sub_side2">
@@ -1401,7 +1401,7 @@
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
-					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_new.svg" id="side_logo">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo.png" id="side_logo">
 					<p id="shimla1">Altaf Lottery</p>
 				</div>
 				<div id="sub_side2">
@@ -1634,7 +1634,7 @@
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
-					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_new.svg" id="side_logo">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo.png" id="side_logo">
 					<p id="shimla1">Altaf Lottery</p>
 				</div>
 				<div id="sub_side2">
@@ -1866,7 +1866,7 @@
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
-					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_new.svg" id="side_logo">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo.png" id="side_logo">
 					<p id="shimla1">Altaf Lottery</p>
 				</div>
 				<div id="sub_side2">
@@ -2099,7 +2099,7 @@
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
-					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_new.svg" id="side_logo">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo.png" id="side_logo">
 					<p id="shimla1">Altaf Lottery</p>
 				</div>
 				<div id="sub_side2">
@@ -2400,7 +2400,7 @@
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
-					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_new.svg" id="side_logo">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo.png" id="side_logo">
 					<p id="shimla1">Altaf Lottery</p>
 				</div>
 				<div id="sub_side2">
@@ -2619,7 +2619,7 @@
 			</div>
 			<div id="side1">
 				<div id="sub_side1">
-					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo_new.svg" id="side_logo">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/logo.png" id="side_logo">
 					<p id="shimla1">Altaf Lottery</p>
 				</div>
 				<div id="sub_side2">
