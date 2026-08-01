@@ -82,9 +82,9 @@ if ($is_live) {
 	$db['default'] = array(
 		'dsn'	=> '',
 		'hostname' => 'localhost',
-		'username' => 'u710604058_hariana_state',
-		'password' => 'Hariana@123',
-		'database' => 'u710604058_hariana_state',
+		'username' => 'u710604058_singham',
+		'password' => '~X3dE$LOc',
+		'database' => 'u710604058_singham',
 		'dbdriver' => 'mysqli',
 		'dbprefix' => '',
 		'pconnect' => FALSE,
