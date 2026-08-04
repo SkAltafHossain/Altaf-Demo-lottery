@@ -188,7 +188,8 @@
         },first);
 
         setTimeout(function(){
-            new Audio("<?=base_url()?>webroot/live_draw/assets/audio/"+audioFile+"/firstPrize.mp3").play();
+            //new Audio("<?=base_url()?>webroot/live_draw/assets/audio/"+audioFile+"/firstPrize.mp3").play();
+            responsiveVoice.speak("First Price "+fp+" On Five Digits With Series On One Time. ","Hindi Male",{pitch: 0.7});
         },first + 1000);
 
         setTimeout(function(){
@@ -416,7 +417,8 @@
 
         for(i=0;i<2;i++){
           setTimeout(function(){
-            playNumber(parseInt(arrayFirstPrice[m++]));
+              responsiveVoice.speak(convert(arrayFirstPrice[m++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+            //playNumber(parseInt(arrayFirstPrice[m++]));
           },first + 21500+(1000*i));
         }
         setTimeout(function(){
@@ -441,7 +443,8 @@
 
         for(i=0;i<1;i++){
           setTimeout(function(){
-            playChar(arrayFirstPrice[m++]);
+              responsiveVoice.speak(convert(arrayFirstPrice[m++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+            //playChar(arrayFirstPrice[m++]);
           },first + 24000+(1000*i));
         }
 
@@ -467,7 +470,8 @@
 
         for(i=0;i<5;i++){
           setTimeout(function(){
-            playNumber(parseInt(arrayFirstPrice[m++]));
+            //playNumber(parseInt(arrayFirstPrice[m++]));
+            responsiveVoice.speak(convert(arrayFirstPrice[m++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
           },first + 26000+(1000*i));
         }
 
@@ -520,7 +524,8 @@
 
 
         setTimeout(function(){
-            new Audio("<?=base_url()?>webroot/live_draw/assets/audio/"+audioFile+"/secondPrize.mp3").play();
+            //new Audio("<?=base_url()?>webroot/live_draw/assets/audio/"+audioFile+"/secondPrize.mp3").play();
+            responsiveVoice.speak("Second price "+sp+" on five digit on ten times","Hindi Male",{pitch: 0.7});
         },(second + 1000));
 
         setTimeout(function(){
@@ -568,10 +573,11 @@
           for(i=0;i<5;i++){
           
             setTimeout(function(){
-              playNumber(parseInt(arraySecondPrice[mSecondPrice++]));
-            },time+(500*i));
+              //playNumber(parseInt(arraySecondPrice[mSecondPrice++]));
+              responsiveVoice.speak(convert(arraySecondPrice[mSecondPrice++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+            },time+(1000*i));
           }
-          time=time+3000;
+          time=time+6000;
         }
 
         setTimeout(function(){
@@ -594,9 +600,9 @@
           $("#section_16").hide();
           $("#section_17").hide();
 
-        },second + 48000);
+        },second + 80000);
 
-        var third = second + musicTime + 48000 //107000
+        var third = second + musicTime + 80000 //107000
 
         setTimeout(function(){  
           $("#section_1").hide();
@@ -624,7 +630,8 @@
         },third);
 
         setTimeout(function(){
-            new Audio("<?=base_url()?>webroot/live_draw/assets/audio/"+audioFile+"/thirdPrize.mp3").play();
+            //new Audio("<?=base_url()?>webroot/live_draw/assets/audio/"+audioFile+"/thirdPrize.mp3").play();
+            responsiveVoice.speak("Third price "+tp+" on four digit on ten times","Hindi Male",{pitch: 0.7});
         },third + 1000);
 
         setTimeout(function(){
@@ -671,10 +678,11 @@
         for(j=0;j<10;j++){
           for(i=0;i<4;i++){
             setTimeout(function(){
-              playNumber(parseInt(arrayThirdPrice[mThirdPrice++]));
-            },time+(500*i));
+              //playNumber(parseInt(arrayThirdPrice[mThirdPrice++]));
+              responsiveVoice.speak(convert(arrayThirdPrice[mThirdPrice++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+            },time+(1000*i));
           }
-          time=time+3000;
+          time=time+5000;
         }
 
         setTimeout(function(){
@@ -695,9 +703,9 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
-        },third + 48000);
+        },third + 70000);
 
-        var fourth = third + musicTime + 48000; //158000
+        var fourth = third + musicTime + 70000; //158000
 
         setTimeout(function(){
           $("#section_1").hide();
@@ -725,7 +733,8 @@
         },fourth);
 
         setTimeout(function(){
-            new Audio("<?=base_url()?>webroot/live_draw/assets/audio/"+audioFile+"/fourthPrize.mp3").play();
+            //new Audio("<?=base_url()?>webroot/live_draw/assets/audio/"+audioFile+"/fourthPrize.mp3").play();
+            responsiveVoice.speak("Fourth price "+fop+" on four digit on ten times","Hindi Male",{pitch: 0.7});
         },fourth + 1000);
 
         setTimeout(function(){
@@ -772,10 +781,11 @@
         for(j=0;j<10;j++){
           for(i=0;i<4;i++){
             setTimeout(function(){
-              playNumber(parseInt(arrayFourthPrice[mFourthPrice++]));
-            },time+(500*i)); 
+              //playNumber(parseInt(arrayFourthPrice[mFourthPrice++]));
+              responsiveVoice.speak(convert(arrayFourthPrice[mFourthPrice++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+            },time+(1000*i)); 
           }
-          time=time+3000;
+          time=time+5000;
         }
 
         setTimeout(function(){
@@ -796,9 +806,9 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
-        },fourth + 48000);
+        },fourth + 70000);
 
-        var fifth = fourth + musicTime + 48000; //209000
+        var fifth = fourth + musicTime + 70000; //209000
 
         setTimeout(function(){
           $("#section_1").hide();
@@ -826,7 +836,8 @@
         },fifth);
 
         setTimeout(function(){
-            new Audio("<?=base_url()?>webroot/live_draw/assets/audio/"+audioFile+"/fifthPrize.mp3").play();
+            //new Audio("<?=base_url()?>webroot/live_draw/assets/audio/"+audioFile+"/fifthPrize.mp3").play();
+            responsiveVoice.speak("Fifth price "+fip+" on four digit on hundred times","Hindi Male",{pitch: 0.7});
         },fifth + 1000);
 
         setTimeout(function(){
@@ -873,10 +884,11 @@
         for(j=0;j<20;j++){
           for(i=0;i<4;i++){
             setTimeout(function(){
-              playNumber(parseInt(arrayFifthPrice1[mFifthPrice1++]));
-            },time+(500*i));
+              //playNumber(parseInt(arrayFifthPrice1[mFifthPrice1++]));
+              responsiveVoice.speak(convert(arrayFifthPrice1[mFifthPrice1++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+            },time+(1000*i));
           }
-          time=time+3000;
+          time=time+5000;
         }
 
         setTimeout(function(){          
@@ -897,9 +909,9 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
-        },fifth + 78000);
+        },fifth + 120000);
 
-        var sixth = fifth + musicTime + 78000; //290000
+        var sixth = fifth + musicTime + 120000; //290000
         setTimeout(function(){
           $("#section_1").hide();
           $("#section_2").hide();
@@ -969,10 +981,11 @@
         for(j=0;j<20;j++){        
           for(i=0;i<4;i++){
             setTimeout(function(){
-              playNumber(parseInt(arraySixthPrice[mSixthPrice++]));
-            },time2+(500*i));
+              //playNumber(parseInt(arraySixthPrice[mSixthPrice++]));
+              responsiveVoice.speak(convert(arraySixthPrice[mSixthPrice++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+            },time2+(1000*i));
           }
-          time2=time2+3000;
+          time2=time2+5000;
         }
 
         setTimeout(function(){          
@@ -993,9 +1006,9 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
-        },sixth + 73000);
+        },sixth + 120000);
 
-        var seventh = sixth + musicTime + 73000; //366000
+        var seventh = sixth + musicTime + 120000; //366000
         setTimeout(function(){
           $("#section_1").hide();
           $("#section_2").hide();
@@ -1066,10 +1079,12 @@
 
           for(i=0;i<4;i++){
             setTimeout(function(){
-              playNumber(parseInt(arraySeventhPrice[mSeventhPrice++]));
-            },time3+(500*i));
+              //playNumber(parseInt(arraySeventhPrice[mSeventhPrice++]));
+              responsiveVoice.speak(convert(arraySeventhPrice[mSeventhPrice++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+              
+            },time3+(1000*i));
           }
-          time3=time3+3000;
+          time3=time3+5000;
         }
 
         setTimeout(function(){          
@@ -1090,9 +1105,9 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
-        },seventh + 73000);
+        },seventh + 120000);
 
-        var eighth = seventh + musicTime + 73000; //442000
+        var eighth = seventh + musicTime + 120000; //442000
         setTimeout(function(){
           $("#section_1").hide();
           $("#section_2").hide();
@@ -1163,10 +1178,11 @@
 
           for(i=0;i<4;i++){
             setTimeout(function(){
-              playNumber(parseInt(arrayEigthPrice4[mEigthPrice4++]));
-            },time4+(500*i));
+              //playNumber(parseInt(arrayEigthPrice4[mEigthPrice4++]));
+              responsiveVoice.speak(convert(arrayEigthPrice4[mEigthPrice4++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+            },time4+(1000*i));
           }
-          time4=time4+3000;
+          time4=time4+5000;
         }
 
         setTimeout(function(){          
@@ -1187,9 +1203,9 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
-        },eighth + 73000);
+        },eighth + 120000);
 
-        var ninth = eighth + musicTime + 73000; //518000
+        var ninth = eighth + musicTime + 120000; //518000
         setTimeout(function(){
           $("#section_1").hide();
           $("#section_2").hide();
@@ -1260,10 +1276,11 @@
 
           for(i=0;i<4;i++){
             setTimeout(function(){
-              playNumber(parseInt(arrayNinthPrice5[mNinthPrice5++]));
-            },time5+(500*i));
+              //playNumber(parseInt(arrayNinthPrice5[mNinthPrice5++]));
+              responsiveVoice.speak(convert(arrayNinthPrice5[mNinthPrice5++]),"Hindi Male",{pitch: 0.7},{rate: 0.8});
+            },time5+(1000*i));
           }
-          time5=time5+3000;
+          time5=time5+5000;
         }
 
         setTimeout(function(){          
@@ -1284,7 +1301,7 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
-        },ninth + 73000);
+        },ninth + 120000);
 
     </script>
 </body>

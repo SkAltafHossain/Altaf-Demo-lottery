@@ -14,7 +14,7 @@
 	<section id="section_1">
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Manipur Singham Lottery</p>
+    		        <p>Live From Manipur</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -159,7 +159,7 @@
 
 				<div id="head_live">
 					<i class="fas fa-dot-circle"></i>
-					<b>Live from Kolkata</b>
+					<b>Live from Manipur</b>
 				</div>
 			</div>
 			
@@ -275,7 +275,7 @@
 	    
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Manipur Singham Lottery</p>
+    		        <p>Live From Manipur</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -388,7 +388,7 @@
 
 				<div id="head_live">
 					<i class="fas fa-dot-circle"></i>
-					<b>Live from Kolkata</b>
+					<b>Live from Manipur</b>
 				</div>
 			</div>
 			<div id="side1">
@@ -495,7 +495,7 @@
 	<section id="section_3">
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Manipur Singham Lottery</p>
+    		        <p>Live From Manipur</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -606,7 +606,7 @@
 
 				<div id="head_live">
 					<i class="fas fa-dot-circle"></i>
-					<b>Live from Kolkata</b>
+					<b>Live from Manipur</b>
 				</div>
 			</div>
 			<div id="side1">
@@ -716,7 +716,7 @@
 	<section id="section_9">
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Manipur Singham Lottery</p>
+    		        <p>Live From Manipur</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -777,7 +777,7 @@
 								echo $mn;
 
 								?>;
-							}, 168000 + time);//168000
+							}, 198000 + time);//168000
 						</script>
 
 						<div class="odometer1" id="odometer1c<?=$i.$j.$k?>">
@@ -825,7 +825,7 @@
 
 				<div id="head_live">
 					<i class="fas fa-dot-circle"></i>
-					<b>Live from Kolkata</b>
+					<b>Live from Manipur</b>
 				</div>
 			</div>
 			<div id="side1">
@@ -1051,7 +1051,7 @@
 	<section id="section_4">
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Manipur Singham Lottery</p>
+    		        <p>Live From Manipur</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -1116,7 +1116,7 @@
 								echo $mn;
 
 								?>;
-							}, 219000 + time);//219000
+							}, 279000 + time);//219000
 						</script>
 
 						<div class="odometer1" id="odometer1d<?=$i.$j.$k?>">
@@ -1164,7 +1164,7 @@
 
 				<div id="head_live">
 					<i class="fas fa-dot-circle"></i>
-					<b>Live from Kolkata</b>
+					<b>Live from Manipur</b>
 				</div>
 			</div>
 			<div id="side1">
@@ -1288,7 +1288,7 @@
 	<section id="section_10">
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Manipur Singham Lottery</p>
+    		        <p>Live From Manipur</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -1348,7 +1348,7 @@
 								document.getElementById(id).innerText=<?php
 									echo $mn;
 								?>;	
-						  }, 300000 + time);//300000
+						  }, 380000 + time);//300000
 						</script>
 
 						<div class="odometer1" id="odometer1e<?=$i.$j.$k?>">
@@ -1396,7 +1396,7 @@
 
 				<div id="head_live">
 					<i class="fas fa-dot-circle"></i>
-					<b>Live from Kolkata</b>
+					<b>Live from Manipur</b>
 				</div>
 			</div>
 			<div id="side1">
@@ -1520,7 +1520,7 @@
 	<section id="section_11">
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Manipur Singham Lottery</p>
+    		        <p>Live From Manipur</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -1580,7 +1580,7 @@
 								document.getElementById(id).innerText=<?php
 									echo $mn;
 								?>;	
-							}, 376000 +time);//376000
+							}, 456000 + time);//376000
 							
 						</script>
 
@@ -1629,7 +1629,7 @@
 
 				<div id="head_live">
 					<i class="fas fa-dot-circle"></i>
-					<b>Live from Kolkata</b>
+					<b>Live from Manipur</b>
 				</div>
 			</div>
 			<div id="side1">
@@ -1753,7 +1753,7 @@
 	<section id="section_12">
 	    <div id="altaf">
     		   <div class="sakir">
-    		        <p>Manipur Singham Lottery</p>
+    		        <p>Live From Manipur</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -1813,7 +1813,7 @@
 								document.getElementById(id).innerText=<?php
 									echo $mn;
 								?>;	
-							}, 452000 + time);//452000
+							}, 532000 + time);//452000
 						</script>
 
 						<div class="odometer1" id="odometer1g<?=$i.$j.$k?>">
@@ -1861,7 +1861,7 @@
 
 				<div id="head_live">
 					<i class="fas fa-dot-circle"></i>
-					<b>Live from Kolkata</b>
+					<b>Live from Manipur</b>
 				</div>
 			</div>
 			<div id="side1">
@@ -1986,7 +1986,7 @@
 
             <div id="altaf">
     		   <div class="sakir">
-    		        <p>Manipur Singham Lottery</p>
+    		        <p>Live From Manipur</p>
     		        <p><?=$date_time->date_1?> <?=$date_time->time_t?></p>
     		  </div>
     		</div>
@@ -2045,7 +2045,7 @@
 								document.getElementById(id).innerText=<?php
 									echo $mn;
 								?>;	
-							}, 528000 + time);//528000
+							}, 608000 + time);//528000
 				          
 						</script>
 
@@ -2094,7 +2094,7 @@
 
 				<div id="head_live">
 					<i class="fas fa-dot-circle"></i>
-					<b>Live from Kolkata</b>
+					<b>Live from Manipur</b>
 				</div>
 			</div>
 			<div id="side1">
@@ -2395,7 +2395,7 @@
 
 				<div id="head_live">
 					<i class="fas fa-dot-circle"></i>
-					<b>Live from Kolkata</b>
+					<b>Live from Manipur</b>
 				</div>
 			</div>
 			<div id="side1">
@@ -2614,7 +2614,7 @@
 
 				<div id="head_live">
 					<i class="fas fa-dot-circle"></i>
-					<b>Live from Kolkata</b>
+					<b>Live from Manipur</b>
 				</div>
 			</div>
 			<div id="side1">

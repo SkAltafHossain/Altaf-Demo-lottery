@@ -685,20 +685,20 @@ main #odometer {
 
 #draw_1{
   font-size: 25px !important;
-  position: relative;
-  font-size: larger;
-  background-color: rgb(235, 195, 36);
-  color: white;
-  padding: 17px;
-  left: 290px;
-  top: 40px;
+    position: relative;
+    font-size: larger;
+    background-color: #fff;
+    color: #721c24;
+    padding: 17px;
+    left: 290px;
+    top: 40px;
 }
 #draw_2{
   font-size: 25px !important;
   position: relative;
   font-size: larger;
-  background-color: rgb(235, 195, 36);
-  color: white;
+  background-color: #fff;
+  color: #721c24;
   padding: 17px;
   left: 500px;
   top: 40px;
@@ -707,8 +707,8 @@ main #odometer {
   position: relative;
   font-size: 30px;
   font-weight: bold;
-  background-color: rgb(235, 195, 36);
-  color: white;
+  background-color: #fff;
+  color: #721c24;
   padding: 35px;
   left: 1059px;
   top: 104px;
