@@ -143,14 +143,26 @@
 				
 				// Regenerate and save result PDF for this updated price/time and store path in pdf_file
 				$this->load->model('result/Result_Model');
-				$result_pdf = $this->Result_Model->result_details_add($time);
+				// Use old_result_details with existing date to get the correct record
+				$result_pdf = $this->Result_Model->old_result_details($time, $existing_date);
+				
+				// If old_result_details doesn't work, try getting the record directly by uniqcode
+				if(empty($result_pdf)){
+					$this->db->select('DATE_FORMAT(tbl_price_manegment.date, "%d/%m/%Y") as date_1,tbl_price_manegment.*,tbl_time.time as time_t ');
+					$this->db->from('tbl_price_manegment');
+					$this->db->join('tbl_time', 'tbl_price_manegment.time = tbl_time.id');
+					$this->db->where('tbl_price_manegment.uniqcode', $uniqcode);
+					$result_pdf = $this->db->get()->row();
+				}
+				
 				if(!empty($result_pdf)){
 					$pdf_data['result_pdf'] = $result_pdf;
 					$mpdf = new \Mpdf\Mpdf();
 					$html = $this->load->view('user/result_pdf/result_pdf',$pdf_data,true);
 					$mpdf->WriteHTML($html);
 					
-					$filename = date('Ymd').'_time'.$time.'.pdf';
+					// Use existing date for filename to ensure it updates the correct PDF
+					$filename = str_replace('-', '', $existing_date).'_time'.$time.'.pdf';
 					$filepath = FCPATH.'uploads/price_pdfs/'.$filename;
 					$mpdf->Output($filepath,'F');
 					

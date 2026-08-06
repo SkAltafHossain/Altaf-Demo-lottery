@@ -9,6 +9,7 @@
     body {
         margin-top: 0px;
         margin-left: 0px;
+        background-color: #ee9d2c;
     }
 
     #left_logo{
@@ -21,6 +22,7 @@
     }
     #div_last{
         border: solid;
+        background-color: #33f3f0;
     }
 
     #div1{
@@ -143,7 +145,7 @@
         <div align="center"><span id="div2" >Manipur Singham Lion</span></div>
         <div align="center" style="padding-top: - 10px; padding-bottom: 10px"><span id="div3"><?=$result_pdf->title?></span></div>
         <div align="center"><span id="div4"><?=$result_pdf->drow_number?> Draw held on  <?=$result_pdf->date_1 ?>   Price ₹6/-</span></div>
-        <div align="center" style="padding-top: 10px; padding-bottom: 10px;"><span id="div5">1st Prize 1 Crore/- <?=$result_pdf->first_price?></span></div>    
+        <div align="center" style="padding-top: 10px; padding-bottom: 10px;"><span id="div5">1st Prize 50 Lakh/- <?=$result_pdf->first_price?></span></div>    
         <div align="center"><span id="div1">Cons.Prize   ₹   10000/-&ensp;
             <?php
                 $first_price1=$result_pdf->first_price;
@@ -155,7 +157,7 @@
                 echo $first_price2=substr($slug1, -5);
 
             ?> (REAMINING ALL SERIALS)</span></div>
-        <div align="center" style="padding-top:  10px; padding-bottom:  10px;"><span id="div6">2nd Prize ₹7000/-</span></div>
+        <div align="center" style="padding-top:  10px; padding-bottom:  10px;"><span id="div6">2nd Prize ₹9000/-</span></div>
         <?php 
             $secondPrice = $result_pdf->sce_price;
             $slug2=trim($secondPrice);
@@ -173,7 +175,7 @@
         ?>
         
         <div align="center"><span id="div9"><?=$second_price_1?></span></div>
-        <div align="center" style="padding-top:  10px; padding-bottom:   10px;"><span id="div6">3rd Prize ₹2500/-</span></div>
+        <div align="center" style="padding-top:  10px; padding-bottom:   10px;"><span id="div6">3rd Prize ₹5000/-</span></div>
         <?php 
             $thirdPrice = $result_pdf->third_price;
             $slug3=trim($thirdPrice);
@@ -190,7 +192,7 @@
             }
         ?>
         <div align="center"><span id="div9"><?=$third_price_1?></span></div>
-        <div align="center" style="padding-top:   10px; padding-bottom:   10px;"><span id="div6">4th Prize ₹1500/-</span></div>
+        <div align="center" style="padding-top:   10px; padding-bottom:   10px;"><span id="div6">4th Prize ₹4500/-</span></div>
         <?php 
             $fourthPrice = $result_pdf->for_price;
             $slug4=trim($fourthPrice);
@@ -208,7 +210,7 @@
         ?>
         <div align="center"><span id="div9"><?=$fourth_price_1?></span></div>
 
-        <div align="center" style="padding-top:   10px; padding-bottom:   10px;"><span id="div6">5th Prize ₹800</span></div>
+        <div align="center" style="padding-top:   10px; padding-bottom:   10px;"><span id="div6">5th Prize ₹1000</span></div>
         <?php
             $fifth_price=$result_pdf->five_price;
             $slug1=trim($fifth_price);
