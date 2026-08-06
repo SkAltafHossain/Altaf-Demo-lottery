@@ -69,6 +69,11 @@ function loadPDF(date, timeId) {
     
     // Use single endpoint with time ID parameter
     var pdfUrl = '<?=base_url('old-result')?>?pdate=' + date + '&time=' + timeId;
+    
+    // Add version parameter to prevent caching
+    var version = new Date().getTime();
+    pdfUrl = pdfUrl + '&v=' + version;
+    
     pdfFrame.src = pdfUrl;
     pdfMessage.style.display = 'none';
 }

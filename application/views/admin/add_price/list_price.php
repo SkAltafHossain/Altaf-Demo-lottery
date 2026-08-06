@@ -48,7 +48,11 @@
                             <td><?=$value->five_price?></td>
                             <td>
                                 <?php if (!empty($value->pdf_file)) { ?>
-                                    <a href="<?=base_url($value->pdf_file)?>" class="btn btn-xs btn-info" target="_blank">View PDF</a>
+                                    <?php 
+                                        $pdf_path = FCPATH . $value->pdf_file;
+                                        $version = file_exists($pdf_path) ? filemtime($pdf_path) : time();
+                                    ?>
+                                    <a href="<?=base_url($value->pdf_file)?>?v=<?=$version?>" class="btn btn-xs btn-info" target="_blank">View PDF</a>
                                 <?php } else { ?>
                                     -
                                 <?php } ?>

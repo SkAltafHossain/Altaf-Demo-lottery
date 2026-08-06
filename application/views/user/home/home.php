@@ -56,8 +56,12 @@ function changePDF(url) {
     var pdfFrame = document.getElementById('pdfFrame');
     var pdfMessage = document.getElementById('pdfMessage');
     
+    // Add version parameter to prevent caching
+    var version = new Date().getTime();
+    var pdfUrl = url + '?v=' + version;
+    
     // Update the iframe with the selected PDF URL
-    pdfFrame.src = url;
+    pdfFrame.src = pdfUrl;
     pdfMessage.style.display = 'none';
 }
 </script>
