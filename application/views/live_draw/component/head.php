@@ -17,7 +17,7 @@
 		<style>
 		    body{
   overflow: hidden !important;
-  background-color: #d8d7d0 !important;
+  background-color: #b6590269 !important;
 }
 #altaf{
                 position: fixed;
@@ -988,7 +988,6 @@ main #odometer {
   position: relative;
   left: 859px;
   bottom: 524px;
-  background: #0f8a33;
 }
 
 #side17{
@@ -997,7 +996,6 @@ main #odometer {
   position: relative;
   left: 1174px;
   bottom: 1524px;
-  background: #0f8a33;
 }
 .odometer-value{
   font-size: 21px;
@@ -1034,7 +1032,7 @@ main #odometer {
 }
 #sub_side1{
   border: black 5px solid;
-  background-color: #39dbd1;
+  background-color: #f0f7f7;
   position: relative;
   width: 282px;
   height: 88px;
@@ -1117,7 +1115,7 @@ main #odometer {
 
 #sub_side2{
   position: relative;
-  background-color: #39dbd1;
+  background-color: #f0f7f7;
   width: 81%;
   height: 300px;
   left: 68px;

@@ -414,7 +414,7 @@
 		</div>
 
 		<div id="gov">
-			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.jpg" class="img-responsive">
+			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.png?v=2" class="img-responsive">
 		</div>
 
 		<div id="result_div_2">
@@ -632,7 +632,7 @@
 		</div>
 
 		<div id="gov">
-			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.jpg" class="img-responsive">
+			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.png?v=2" class="img-responsive">
 		</div>
 
 		<div id="result_div_2">
@@ -851,7 +851,7 @@
 		</div>
 
 		<div id="gov">
-			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.jpg" class="img-responsive">
+			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.png?v=2" class="img-responsive">
 		</div>
 
 		<div id="result_div_2">
@@ -1192,7 +1192,7 @@
 		</div>
 
 		<div id="gov">
-			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.jpg" class="img-responsive">
+			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.png?v=2" class="img-responsive">
 		</div>
 
 		<div id="result_div_2">
@@ -1424,7 +1424,7 @@
 		</div>
 
 		<div id="gov">
-			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.jpg" class="img-responsive">
+			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.png?v=2" class="img-responsive">
 		</div>
 
 		<div id="result_div_2">
@@ -1657,7 +1657,7 @@
 		</div>
 
 		<div id="gov">
-			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.jpg" class="img-responsive">
+			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.png?v=2" class="img-responsive">
 		</div>
 
 		<div id="result_div_2">
@@ -1889,7 +1889,7 @@
 		</div>
 
 		<div id="gov">
-			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.jpg" class="img-responsive">
+			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.png?v=2" class="img-responsive">
 		</div>
 
 		<div id="result_div_2">
@@ -2122,7 +2122,7 @@
 		</div>
 
 		<div id="gov">
-			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.jpg" class="img-responsive">
+			<img src="<?=base_url()?>webroot/live_draw/assets/images/gov.png?v=2" class="img-responsive">
 		</div>
 
 		<div id="result_div_2">
@@ -2432,7 +2432,7 @@
 			</div>
 
 		    <div id="spin_div">
-				<img src="<?=base_url()?>webroot/live_draw/assets/images/chakamain.png" class="img-responsive" id="chaka_15">
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/chakamain.png?v=2" class="img-responsive" id="chaka_15">
 				<img src="<?=base_url()?>webroot/live_draw/assets/images/chaka_circle.png" class="img-responsive" id="circle_15">
 				<script type="text/javascript">
 					
@@ -2447,7 +2447,7 @@
 				<!-- <button type="button" class="btn btn-info" id="spin_btn">Spin Circle 1</button> -->
 			</div>
 			<div id="sm_spin_div_15">
-				<img src="<?=base_url()?>webroot/live_draw/assets/images/chakamain1.png" id="chaka1">
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/chakamain1.png?v=2" id="chaka1">
 				<img src="<?=base_url()?>webroot/live_draw/assets/images/chaka_circle1.png" id="circle1">
 
 				<script type="text/javascript">
@@ -2651,7 +2651,7 @@
 			</div>
 
 		    <div id="spin_div_16">
-				<img src="<?=base_url()?>webroot/live_draw/assets/images/chakamain.png" class="img-responsive" id="chaka_15">
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/chakamain.png?v=2" class="img-responsive" id="chaka_15">
 				<img src="<?=base_url()?>webroot/live_draw/assets/images/chaka_circle.png" class="img-responsive" id="circle_15">
 				<script type="text/javascript">
 					
@@ -2666,7 +2666,7 @@
 				<!-- <button type="button" class="btn btn-info" id="spin_btn">Spin Circle 1</button> -->
 			</div>
 			<div id="sm_spin_div">
-				<img src="<?=base_url()?>webroot/live_draw/assets/images/chakamain1.png" id="chaka16">
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/chakamain1.png?v=2" id="chaka16">
 				<img src="<?=base_url()?>webroot/live_draw/assets/images/chaka_circle1.png" id="circle16">
 
 				<script type="text/javascript">
