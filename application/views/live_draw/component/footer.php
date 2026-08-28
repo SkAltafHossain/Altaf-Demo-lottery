@@ -139,6 +139,11 @@
         },start + 3500);
 
         setTimeout(function(){
+            //new Audio("<?=base_url()?>webroot/live_draw/assets/audio/"+audioFile+"/firstPrize.mp3").play();
+            responsiveVoice.speak("Dice Through","Hindi Male",{pitch: 0.7});
+        },start + 1500);
+
+        setTimeout(function(){
           var vid = document.getElementById("myVideo"); 
           vid.play()
         },start + 3000);
