@@ -12,13 +12,17 @@
 
         public function get_all_first_price_jodi()
         {
-            // First, get all time slots to ensure we include all of them
-            $time_slots = [
-                '11:30 AM' => '--',
-                '03:00 PM' => '--',
-                '05:00 PM' => '--',
-                '08:30 PM' => '--'
-            ];
+            // Get all time slots from database
+            $this->db->select('time');
+            $this->db->from('tbl_time');
+            $this->db->where('status', 'Active');
+            $this->db->order_by('id', 'asc');
+            $time_slots_query = $this->db->get();
+            
+            $time_slots = [];
+            foreach ($time_slots_query->result() as $row) {
+                $time_slots[$row->time] = '--';
+            }
 
             $this->db->select([
                 'tbl_price_manegment.first_price',
@@ -82,13 +86,17 @@
         
         public function get_all_first_price_last()
         {
-            // First, get all time slots to ensure we include all of them
-            $time_slots = [
-                '11:30 AM' => '-',
-                '03:00 PM' => '-',
-                '05:00 PM' => '-',
-                '08:30 PM' => '-'
-            ];
+            // Get all time slots from database
+            $this->db->select('time');
+            $this->db->from('tbl_time');
+            $this->db->where('status', 'Active');
+            $this->db->order_by('id', 'asc');
+            $time_slots_query = $this->db->get();
+            
+            $time_slots = [];
+            foreach ($time_slots_query->result() as $row) {
+                $time_slots[$row->time] = '-';
+            }
 
             $this->db->select([
                 'tbl_price_manegment.first_price',

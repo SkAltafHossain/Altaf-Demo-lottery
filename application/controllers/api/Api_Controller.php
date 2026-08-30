@@ -15,11 +15,27 @@
             //load user model
             $this->load->model('api/Api_Model');
             $this->db->query("SET sql_mode=(SELECT REPLACE(@@sql_mode, 'ONLY_FULL_GROUP_BY', ''));");
-            date_default_timezone_set('Asia/Kolkata');
+            
+            // Set timezone from database configuration or default to Asia/Kolkata
+            $timezone = $this->get_setting('timezone', 'Asia/Kolkata');
+            date_default_timezone_set($timezone);
+            
+            // Set CORS headers - could be made database-driven in future
             Header('Access-Control-Allow-Origin: *'); //for allow any domain, insecure
             Header('Access-Control-Allow-Headers: *'); //for allow any headers, insecure
             Header('Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE');
             header('Content-Type: application/json'); //method allowed
+        }
+        
+        /**
+         * Get setting from database or return default value
+         * This method allows for database-driven configuration
+         */
+        private function get_setting($key, $default = null)
+        {
+            // Check if there's a settings table and fetch the value
+            // For now, return default - this can be extended when a settings table is created
+            return $default;
         }
         /*<====================Customer Api List==================>*/
 
