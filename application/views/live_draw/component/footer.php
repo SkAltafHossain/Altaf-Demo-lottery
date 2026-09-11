@@ -141,6 +141,10 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
+          $("#section_18").hide();
+          $("#section_19").hide();
+          $("#section_20").hide();
+          $("#section_21").hide();
         },start + 3500);
 
         setTimeout(function(){
@@ -168,6 +172,10 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
+          $("#section_18").hide();
+          $("#section_19").hide();
+          $("#section_20").hide();
+          $("#section_21").hide();
         },afterStartVideo + 4000);
 
         let first = afterStartVideo + musicTime + 4000;//23000
@@ -190,6 +198,10 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
+          $("#section_18").hide();
+          $("#section_19").hide();
+          $("#section_20").hide();
+          $("#section_21").hide();
         },first);
 
         setTimeout(function(){
@@ -417,6 +429,10 @@
           $("#section_15").show();
           $("#section_16").hide();
           $("#section_17").hide();
+          $("#section_18").hide();
+          $("#section_19").hide();
+          $("#section_20").hide();
+          $("#section_21").hide();
         },first + 21500);
 
         var firstPrice= document.getElementById('section_1').value;
@@ -448,6 +464,10 @@
           $("#section_15").hide();
           $("#section_16").show();
           $("#section_17").hide(); 
+          $("#section_18").hide();
+          $("#section_19").hide();
+          $("#section_20").hide();
+          $("#section_21").hide();
         },first + 24000);
 
         for(i=0;i<1;i++){
@@ -475,6 +495,10 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").show(); 
+          $("#section_18").hide();
+          $("#section_19").hide();
+          $("#section_20").hide();
+          $("#section_21").hide();
         },first + 26000);
 
         for(i=0;i<5;i++){
@@ -502,6 +526,10 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
+          $("#section_18").hide();
+          $("#section_19").hide();
+          $("#section_20").hide();
+          $("#section_21").hide();
         },first + 33000);
 
         const second = first + musicTime + 33000;//56000
@@ -524,6 +552,10 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
+          $("#section_18").hide();
+          $("#section_19").hide();
+          $("#section_20").hide();
+          $("#section_21").hide();
         },(second));
 
         setTimeout(function(){
@@ -604,10 +636,14 @@
           $("#section_11").hide();
           $("#section_12").hide();
           $("#section_13").hide();
-          $("#section_14").show();
+          $("#section_14").hide();
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
+          $("#section_18").show();
+          $("#section_19").hide();
+          $("#section_20").hide();
+          $("#section_21").hide();
 
         },second + 80000);
 
@@ -631,6 +667,10 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
+          $("#section_18").hide();
+          $("#section_19").hide();
+          $("#section_20").hide();
+          $("#section_21").hide();
         },third);
 
         setTimeout(function(){
@@ -708,10 +748,14 @@
           $("#section_11").hide();
           $("#section_12").hide();
           $("#section_13").hide();
-          $("#section_14").show();
+          $("#section_14").hide();
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
+          $("#section_18").hide();
+          $("#section_19").show();
+          $("#section_20").hide();
+          $("#section_21").hide();
         },third + 70000);
 
         var fourth = third + musicTime + 70000; //158000
@@ -734,6 +778,10 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
+          $("#section_18").hide();
+          $("#section_19").hide();
+          $("#section_20").hide();
+          $("#section_21").hide();
         },fourth);
 
         setTimeout(function(){
@@ -811,10 +859,14 @@
           $("#section_11").hide();
           $("#section_12").hide();
           $("#section_13").hide();
-          $("#section_14").show();
+          $("#section_14").hide();
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
+          $("#section_18").hide();
+          $("#section_19").hide();
+          $("#section_20").show();
+          $("#section_21").hide();
         },fourth + 70000);
 
         var fifth = fourth + musicTime + 70000; //209000
@@ -837,6 +889,10 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
+          $("#section_18").hide();
+          $("#section_19").hide();
+          $("#section_20").hide();
+          $("#section_21").hide();
         },fifth);
 
         setTimeout(function(){
@@ -914,10 +970,14 @@
           $("#section_11").hide();
           $("#section_12").hide();
           $("#section_13").hide();
-          $("#section_14").show();
+          $("#section_14").hide();
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
+          $("#section_18").hide();
+          $("#section_19").hide();
+          $("#section_20").hide();
+          $("#section_21").show();
         },fifth + 120000);
 
         var sixth = fifth + musicTime + 120000; //290000
@@ -939,6 +999,10 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
+          $("#section_18").hide();
+          $("#section_19").hide();
+          $("#section_20").hide();
+          $("#section_21").hide();
         },sixth);
 
         setTimeout(function(){
@@ -1015,6 +1079,10 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
+          $("#section_18").hide();
+          $("#section_19").hide();
+          $("#section_20").hide();
+          $("#section_21").hide();
         },sixth + 120000);
 
         var seventh = sixth + musicTime + 120000; //366000
@@ -1036,6 +1104,10 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
+          $("#section_18").hide();
+          $("#section_19").hide();
+          $("#section_20").hide();
+          $("#section_21").hide();
         },seventh);
 
         setTimeout(function(){
@@ -1110,10 +1182,14 @@
           $("#section_11").hide();
           $("#section_12").hide();
           $("#section_13").hide();
-          $("#section_14").show();
+          $("#section_14").hide();
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
+          $("#section_18").show();
+          $("#section_19").hide();
+          $("#section_20").hide();
+          $("#section_21").hide();
         },seventh + 120000);
 
         var eighth = seventh + musicTime + 120000; //442000
@@ -1135,6 +1211,10 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
+          $("#section_18").hide();
+          $("#section_19").hide();
+          $("#section_20").hide();
+          $("#section_21").hide();
         },eighth);
 
         setTimeout(function(){
@@ -1208,10 +1288,14 @@
           $("#section_11").hide();
           $("#section_12").hide();
           $("#section_13").hide();
-          $("#section_14").show();
+          $("#section_14").hide();
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
+          $("#section_18").hide();
+          $("#section_19").show();
+          $("#section_20").hide();
+          $("#section_21").hide();
         },eighth + 120000);
 
         var ninth = eighth + musicTime + 120000; //518000
@@ -1233,6 +1317,10 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
+          $("#section_18").hide();
+          $("#section_19").hide();
+          $("#section_20").hide();
+          $("#section_21").hide();
         },ninth);
 
         setTimeout(function(){
@@ -1310,6 +1398,10 @@
           $("#section_15").hide();
           $("#section_16").hide();
           $("#section_17").hide();
+          $("#section_18").hide();
+          $("#section_19").hide();
+          $("#section_20").hide();
+          $("#section_21").hide();
         },ninth + 120000);
 
     </script>

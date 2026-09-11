@@ -2347,7 +2347,22 @@
 
 	<section id="section_14">
 		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider2.jpg" id="screenshot">
+	</section>
 
+	<section id="section_18">
+		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider4.jpeg" id="screenshot">
+	</section>
+
+	<section id="section_19">
+		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider5.jpeg" id="screenshot">
+	</section>
+
+	<section id="section_20">
+		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider6.jpeg" id="screenshot">
+	</section>
+
+	<section id="section_21">
+		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider7.jpeg" id="screenshot">
 	</section>
 
 	<section id="section_15">
