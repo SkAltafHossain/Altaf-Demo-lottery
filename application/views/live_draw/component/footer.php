@@ -371,13 +371,18 @@
             { start: first + 7000, end: first + 16600 },
             { start: first + 6000, end: first + 15600 },
             { start: first + 6500, end: first + 16100 },
+            { start: first + 6000, end: first + 15600 },
+            { start: first + 6500, end: first + 16100 },
+            { start: first + 7000, end: first + 16600 },
+            { start: first + 6000, end: first + 15600 },
+            { start: first + 6500, end: first + 16100 },
         ];
 
         for (let k = 1; k <= 5; k++) {
             for (let j = 1; j <= 2; j++) {
-                for (let i = 1; i <= 10; i++) {
-                  if(i > 4 && i != 10){
-                    const delay = delays[i- 4 - 1];
+                for (let i = 0; i <= 9; i++) {
+                  
+                  const delay = delays[i];
                     console.log("tag", delay);
                     // Hide original, show animation
                     setTimeout(() => {
@@ -390,7 +395,6 @@
                         $("#odometer"+i+j+k).show();
                         $("#odometer1"+i+j+k).hide();
                     }, delay.end);
-                  }
                 }
             }
         }

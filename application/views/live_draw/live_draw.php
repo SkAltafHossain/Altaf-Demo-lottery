@@ -9,6 +9,8 @@
 		$first_price_big_spin=(int)substr($slug1,0, 2);
 		$first_price_small_spin=substr($slug1,2, 1);
 
+		$multiplePosition = rand(1, 10);
+
 	?> 
 
 	<section id="section_1">
@@ -40,9 +42,10 @@
 			<div class="row" id="meater_box_row">
 				<?php
 					for($j=1;$j<=2;$j++)
-					{ if($j!=1){?>
-						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-						<?php
+					{ 
+						if($j!=1){?>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+							<?php
 						}
 						for($i=0;$i<10;$i++) {
 				?> 
@@ -52,36 +55,29 @@
 
 							$first_price2=(int)substr($slug1, -5);
 							$mn=1;
+
+							$positionConfig = [
+								10 => ['target_k' => 1, 'target_j' => 2, 'i_values' => [5,4,3,2,1]],
+								9 => ['target_k' => 2, 'target_j' => 2, 'i_values' => [5,4,3,2,1]],
+								8 => ['target_k' => 3, 'target_j' => 2, 'i_values' => [5,4,3,2,1]],
+								7 => ['target_k' => 4, 'target_j' => 2, 'i_values' => [5,4,3,2,1]],
+								6 => ['target_k' => 5, 'target_j' => 2, 'i_values' => [5,4,3,2,1]],
+								5 => ['target_k' => 1, 'target_j' => 1, 'i_values' => [9,8,7,6,5]],
+								4 => ['target_k' => 2, 'target_j' => 2, 'i_values' => [9,8,7,6,5]],
+								3 => ['target_k' => 3, 'target_j' => 2, 'i_values' => [9,8,7,6,5]],
+								2 => ['target_k' => 4, 'target_j' => 2, 'i_values' => [9,8,7,6,5]],
+								1 => ['target_k' => 5, 'target_j' => 2, 'i_values' => [9,8,7,6,5]]
+							];
+
+							$config = $positionConfig[$multiplePosition] ?? $positionConfig[1];
+							$divisors = [1, 10, 100, 1000, 10000];
+
+							if($k == $config['target_k'] && in_array($i, $config['i_values'])) {
+								$index = array_search($i, $config['i_values']);
+								$first_price3 = (int)($first_price2 / $divisors[$index]);
+								$mn = fmod($first_price3, 10);
+							}
 							
-							if($k==5 && $j==2 && $i==9){
-								$first_price3=(int)$first_price2;
-								$mn=fmod((int)$first_price3,10);
-								
-							}
-
-							else if($k==5 && $j==2 && $i==8){
-								$first_price3=(int)$first_price2/10;
-								$mn=fmod((int)$first_price3,10);
-								
-							}
-
-							else if($k==5 && $j==2 && $i==7){
-								$first_price3=(int)$first_price2/100;
-								$mn=fmod((int)$first_price3,10);
-								
-							}
-
-							else if($k==5 && $j==2 && $i==6){
-								
-								$first_price3=(int)$first_price2/1000;
-								$mn=fmod((int)$first_price3,10);
-
-							}
-
-							else if($k==5 && $j==2 && $i==5){
-								$first_price3=(int)$first_price2/10000;
-								$mn=fmod((int)$first_price3,10);							
-							}
 							$start = $mn;
 							$a = rand(50, 99);
 							for($od=$mn;$od<$a+$mn;$od++){
@@ -177,8 +173,6 @@
 						
 						document.getElementById('shimla_price_31').value='<?=$price->f_p;?>';
 
-
-
 					</script>
 
 					<p id="shimla_price_4">ON 5 DIGITS</p>
@@ -188,13 +182,93 @@
 
 		</div>
 
-			<div id="porda_div1">
-				<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img1">
-				<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img2">
-				<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img3">
-				<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img4">
-				<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img5">
-			</div>
+			<?php if($multiplePosition == 10) { ?>
+				<div id="porda_div1">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img1101">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img1102">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img2">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img3">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img4">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img5">
+				</div>
+			<?php } else if($multiplePosition == 9) { ?>
+				<div id="porda_div1">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img1">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img2091">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img2092">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img3">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img4">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img5">
+				</div>
+			<?php } else if($multiplePosition == 8) { ?>
+				<div id="porda_div1">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img1">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img2">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img3081">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img3082">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img4">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img5">
+				</div>
+			<?php } else if($multiplePosition == 7) { ?>
+				<div id="porda_div1">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img1">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img2">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img3">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img4071">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img4072">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img5">
+				</div>
+			<?php } else if($multiplePosition == 6) { ?>
+				<div id="porda_div1">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img1">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img2">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img3">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img4">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img5061">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img5062">
+				</div>
+			<?php } else if($multiplePosition == 5) { ?>
+				<div id="porda_div1">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img105">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img2">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img3">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img4">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img5">
+				</div>
+			<?php } else if($multiplePosition == 4) { ?>
+				<div id="porda_div1">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img1">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img204">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img3">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img4">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img5">
+				</div>
+			<?php } else if($multiplePosition == 3) { ?>
+				<div id="porda_div1">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img1">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img2">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img303">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img4">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img5">
+				</div>
+			<?php } else if($multiplePosition == 2) { ?>
+				<div id="porda_div1">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img1">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img2">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img3">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img402">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img5">
+				</div>
+			<?php } else { ?>
+				<div id="porda_div1">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img1">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img2">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img3">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img4">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img501">
+				</div>
+			<?php } ?>
+			
 
 		    <div id="spin_div">
 				<img src="<?=base_url()?>webroot/live_draw/assets/images/chakamain.png" class="img-responsive" id="chaka">
@@ -234,15 +308,33 @@
 			</div>
 			<img src="<?=base_url()?>webroot/live_draw/assets/images/chaka_angtha.PNG" id="chaka_angtha">
 			<img src="<?=base_url()?>webroot/live_draw/assets/images/chaka_angtha_2.png" id="chaka_angtha2">
-
-			<img src="<?=base_url()?>webroot/live_draw/assets/images/rod1.jpg" id="rod1" class="rod">
+			<?php if($multiplePosition == 10) { ?>
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/rod1.jpg" id="rod110" class="rod">
+			<?php } else if($multiplePosition == 9) { ?>
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/rod1.jpg" id="rod109" class="rod">
+			<?php } else if($multiplePosition == 8) { ?>
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/rod1.jpg" id="rod108" class="rod">
+			<?php } else if($multiplePosition == 7) { ?>
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/rod1.jpg" id="rod107" class="rod">
+			<?php } else if($multiplePosition == 6) { ?>
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/rod1.jpg" id="rod106" class="rod">
+			<?php } else if($multiplePosition == 5) { ?>
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/rod1.jpg" id="rod105" class="rod">
+			<?php } else if($multiplePosition == 4) { ?>
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/rod1.jpg" id="rod104" class="rod">
+			<?php } else if($multiplePosition == 3) { ?>
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/rod1.jpg" id="rod103" class="rod">
+			<?php } else if($multiplePosition == 2) { ?>
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/rod1.jpg" id="rod102" class="rod">
+			<?php } else { ?>
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/rod1.jpg" id="rod1" class="rod">
+			<?php } ?>
 
 			<div id="dot_first_price">
 				
 				<img src="<?=base_url()?>webroot/live_draw/assets/images/dot.png" id="dots_1" class="dots">
         		<img src="<?=base_url()?>webroot/live_draw/assets/images/dot.png" id="dots_2" class="dots">
         		<img src="<?=base_url()?>webroot/live_draw/assets/images/dot.png" id="dots_3" class="dots">
-
 
 			</div>
 			
@@ -2222,9 +2314,6 @@
 		</center>
 	</section>
 
-    <style>
-        
-    </style>
 	<section id="section_6">
 		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider1.jpg" id="screenshot">
 	</section>
@@ -2712,7 +2801,28 @@
 		$first_price_small_spin=substr($slug1,2, 1);
 	?> 
 	<section id="section_17">
-		<div class="container" id="kus17">
+		<?php if($multiplePosition == 10) { ?>
+			<div class="container" id="kus1705">
+		<?php } else if($multiplePosition == 9) { ?>
+			<div class="container" id="kus1704">
+		<?php } else if($multiplePosition == 8) { ?>
+			<div class="container" id="kus1703">
+		<?php } else if($multiplePosition == 7) { ?>
+			<div class="container" id="kus17">
+		<?php } else if($multiplePosition == 6) { ?>
+			<div class="container" id="kus17">
+		<?php } else if($multiplePosition == 5) {?>
+			<div class="container" id="kus1705">
+		<?php } else if($multiplePosition == 4) {?>
+			<div class="container" id="kus1704">
+		<?php } else if($multiplePosition == 3) {?>
+			<div class="container" id="kus1703">
+		<?php } else if($multiplePosition == 2) { ?>
+			<div class="container" id="kus17">
+		<?php } else { ?>
+			<div class="container" id="kus17">
+		<?php } ?>
+		
 
 		<!------- Row 1 ------->
 
@@ -2735,35 +2845,26 @@
 
 							$first_price2=(int)substr($slug1, -5);
 							$mn=1;
-							
-							if($k==5 && $j==2 && $i==9){
-								$first_price3=(int)$first_price2;
-								$mn=fmod((int)$first_price3,10);
-								
-							}
+							$positionConfig = [
+								10 => ['target_k' => 1, 'target_j' => 2, 'i_values' => [5,4,3,2,1]],
+								9 => ['target_k' => 2, 'target_j' => 2, 'i_values' => [5,4,3,2,1]],
+								8 => ['target_k' => 3, 'target_j' => 2, 'i_values' => [5,4,3,2,1]],
+								7 => ['target_k' => 4, 'target_j' => 2, 'i_values' => [5,4,3,2,1]],
+								6 => ['target_k' => 5, 'target_j' => 2, 'i_values' => [5,4,3,2,1]],
+								5 => ['target_k' => 1, 'target_j' => 1, 'i_values' => [9,8,7,6,5]],
+								4 => ['target_k' => 2, 'target_j' => 2, 'i_values' => [9,8,7,6,5]],
+								3 => ['target_k' => 3, 'target_j' => 2, 'i_values' => [9,8,7,6,5]],
+								2 => ['target_k' => 4, 'target_j' => 2, 'i_values' => [9,8,7,6,5]],
+								1 => ['target_k' => 5, 'target_j' => 2, 'i_values' => [9,8,7,6,5]]
+							];
 
-							else if($k==5 && $j==2 && $i==8){
-								$first_price3=(int)$first_price2/10;
-								$mn=fmod((int)$first_price3,10);
-								
-							}
+							$config = $positionConfig[$multiplePosition] ?? $positionConfig[1];
+							$divisors = [1, 10, 100, 1000, 10000];
 
-							else if($k==5 && $j==2 && $i==7){
-								$first_price3=(int)$first_price2/100;
-								$mn=fmod((int)$first_price3,10);
-								
-							}
-
-							else if($k==5 && $j==2 && $i==6){
-								
-								$first_price3=(int)$first_price2/1000;
-								$mn=fmod((int)$first_price3,10);
-
-							}
-
-							else if($k==5 && $j==2 && $i==5){
-								$first_price3=(int)$first_price2/10000;
-								$mn=fmod((int)$first_price3,10);							
+							if($k == $config['target_k'] && in_array($i, $config['i_values'])) {
+								$index = array_search($i, $config['i_values']);
+								$first_price3 = (int)($first_price2 / $divisors[$index]);
+								$mn = fmod($first_price3, 10);
 							}
 							
 							$start=$mn;
@@ -2831,15 +2932,15 @@
 				}
 			?>
 		</div>
-
-			<div id="result_div_17">
-				<span id="draw_1">Draw Date : <?=$date_time->date_1?></span>
-				<span id="draw_17">Draw Time : <?=$date_time->time_t?> ONWARDS</span>
-			</div>
+			<?php if($multiplePosition == 1 || $multiplePosition == 6) { ?>
+				<div id="result_div_17">
+					<span id="draw_1">Draw Date : <?=$date_time->date_1?></span>
+					<span id="draw_17">Draw Time : <?=$date_time->time_t?> ONWARDS</span>
+				</div>
+			<?php } ?>
+			
 			<img src="<?=base_url()?>webroot/live_draw/assets/images/chaka_angtha.PNG" id="chaka_angtha">
 			<img src="<?=base_url()?>webroot/live_draw/assets/images/chaka_angtha_2.png" id="chaka_angtha2">
-
-			<img src="<?=base_url()?>webroot/live_draw/assets/images/rod1.jpg" id="rod1" class="rod">
 
 			<div id="dot_first_price">
 				
@@ -2847,18 +2948,109 @@
         		<img src="<?=base_url()?>webroot/live_draw/assets/images/dot.png" id="dots_2" class="dots">
         		<img src="<?=base_url()?>webroot/live_draw/assets/images/dot.png" id="dots_3" class="dots">
 
-
 			</div>
 
 			<div id="side17">
 			</div>
+			<?php if($multiplePosition == 10) { ?>
+				<div id="porda_div1710">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img1_17101">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1_other.png" id="porda_img1_17102">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img2_1710">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img3_1709">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img4_1708">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img5_1707">
+				</div>
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/rod1.jpg" id="rod1710" class="rod">
+			<?php } else if($multiplePosition == 9) { ?>
+				<div id="porda_div1709">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img1_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img2_17091">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1_other.png" id="porda_img2_17092">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img3_1709">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img4_1708">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img5_1707">
+				</div>
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/rod1.jpg" id="rod1709" class="rod">
+			<?php } else if($multiplePosition == 8) { ?>
+				<div id="porda_div1708">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img1_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img2_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img3_17081">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1_other.png" id="porda_img3_17082">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img4_1708">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img5_1707">
+				</div>
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/rod1.jpg" id="rod1708" class="rod">
+			<?php } else if($multiplePosition == 7) { ?>
+				<div id="porda_div1707">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img1_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img2_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img3_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img4_17071">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1_other.png" id="porda_img4_17072">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img5_1707">
+				</div>
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/rod1.jpg" id="rod1707" class="rod">
+			<?php } else if($multiplePosition == 6) { ?>
+				<div id="porda_div1706">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img1_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img2_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img3_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img4_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img5_17061">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1_other.png" id="porda_img5_17062">
+				</div>
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/rod1.jpg" id="rod1706" class="rod">
+			<?php } else if($multiplePosition == 5) { ?>
+				<div id="porda_div1705">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img1_1705">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img2_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img3_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img4_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img5_17">
+				</div>
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/rod1.jpg" id="rod1705" class="rod">
+			<?php } else if($multiplePosition == 4) { ?>
+				<div id="porda_div1704">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img1_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img2_1704">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img3_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img4_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img5_17">
+				</div>
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/rod1.jpg" id="rod1704" class="rod">
+			<?php } else if($multiplePosition == 3) { ?>
+				<div id="porda_div1703">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img1_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img2_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img3_1703">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img4_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img5_17">
+				</div>
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/rod1.jpg" id="rod1703" class="rod">
+			<?php } else if($multiplePosition == 2) { ?>
+				<div id="porda_div1702">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img1_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img2_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img3_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img4_1702">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img5_17">
+				</div>
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/rod1.jpg" id="rod1702" class="rod">
+			<?php } else { ?>
+				<div id="porda_div17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img1_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img2_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img3_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img4_17">
+					<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img5_1701">
+				</div>
+				<img src="<?=base_url()?>webroot/live_draw/assets/images/rod1.jpg" id="rod1701" class="rod">
+			<?php } ?>
 
-			<div id="porda_div17">
-				<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img1_17">
-				<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img2_17">
-				<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img3_17">
-				<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img4_17">
-				<img src="<?=base_url()?>webroot/live_draw/assets/images/1st_price_porda_1.png" id="porda_img5_17">
-			</div>
+			
+
+			
 	</section>
 	

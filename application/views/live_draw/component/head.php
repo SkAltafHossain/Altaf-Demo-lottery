@@ -69,6 +69,24 @@
   right: 250px;
 }
 
+#kus1703{
+  position: relative;
+  bottom: 340px;
+  right: 250px;
+}
+
+#kus1704{
+  position: relative;
+  bottom: 20px;
+  right: 250px;
+}
+
+#kus1705{
+  position: relative;
+  bottom: -220px;
+  right: 250px;
+}
+
 #chaka_angtha{
   position: relative;
   bottom: 1621px;
@@ -752,6 +770,95 @@ main #odometer {
     bottom: 2372px;
 }
 
+#porda_div1702{
+      position: relative;
+    background-color: transparent;
+    text-align: center;
+    width: 59.8%;
+    height: 90px;
+    right: 321px;
+    bottom: 2072px;
+}
+
+#porda_div1703{
+      position: relative;
+    background-color: transparent;
+    text-align: center;
+    width: 59.8%;
+    height: 90px;
+    right: 321px;
+    bottom: 1772px;
+}
+
+#porda_div1704{
+      position: relative;
+    background-color: transparent;
+    text-align: center;
+    width: 59.8%;
+    height: 90px;
+    right: 321px;
+    bottom: 1372px;
+}
+
+#porda_div1705{
+      position: relative;
+    background-color: transparent;
+    text-align: center;
+    width: 59.8%;
+    height: 90px;
+    right: 321px;
+    bottom: 1072px;
+}
+
+#porda_div1706{
+    position: relative;
+    background-color: transparent;
+    text-align: center;
+    width: 59.8%;
+    height: 90px;
+    right: 321px;
+    bottom: 2372px;
+}
+
+#porda_div1707{
+    position: relative;
+    background-color: transparent;
+    text-align: center;
+    width: 59.8%;
+    height: 90px;
+    right: 321px;
+    bottom: 2072px;
+}
+
+#porda_div1708{
+    position: relative;
+    background-color: transparent;
+    text-align: center;
+    width: 59.8%;
+    height: 90px;
+    right: 321px;
+    bottom: 1772px;
+}
+
+#porda_div1709{
+    position: relative;
+    background-color: transparent;
+    text-align: center;
+    width: 59.8%;
+    height: 90px;
+    right: 321px;
+    bottom: 1372px;
+}
+
+#porda_div1710{
+    position: relative;
+    background-color: transparent;
+    text-align: center;
+    width: 59.8%;
+    height: 90px;
+    right: 321px;
+    bottom: 1072px;
+}
 
 #porda_img1{
   position: relative;
@@ -759,6 +866,30 @@ main #odometer {
   height: 97px;
   bottom: 630px;
   right: 5px; 
+}
+
+#porda_img105{
+  position: relative;
+  width: 594px;
+  bottom: 630px;
+  height: 97px;
+  right: 112px;
+}
+
+#porda_img1101{
+  position: relative;
+  width: 450px;
+  bottom: 630px;
+  height: 97px;
+  right: 92px;
+}
+
+#porda_img1102{
+  position: relative;
+  width: 180px;
+  height: 97px;
+  bottom: 630px;
+  left: 82px;
 }
 
 #porda_img1_15{
@@ -777,12 +908,60 @@ main #odometer {
   right: 5px; 
 }
 
+#porda_img1_1705{
+  position: relative;
+    width: 1097px;
+    height: 279px;
+    bottom: 631px;
+    right: 5px; 
+}
+
+#porda_img1_17101{
+  position: relative;
+    width: 1097px;
+    height: 279px;
+    bottom: 631px;
+    right:250px;
+}
+
+#porda_img1_17102{
+  position: relative;
+  width: 330px;
+  height: 279px;
+  bottom: 910px;
+  left: 900px; 
+}
+
 #porda_img2{
   position: relative;
   width: 809px;
   height: 97px;
   bottom: 630px;
   right: 5px;
+}
+
+#porda_img204{
+  position: relative;
+  width: 594px;
+  bottom: 630px;
+  height: 97px;
+  right: 112px;
+}
+
+#porda_img2091{
+  position: relative;
+  width: 450px;
+  bottom: 630px;
+  height: 97px;
+  right: 92px;
+}
+
+#porda_img2092{
+  position: relative;
+  width: 180px;
+  height: 97px;
+  bottom: 630px;
+  left: 82px;
 }
 
 #porda_img2_15{
@@ -801,12 +980,68 @@ main #odometer {
   right: 5px; 
 }
 
+#porda_img2_1704{
+  position: relative;
+    width: 1097px;
+    height: 279px;
+    bottom: 631px;
+    right: 5px; 
+}
+
+#porda_img2_1710{
+    position: relative;
+    width: 1500px;
+    height: 300px;
+    bottom: 930px;
+    right: 5px;
+}
+
+#porda_img2_17091{
+  position: relative;
+    width: 1097px;
+    height: 279px;
+    bottom: 631px;
+    right:250px;
+}
+
+#porda_img2_17092{
+  position: relative;
+  width: 330px;
+  height: 279px;
+  bottom: 910px;
+  left: 900px; 
+}
+
 #porda_img3{
   position: relative;
   width: 809px;
   height: 97px;
   bottom: 630px;
   right: 5px;
+}
+
+#porda_img303{
+  position: relative;
+  width: 594px;
+  bottom: 630px;
+  height: 97px;
+  right: 112px;
+}
+
+#porda_img3081{
+  position: relative;
+  width: 450px;
+  bottom: 630px;
+  height: 97px;
+  right: 92px;
+}
+
+#porda_img3082{
+  position: relative;
+  width: 180px;
+  height: 97px;
+  bottom: 630px;
+  left: 82px;
 }
 
 #porda_img3_15{
@@ -825,12 +1060,68 @@ main #odometer {
   right: 5px; 
 }
 
+#porda_img3_1703{
+  position: relative;
+    width: 1097px;
+    height: 279px;
+    bottom: 631px;
+    right: 5px; 
+}
+
+#porda_img3_1709{
+    position: relative;
+    width: 1500px;
+    height: 300px;
+    bottom: 930px;
+    right: 5px;
+}
+
+#porda_img3_17081{
+  position: relative;
+    width: 1097px;
+    height: 279px;
+    bottom: 631px;
+    right:250px;
+}
+
+#porda_img3_17082{
+  position: relative;
+  width: 330px;
+  height: 279px;
+  bottom: 910px;
+  left: 900px; 
+}
+
 #porda_img4{
   position: relative;
   width: 809px;
   height: 97px;
   bottom: 630px;
   right: 5px;
+}
+
+#porda_img402{
+  position: relative;
+  width: 594px;
+  bottom: 630px;
+  height: 97px;
+  right: 112px;
+}
+
+#porda_img4071{
+  position: relative;
+  width: 450px;
+  bottom: 630px;
+  height: 97px;
+  right: 92px;
+}
+
+#porda_img4072{
+  position: relative;
+  width: 180px;
+  height: 97px;
+  bottom: 630px;
+  left: 82px;
 }
 
 #porda_img4_15{
@@ -849,12 +1140,68 @@ main #odometer {
   right: 5px; 
 }
 
+#porda_img4_1702{
+  position: relative;
+    width: 1097px;
+    height: 279px;
+    bottom: 631px;
+    right: 5px; 
+}
+
+#porda_img4_17071{
+  position: relative;
+    width: 1097px;
+    height: 279px;
+    bottom: 631px;
+    right:250px;
+}
+
+#porda_img4_17072{
+  position: relative;
+  width: 330px;
+  height: 279px;
+  bottom: 910px;
+  left: 900px; 
+}
+
+#porda_img4_1708{
+    position: relative;
+    width: 1500px;
+    height: 300px;
+    bottom: 930px;
+    right: 5px;
+}
+
 #porda_img5{
+  position: relative;
+  width: 809px;
+  height: 97px;
+  bottom: 630px;
+  right: 5px;
+}
+
+#porda_img501{
   position: relative;
   width: 594px;
   bottom: 630px;
   height: 97px;
   right: 112px;
+}
+
+#porda_img5061{
+  position: relative;
+  width: 450px;
+  bottom: 630px;
+  height: 97px;
+  right: 92px;
+}
+
+#porda_img5062{
+  position: relative;
+  width: 180px;
+  height: 97px;
+  bottom: 630px;
+  left: 82px;
 }
 
 #porda_img5_15{
@@ -864,13 +1211,42 @@ main #odometer {
   height: 150px;
   right: 112px;
 }
-
 #porda_img5_17{
+  position: relative;
+  width: 1500px;
+  height: 300px;
+  bottom: 630px;
+  right: 5px;
+}
+#porda_img5_1701{
   position: relative;
     width: 1097px;
     height: 279px;
     bottom: 631px;
     right: 5px; 
+}
+#porda_img5_17061{
+  position: relative;
+    width: 1097px;
+    height: 279px;
+    bottom: 631px;
+    right:250px;
+}
+
+#porda_img5_17062{
+  position: relative;
+  width: 330px;
+  height: 279px;
+  bottom: 910px;
+  left: 900px; 
+}
+
+#porda_img5_1707{
+    position: relative;
+    width: 1500px;
+    height: 300px;
+    bottom: 930px;
+    right: 5px;
 }
 
 #porda_img6{
@@ -1139,11 +1515,143 @@ main #odometer {
   left: 648px;
 }
 
+#rod102{
+  position: relative;
+  bottom: 1369px;
+  left: 648px;
+}
+
+#rod103{
+  position: relative;
+  bottom: 1469px;
+  left: 648px;
+}
+
+#rod104{
+  position: relative;
+  bottom: 1569px;
+  left: 648px;
+}
+
+#rod105{
+  position: relative;
+  bottom: 1669px;
+  left: 648px;
+}
+
+#rod106{
+  position: relative;
+  bottom: 1269px;
+  left: 460px;
+}
+
+#rod107{
+  position: relative;
+  bottom: 1369px;
+  left: 460px;
+}
+
+#rod108{
+  position: relative;
+  bottom: 1469px;
+  left: 460px;
+}
+
+#rod109{
+  position: relative;
+  bottom: 1569px;
+  left: 460px;
+}
+#rod110{
+  position: relative;
+  bottom: 1669px;
+  left: 460px;
+}
 #rod15{
   position: relative;
   bottom: 1269px;
   left: 648px;
   display: none;
+}
+
+#rod1701 {
+    position: relative;
+    left: 700px;
+    bottom: 1860px;
+    width: 350px;
+    height: 15px !important;
+}
+
+#rod1702 {
+    position: relative;
+    left: 700px;
+    bottom: 1860px;
+    width: 350px;
+    height: 15px !important;
+}
+
+#rod1703 {
+    position: relative;
+    left: 700px;
+    bottom: 1860px;
+    width: 350px;
+    height: 15px !important;
+}
+
+#rod1704 {
+    position: relative;
+    left: 700px;
+    bottom: 1760px;
+    width: 350px;
+    height: 15px !important;
+}
+
+#rod1705 {
+    position: relative;
+    left: 700px;
+    bottom: 1760px;
+    width: 350px;
+    height: 15px !important;
+}
+
+#rod1706 {
+    position: relative;
+    left: 400px;
+    bottom: 1860px;
+    width: 350px;
+    height: 15px !important;
+}
+
+#rod1707 {
+    position: relative;
+    left: 400px;
+    bottom: 1860px;
+    width: 350px;
+    height: 15px !important;
+}
+
+#rod1708 {
+    position: relative;
+    left: 400px;
+    bottom: 1860px;
+    width: 350px;
+    height: 15px !important;
+}
+
+#rod1709 {
+    position: relative;
+    left: 400px;
+    bottom: 1760px;
+    width: 350px;
+    height: 15px !important;
+}
+
+#rod1710 {
+    position: relative;
+    left: 400px;
+    bottom: 1760px;
+    width: 350px;
+    height: 15px !important;
 }
 
 #section_1{
