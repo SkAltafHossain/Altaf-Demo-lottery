@@ -2316,6 +2316,7 @@
 
 	<section id="section_6">
 		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider1.jpg" id="screenshot">
+		<p id="notes_text">Notes: If the live result is unavailable for any reason, the PDF Result will be considered the Final Result.</p>
 	</section>
 
 	<section id="section_7">

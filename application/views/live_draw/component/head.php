@@ -1674,6 +1674,19 @@ main #odometer {
 }
 #section_6{
   /*display: none;*/
+  position: relative;
+}
+
+#notes_text{
+  position: absolute; 
+  bottom: 60px; left: 0; 
+  right: 0; 
+  text-align: center; 
+  padding: 0 60px; 
+  font-size: 30px; 
+  color: white; 
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8); 
+  z-index: 10;
 }
 
 #section_7{
