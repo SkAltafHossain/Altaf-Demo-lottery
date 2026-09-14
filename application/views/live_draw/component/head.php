@@ -1722,6 +1722,18 @@ main #odometer {
 #section_17{
   display: none;
 }
+#section_18{
+  display: none;
+}
+#section_19{
+  display: none;
+}
+#section_20{
+  display: none;
+}
+#section_21{
+  display: none;
+}
 
 #heading_text{
   position: relative;
