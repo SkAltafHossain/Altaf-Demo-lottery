@@ -32,7 +32,7 @@
               animation-direction: alternate;
             }
             .sakir p{
-                color:#FFFB00;
+                color:#FF0000;
                 font-size:30px;
                 margin-bottom:0px;
                 font-weight:800;
@@ -1680,6 +1680,18 @@ main #odometer {
 #notes_text{
   position: absolute; 
   bottom: 60px; left: 0; 
+  right: 0; 
+  text-align: center; 
+  padding: 0 60px; 
+  font-size: 30px; 
+  color: white; 
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8); 
+  z-index: 10;
+}
+
+#notes_text_other{
+  position: absolute; 
+  bottom: 70px; left: 0; 
   right: 0; 
   text-align: center; 
   padding: 0 60px; 

@@ -2316,7 +2316,7 @@
 
 	<section id="section_6">
 		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider1.jpg" id="screenshot">
-		<p id="notes_text">Notes: If the live result is unavailable for any reason, the PDF Result will be considered the Final Result.</p>
+		<p id="notes_text" style="color: white;">NOTES: IF THE LIVE RESULT IS UNAVAILABLE FOR ANY REASON, THE PDF RESULT WILL BE CONSIDERED THE FINAL RESULT.</p>
 	</section>
 
 	<section id="section_7">
@@ -2344,26 +2344,32 @@
 
 	<section id="section_8">
 		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider3.jpg" id="screenshot">
+		<p id="notes_text" style="color: white;">NOTES: IF THE LIVE RESULT IS UNAVAILABLE FOR ANY REASON, THE PDF RESULT WILL BE CONSIDERED THE FINAL RESULT.</p>
 	</section>
 
 	<section id="section_14">
 		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider2.jpg" id="screenshot">
+		<p id="notes_text" style="color: white;">NOTES: IF THE LIVE RESULT IS UNAVAILABLE FOR ANY REASON, THE PDF RESULT WILL BE CONSIDERED THE FINAL RESULT.</p>
 	</section>
 
 	<section id="section_18">
-		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider4.jpeg" id="screenshot">
+		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider4.jpg" id="screenshot">
+		<p id="notes_text" style="color: red;">NOTES: IF THE LIVE RESULT IS UNAVAILABLE FOR ANY REASON, THE PDF RESULT WILL BE CONSIDERED THE FINAL RESULT.</p>
 	</section>
 
 	<section id="section_19">
-		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider5.jpeg" id="screenshot">
+		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider5.jpg" id="screenshot">
+		<p id="notes_text_other" style="color: red;">NOTES: IF THE LIVE RESULT IS UNAVAILABLE FOR ANY REASON, THE PDF RESULT WILL BE CONSIDERED THE FINAL RESULT.</p>
 	</section>
 
 	<section id="section_20">
-		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider6.jpeg" id="screenshot">
+		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider6.jpg" id="screenshot">
+		<p id="notes_text" style="color: red;">NOTES: IF THE LIVE RESULT IS UNAVAILABLE FOR ANY REASON, THE PDF RESULT WILL BE CONSIDERED THE FINAL RESULT.</p>
 	</section>
 
 	<section id="section_21">
-		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider7.jpeg" id="screenshot">
+		<img src="<?=base_url()?>webroot/live_draw/assets/images/slider7.jpg" id="screenshot">
+		<p id="notes_text" style="color: red;">NOTES: IF THE LIVE RESULT IS UNAVAILABLE FOR ANY REASON, THE PDF RESULT WILL BE CONSIDERED THE FINAL RESULT.</p>
 	</section>
 
 	<section id="section_15">
