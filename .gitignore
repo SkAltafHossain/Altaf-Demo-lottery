@@ -6,3 +6,6 @@ uploads/price_pdfs/*.pdf
 # System files
 .DS_Store
 Thumbs.db
+
+# Log files
+logs/
