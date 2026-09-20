@@ -929,7 +929,7 @@ main #odometer {
   width: 330px;
   height: 279px;
   bottom: 910px;
-  left: 900px; 
+  left: 922px; 
 }
 
 #porda_img2{
@@ -1009,7 +1009,7 @@ main #odometer {
   width: 330px;
   height: 279px;
   bottom: 910px;
-  left: 900px; 
+  left: 922px; 
 }
 
 #porda_img3{
@@ -1089,7 +1089,7 @@ main #odometer {
   width: 330px;
   height: 279px;
   bottom: 910px;
-  left: 900px; 
+  left: 922px; 
 }
 
 #porda_img4{
@@ -1161,7 +1161,7 @@ main #odometer {
   width: 330px;
   height: 279px;
   bottom: 910px;
-  left: 900px; 
+  left: 922px; 
 }
 
 #porda_img4_1708{
@@ -1238,7 +1238,7 @@ main #odometer {
   width: 330px;
   height: 279px;
   bottom: 910px;
-  left: 900px; 
+  left: 922px; 
 }
 
 #porda_img5_1707{
@@ -1517,55 +1517,55 @@ main #odometer {
 
 #rod102{
   position: relative;
-  bottom: 1369px;
+  bottom: 1365px;
   left: 648px;
 }
 
 #rod103{
   position: relative;
-  bottom: 1469px;
+  bottom: 1463px;
   left: 648px;
 }
 
 #rod104{
   position: relative;
-  bottom: 1569px;
+  bottom: 1560px;
   left: 648px;
 }
 
 #rod105{
   position: relative;
-  bottom: 1669px;
+  bottom: 1657px;
   left: 648px;
 }
 
 #rod106{
   position: relative;
   bottom: 1269px;
-  left: 460px;
+  left: 472px;
 }
 
 #rod107{
   position: relative;
-  bottom: 1369px;
-  left: 460px;
+  bottom: 1365px;
+  left: 472px;
 }
 
 #rod108{
   position: relative;
-  bottom: 1469px;
-  left: 460px;
+  bottom: 1463px;
+  left: 472px;
 }
 
 #rod109{
   position: relative;
-  bottom: 1569px;
-  left: 460px;
+  bottom: 1560px;
+  left: 472px;
 }
 #rod110{
   position: relative;
-  bottom: 1669px;
-  left: 460px;
+  bottom: 1657px;
+  left: 472px;
 }
 #rod15{
   position: relative;
@@ -1576,81 +1576,81 @@ main #odometer {
 
 #rod1701 {
     position: relative;
-    left: 700px;
-    bottom: 1860px;
-    width: 350px;
+    left: 760px;
+    bottom: 1900px;
+    width: 420px;
     height: 15px !important;
 }
 
 #rod1702 {
     position: relative;
-    left: 700px;
-    bottom: 1860px;
-    width: 350px;
+    left: 760px;
+    bottom: 1900px;
+    width: 420px;
     height: 15px !important;
 }
 
 #rod1703 {
     position: relative;
-    left: 700px;
-    bottom: 1860px;
-    width: 350px;
+    left: 760px;
+    bottom: 1900px;
+    width: 420px;
     height: 15px !important;
 }
 
 #rod1704 {
     position: relative;
-    left: 700px;
-    bottom: 1760px;
-    width: 350px;
+    left: 760px;
+    bottom: 1800px;
+    width: 420px;
     height: 15px !important;
 }
 
 #rod1705 {
     position: relative;
-    left: 700px;
-    bottom: 1760px;
-    width: 350px;
+    left: 760px;
+    bottom: 1800px;
+    width: 420px;
     height: 15px !important;
 }
 
 #rod1706 {
     position: relative;
-    left: 400px;
-    bottom: 1860px;
-    width: 350px;
+    left: 470px;
+    bottom: 1900px;
+    width: 380px;
     height: 15px !important;
 }
 
 #rod1707 {
     position: relative;
-    left: 400px;
-    bottom: 1860px;
-    width: 350px;
+    left: 470px;
+    bottom: 1900px;
+    width: 380px;
     height: 15px !important;
 }
 
 #rod1708 {
     position: relative;
-    left: 400px;
-    bottom: 1860px;
-    width: 350px;
+    left: 470px;
+    bottom: 1900px;
+    width: 380px;
     height: 15px !important;
 }
 
 #rod1709 {
     position: relative;
-    left: 400px;
-    bottom: 1760px;
-    width: 350px;
+    left: 470px;
+    bottom: 1800px;
+    width: 380px;
     height: 15px !important;
 }
 
 #rod1710 {
     position: relative;
-    left: 400px;
-    bottom: 1760px;
-    width: 350px;
+    left: 470px;
+    bottom: 1800px;
+    width: 380px;
     height: 15px !important;
 }
 
