@@ -1,10 +1,14 @@
 <?php
 /**
  * Cron Job Script for Automatic Price Management Status Activation
- * 
+ *
  * This script automatically activates price management entries based on time + 25 minutes
  * It runs independently of the website and can be executed via cron job
  */
+
+// Enable error reporting for debugging (comment out in production)
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 // Set timezone to match your server timezone
 date_default_timezone_set('Asia/Kolkata');

@@ -111,6 +111,75 @@ mkdir -p /Applications/XAMPP/xamppfiles/htdocs/manipur-singham/logs
 chmod 755 /Applications/XAMPP/xamppfiles/htdocs/manipur-singham/logs
 ```
 
+## Server Troubleshooting (Hostinger/Production)
+
+### Step 1: Verify Cron Job is Scheduled
+1. Log in to Hostinger hPanel
+2. Go to **Hosting → Manage → Advanced → Cron Jobs**
+3. Check if your cron job is listed and active
+4. Verify the schedule (e.g., `* * * * *` for every minute)
+
+### Step 2: Test Script Manually via SSH
+```bash
+# Connect to your server via SSH
+ssh username@your-server-ip
+
+# Navigate to project directory
+cd public_html/manipur-singham
+
+# Run the script manually
+php cron_price_activation.php
+```
+
+### Step 3: Check Cron Job Execution Logs
+Hostinger provides cron execution logs in hPanel:
+1. Go to **Advanced → Cron Jobs**
+2. Click on your cron job
+3. View "Last execution" and "Last output"
+
+### Step 4: Use Test Script for Debugging
+A test script (`test_cron.php`) is provided to verify basic functionality:
+```bash
+# Run test script
+php test_cron.php
+
+# Check test log
+cat logs/test_cron.log
+```
+
+### Step 5: Verify File Paths on Server
+On Hostinger, the absolute path might be different. Check via File Manager:
+- Common paths: `/home/u710604058/public_html/manipur-singham/`
+- Verify the exact path in File Manager and update cron job accordingly
+
+### Step 6: Check PHP Binary Path on Server
+```bash
+# Find PHP path on server
+which php
+# Common paths: /usr/bin/php, /usr/local/bin/php
+```
+
+### Step 7: Enable Error Reporting in Script
+For debugging, temporarily add error reporting to the script:
+```php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+```
+
+### Step 8: Verify Database Connection on Server
+Test database connection manually:
+```bash
+php -r "
+\$conn = new mysqli('localhost', 'u710604058_singham', '~X3dE\$LOc', 'u710604058_singham');
+if (\$conn->connect_error) {
+    echo 'Connection failed: ' . \$conn->connect_error;
+} else {
+    echo 'Connection successful';
+    \$conn->close();
+}
+"
+```
+
 ## Security Considerations
 - The script contains database credentials - ensure proper file permissions
 - Consider moving the script outside the web root for production
