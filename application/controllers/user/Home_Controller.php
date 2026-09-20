@@ -22,7 +22,7 @@ class Home_Controller extends CI_Controller {
 		$this->data['time4'] = $this->Home_Model->get_time4();
     	$this->data['inactiveDate'] = $this->Home_Model->getInactiveData();
     	$this->data['dateOfOneMonth'] = $this->Home_Model->getDataOneMonth();
-    	$this->updateInactiveData($this->data['inactiveDate']);
+    	//$this->updateInactiveData($this->data['inactiveDate']);
 	    $this->data['page_title']='Lottery | Home';  
 		$this->data['subview']='home/home';
 // 		echo "<pre>";
