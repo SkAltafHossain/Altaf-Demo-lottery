@@ -432,7 +432,7 @@
 							echo $mn;
 
 							?>;
-						}, 66000 + time);
+						}, 80000 + time);
 						</script>
 
 						<div class="odometer1" id="odometer1a<?=$i.$j.$k?>">
@@ -649,7 +649,7 @@
 								echo $mn;
 
 								?>;
-							}, 117000 + time); //117000
+							}, 125000 + time); //117000
 
 						</script>
 
@@ -869,7 +869,7 @@
 								echo $mn;
 
 								?>;
-							}, 198000 + time);//168000
+							}, 188000 + time);//168000
 						</script>
 
 						<div class="odometer1" id="odometer1c<?=$i.$j.$k?>">
@@ -1208,7 +1208,7 @@
 								echo $mn;
 
 								?>;
-							}, 279000 + time);//219000
+							}, 249000 + time);//219000
 						</script>
 
 						<div class="odometer1" id="odometer1d<?=$i.$j.$k?>">
@@ -1440,7 +1440,7 @@
 								document.getElementById(id).innerText=<?php
 									echo $mn;
 								?>;	
-						  }, 380000 + time);//300000
+						  }, 340000 + time);//300000
 						</script>
 
 						<div class="odometer1" id="odometer1e<?=$i.$j.$k?>">
@@ -1672,7 +1672,7 @@
 								document.getElementById(id).innerText=<?php
 									echo $mn;
 								?>;	
-							}, 456000 + time);//376000
+							}, 416000 + time);//376000
 							
 						</script>
 
@@ -1905,7 +1905,7 @@
 								document.getElementById(id).innerText=<?php
 									echo $mn;
 								?>;	
-							}, 532000 + time);//452000
+							}, 492000 + time);//452000
 						</script>
 
 						<div class="odometer1" id="odometer1g<?=$i.$j.$k?>">
@@ -2137,7 +2137,7 @@
 								document.getElementById(id).innerText=<?php
 									echo $mn;
 								?>;	
-							}, 608000 + time);//528000
+							}, 568000 + time);//528000
 				          
 						</script>
 
@@ -2501,7 +2501,7 @@
 					</div>
 				</div>
 				<div id="head_title">
-					<span id="heading_text">Manipur Singham Lottery</span>
+					
 				</div>
 
 				<div id="head_live">
@@ -2794,8 +2794,8 @@
 			</div>
 
 			<div id="result_div_3_16">
-				<span id="draw_1">Draw Date : <?=$date_time->date_1?></span>
-				<span id="draw_2">Draw Time : <?=$date_time->time_t?> ONWARDS</span>
+				<span id="draw_16_1">Draw Date : <?=$date_time->date_1?></span>
+				<span id="draw_16_2">Draw Time : <?=$date_time->time_t?> ONWARDS</span>
 			</div>
 			<img src="<?=base_url()?>webroot/live_draw/assets/images/chakka_angtha_15.PNG" id="chaka_angtha_15">
 			<img src="<?=base_url()?>webroot/live_draw/assets/images/chaka_angtha_16.PNG" id="chaka_angtha2_16">
@@ -2956,8 +2956,8 @@
 		</div>
 			<?php if($multiplePosition == 1 || $multiplePosition == 6) { ?>
 				<div id="result_div_17">
-					<span id="draw_1">Draw Date : <?=$date_time->date_1?></span>
-					<span id="draw_17">Draw Time : <?=$date_time->time_t?> ONWARDS</span>
+					<span id="draw_17_1">Draw Date : <?=$date_time->date_1?></span>
+					<span id="draw_17_2">Draw Time : <?=$date_time->time_t?> ONWARDS</span>
 				</div>
 			<?php } ?>
 			

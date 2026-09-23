@@ -16,10 +16,10 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
 		<style>
 		    body{
-  overflow: hidden !important;
-  background-color: rgba(195, 91, 5, 0.6) !important;
-}
-#altaf{
+          overflow: hidden !important;
+          background-color: #bc5f24 !important;
+        }
+        #altaf{
                 position: fixed;
                 top: 0;
                 left: 0;
@@ -114,7 +114,7 @@
 
 #chaka_angtha2_16{
   position: relative;
-    bottom: 1620px;
+    bottom: 1720px;
     left: 613px;
     z-index: -9999999;
 }
@@ -654,7 +654,7 @@ main #odometer {
 
 }
 #result_div_1{
-  background-image: linear-gradient(rgba(195, 91, 5, 0.53), rgba(195, 91, 5, 0.39));
+  background-image: linear-gradient(#a04207, #a4470d);
   position: relative;
   bottom: 1061px;
   width: 100%;
@@ -662,7 +662,7 @@ main #odometer {
   display: inline-block;
 }
 #result_div_2{
-  background-image: linear-gradient(rgba(195, 91, 5, 0.53), rgba(195, 91, 5, 0.39));
+  background-image: linear-gradient(#a04207, #a4470d);
   position: relative;
   bottom: 994px;
   width: 100%;
@@ -671,15 +671,15 @@ main #odometer {
 }
 
 #result_div_3{
-  background-image: linear-gradient(rgba(195, 91, 5, 0.53), rgba(195, 91, 5, 0.39));
+  background-image: linear-gradient(#a04207, #a4470d);
   position: relative;
-  bottom: 1061px;
+  bottom: 1040px;
   width: 100%;
   height: 95px;
   display: inline-block;
 }
 #result_div_17{
-  background-image: linear-gradient(rgba(195, 91, 5, 0.53), rgba(195, 91, 5, 0.39));
+  background-image: linear-gradient(#a04207, #a4470d);
     position: relative;
     bottom: 688px;
     width: 145%;
@@ -692,45 +692,94 @@ main #odometer {
   display: none;
 }
 #result_div_3_16{
-  background-image: linear-gradient(rgba(195, 91, 5, 0.53), rgba(195, 91, 5, 0.39));
+  background-image: linear-gradient(#a04207, #a4470d);
   position: relative;
   bottom: 920px;
-  width: 100%;
-  height: 100px;
-  left: 500px;
+  width: 150%;
+  height: 200px;
+  right: 50px;
   display: inline-block;
 }
 
 #draw_1{
-  font-size: 25px !important;
+  font-size: 35px !important;
+  font-weight: bold;
     position: relative;
     font-size: larger;
     background-color: #fff;
     color: #721c24;
-    padding: 17px;
-    left: 290px;
-    top: 40px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 30px;
+    padding-right: 30px;
+    left: 100px;
+    top: 20px;
+    text-transform: uppercase;
 }
 #draw_2{
-  font-size: 25px !important;
+  font-size: 35px !important;
+  font-weight: bold;
   position: relative;
   font-size: larger;
   background-color: #fff;
   color: #721c24;
-  padding: 17px;
-  left: 500px;
-  top: 40px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 30px;
+  padding-right: 30px;
+  left: 220px;
+  top: 20px;
+  text-transform: uppercase;
 }
-#draw_17{
+
+#draw_17_1{
   position: relative;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bold;
   background-color: #fff;
   color: #721c24;
   padding: 35px;
-  left: 1059px;
-  top: 104px;
+  left: 150px;
+  top: 75px;
+  text-transform: uppercase;
 }
+
+#draw_17_2{
+  position: relative;
+  font-size: 50px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #721c24;
+  padding: 35px;
+  left: 250px;
+  top: 75px;
+  text-transform: uppercase;
+}
+
+#draw_16_1{
+  position: relative;
+  font-size: 50px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #721c24;
+  padding: 35px;
+  left: 950px;
+  top: 75px;
+  text-transform: uppercase;
+}
+
+#draw_16_2{
+  position: relative;
+  font-size: 50px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #721c24;
+  padding: 35px;
+  left: 750px;
+  top: 75px;
+  text-transform: uppercase;
+}
+
 #porda_div1{
   position: relative;
   background-color: transparent;
@@ -1313,7 +1362,7 @@ main #odometer {
 }
 
 #head_div{
-  background-image: linear-gradient(rgba(195, 91, 5, 0.53), rgba(195, 91, 5, 0.39));
+  background-image: linear-gradient(#a04207, #a4470d);
   position: relative;
   bottom: 524px;
   width: 1374PX;
@@ -1322,16 +1371,16 @@ main #odometer {
 }
 
 #head_div_15{
-  background-image: linear-gradient(rgba(195, 91, 5, 0.53), rgba(195, 91, 5, 0.39));
+  background-image: linear-gradient(#a04207, #a4470d);
   position: relative;
   bottom: 524px;
   width: 2023PX;
   height: 50px;
-  right: 451px;
+  right: 1100px;
 }
 
 #head_div_16{
-  background-image: linear-gradient(rgba(195, 91, 5, 0.53), rgba(195, 91, 5, 0.39));
+  background-image: linear-gradient(#a04207, #a4470d);
   position: relative;
   bottom: 621px;
   width: 2023PX;
