@@ -27,6 +27,30 @@
 	   // 	echo $this->db->last_query($all_price);
 	   // 	echo "<pre>";
 	   // 	print_r($all_price);die();
+	    	
+	    	// Fetch prize amount from tbl_price
+	    	$this->db->select('*');
+	    	$this->db->from('tbl_price');
+	    	$this->db->where('status','Active');
+	    	$prize_data=$this->db->get()->row();
+	    	
+	    	// Only assign prize amounts if all_price is not null
+	    	if(!empty($all_price)){
+	    		if(!empty($prize_data)){
+	    			$all_price->first_prize_amount = $prize_data->f_p ?? '1 Crore';
+	    			$all_price->second_prize_amount = $prize_data->s_p ?? '9000';
+	    			$all_price->third_prize_amount = $prize_data->t_p ?? '5000';
+	    			$all_price->fourth_prize_amount = $prize_data->fo_p ?? '4500';
+	    			$all_price->fifth_prize_amount = $prize_data->fi_p ?? '1000';
+	    		} else {
+	    			$all_price->first_prize_amount = '1 Crore';
+	    			$all_price->second_prize_amount = '9000';
+	    			$all_price->third_prize_amount = '5000';
+	    			$all_price->fourth_prize_amount = '4500';
+	    			$all_price->fifth_prize_amount = '1000';
+	    		}
+	    	}
+	    	
 	        return $all_price;  
 	    }
 	   
@@ -45,6 +69,30 @@
 	   // 	echo $this->db->last_query($all_price);
 	   // 	echo "<pre>";
 	   // 	print_r($all_price);die();
+	    	
+	    	// Fetch prize amount from tbl_price
+	    	$this->db->select('*');
+	    	$this->db->from('tbl_price');
+	    	$this->db->where('status','Active');
+	    	$prize_data=$this->db->get()->row();
+	    	
+	    	// Only assign prize amounts if all_price is not null
+	    	if(!empty($all_price)){
+	    		if(!empty($prize_data)){
+	    			$all_price->first_prize_amount = $prize_data->f_p ?? '1 Crore';
+	    			$all_price->second_prize_amount = $prize_data->s_p ?? '9000';
+	    			$all_price->third_prize_amount = $prize_data->t_p ?? '5000';
+	    			$all_price->fourth_prize_amount = $prize_data->fo_p ?? '4500';
+	    			$all_price->fifth_prize_amount = $prize_data->fi_p ?? '1000';
+	    		} else {
+	    			$all_price->first_prize_amount = '1 Crore';
+	    			$all_price->second_prize_amount = '9000';
+	    			$all_price->third_prize_amount = '5000';
+	    			$all_price->fourth_prize_amount = '4500';
+	    			$all_price->fifth_prize_amount = '1000';
+	    		}
+	    	}
+	    	
 	        return $all_price;  
 	    }
 
@@ -62,6 +110,30 @@
 	    	$all_price=$this->db->get()->row();
 	    	// echo "<pre>";
 	    	// print_r($all_price);die();
+	    	
+	    	// Fetch prize amount from tbl_price
+	    	$this->db->select('*');
+	    	$this->db->from('tbl_price');
+	    	$this->db->where('status','Active');
+	    	$prize_data=$this->db->get()->row();
+	    	
+	    	// Only assign prize amounts if all_price is not null
+	    	if(!empty($all_price)){
+	    		if(!empty($prize_data)){
+	    			$all_price->first_prize_amount = $prize_data->f_p ?? '1 Crore';
+	    			$all_price->second_prize_amount = $prize_data->s_p ?? '9000';
+	    			$all_price->third_prize_amount = $prize_data->t_p ?? '5000';
+	    			$all_price->fourth_prize_amount = $prize_data->fo_p ?? '4500';
+	    			$all_price->fifth_prize_amount = $prize_data->fi_p ?? '1000';
+	    		} else {
+	    			$all_price->first_prize_amount = '1 Crore';
+	    			$all_price->second_prize_amount = '9000';
+	    			$all_price->third_prize_amount = '5000';
+	    			$all_price->fourth_prize_amount = '4500';
+	    			$all_price->fifth_prize_amount = '1000';
+	    		}
+	    	}
+	    	
 	        return $all_price;  
 	    }
 	}

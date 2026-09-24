@@ -82,6 +82,47 @@
 					
 					$this->db->where('uniqcode', $uniqcode);
 					$this->db->update('tbl_price_manegment', array('pdf_file' => 'uploads/price_pdfs/'.$filename));
+				} else {
+					// If result_details_add returns null, try direct query for PDF generation
+					$this->db->select('DATE_FORMAT(tbl_price_manegment.date, "%d/%m/%Y") as date_1,tbl_price_manegment.*,tbl_time.time as time_t ');
+					$this->db->from('tbl_price_manegment');
+					$this->db->join('tbl_time', 'tbl_price_manegment.time = tbl_time.id');
+					$this->db->where('tbl_price_manegment.uniqcode', $uniqcode);
+					$result_pdf = $this->db->get()->row();
+					
+					// Fetch prize amount from tbl_price
+					if(!empty($result_pdf)){
+						$this->db->select('*');
+						$this->db->from('tbl_price');
+						$this->db->where('status','Active');
+						$prize_data=$this->db->get()->row();
+						
+						if(!empty($prize_data)){
+							$result_pdf->first_prize_amount = $prize_data->f_p ?? '1 Crore';
+							$result_pdf->second_prize_amount = $prize_data->s_p ?? '9000';
+							$result_pdf->third_prize_amount = $prize_data->t_p ?? '5000';
+							$result_pdf->fourth_prize_amount = $prize_data->fo_p ?? '4500';
+							$result_pdf->fifth_prize_amount = $prize_data->fi_p ?? '1000';
+						} else {
+							$result_pdf->first_prize_amount = '1 Crore';
+							$result_pdf->second_prize_amount = '9000';
+							$result_pdf->third_prize_amount = '5000';
+							$result_pdf->fourth_prize_amount = '4500';
+							$result_pdf->fifth_prize_amount = '1000';
+						}
+						
+						$pdf_data['result_pdf'] = $result_pdf;
+						$mpdf = new \Mpdf\Mpdf();
+						$html = $this->load->view('user/result_pdf/result_pdf',$pdf_data,true);
+						$mpdf->WriteHTML($html);
+						
+						$filename = date('Ymd').'_time'.$time.'.pdf';
+						$filepath = FCPATH.'uploads/price_pdfs/'.$filename;
+						$mpdf->Output($filepath,'F');
+						
+						$this->db->where('uniqcode', $uniqcode);
+						$this->db->update('tbl_price_manegment', array('pdf_file' => 'uploads/price_pdfs/'.$filename));
+					}
 				}
 				$this->session->set_flashdata('success', 'Price added successfully.');
 				redirect('admin/view_price');
@@ -153,6 +194,28 @@
 					$this->db->join('tbl_time', 'tbl_price_manegment.time = tbl_time.id');
 					$this->db->where('tbl_price_manegment.uniqcode', $uniqcode);
 					$result_pdf = $this->db->get()->row();
+					
+					// Fetch prize amount from tbl_price for the fallback case
+					if(!empty($result_pdf)){
+						$this->db->select('*');
+						$this->db->from('tbl_price');
+						$this->db->where('status','Active');
+						$prize_data=$this->db->get()->row();
+						
+						if(!empty($prize_data)){
+							$result_pdf->first_prize_amount = $prize_data->f_p ?? '1 Crore';
+							$result_pdf->second_prize_amount = $prize_data->s_p ?? '9000';
+							$result_pdf->third_prize_amount = $prize_data->t_p ?? '5000';
+							$result_pdf->fourth_prize_amount = $prize_data->fo_p ?? '4500';
+							$result_pdf->fifth_prize_amount = $prize_data->fi_p ?? '1000';
+						} else {
+							$result_pdf->first_prize_amount = '1 Crore';
+							$result_pdf->second_prize_amount = '9000';
+							$result_pdf->third_prize_amount = '5000';
+							$result_pdf->fourth_prize_amount = '4500';
+							$result_pdf->fifth_prize_amount = '1000';
+						}
+					}
 				}
 				
 				if(!empty($result_pdf)){
