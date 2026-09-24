@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light" id="navbar" style="">
     <a class="navbar-brand" href="<?=base_url('home')?>" title="Manipur Singham Lottery" style="align-items: center !important;">
         <div style = "text-align: center;">
-            <img src="<?=base_url()?>webroot/user/images/logo.png" width="40px" class="d-inline-block align-top">
+            <img src="<?=base_url()?>webroot/user/images/logo_chagol.png" width="40px" class="d-inline-block align-top">
             <span style = "color: black; display: inline-block; vertical-align: middle; font-size: 25px; font-weight: 700;text-transform: uppercase; margin-left: 5px; letter-spacing: 1px;"> Manipur Singham Lottery</span>
         </div>
     </a>

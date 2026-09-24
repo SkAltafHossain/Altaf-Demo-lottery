@@ -113,7 +113,7 @@
 <body>
     <table border="0" width="100%" height="100%" style="padding-bottom: 15px;">  
         <tr>  
-            <td><img src="<?=base_url('webroot/user/images/logo.png')?>" id="left_logo"> </td>
+            <td><img src="<?=base_url('webroot/user/images/logo_chagol.png')?>" id="left_logo"> </td>
             <td align="center">
                 <table>
                     <tr>
@@ -132,7 +132,7 @@
 
                 </table>
             </td>  
-            <td><img src="<?=base_url('webroot/user/images/logo.png')?>" id="left_logo"></td>             
+            <td><img src="<?=base_url('webroot/user/images/logo_chagol.png')?>" id="left_logo"></td>             
         </tr>   
     </table> 
 

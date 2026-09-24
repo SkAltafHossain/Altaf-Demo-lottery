@@ -1,38 +1,21 @@
 <?php
 /**
  * Cron Job Script for Automatic Price Management Status Activation
- *
+ * 
  * This script automatically activates price management entries based on time + 25 minutes
  * It runs independently of the website and can be executed via cron job
  */
 
-// Enable error reporting for debugging (comment out in production)
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
 // Set timezone to match your server timezone
 date_default_timezone_set('Asia/Kolkata');
 
-// Database configuration - same as in database.php
 $db_config = [
     'hostname' => 'localhost',
-    'username' => 'root',
-    'password' => '',
-    'database' => 'manipur_singham',
-    'socket' => '/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock'
+    'username' => 'u710604058_singham',
+    'password' => '~X3dE$LOc',
+    'database' => 'u710604058_singham',
+    'socket' => '' // Live server typically uses default socket
 ];
-
-// For live server, you would update these credentials
-$is_live = false; // Set to true for live server
-if ($is_live) {
-    $db_config = [
-        'hostname' => 'localhost',
-        'username' => 'u710604058_singham',
-        'password' => '~X3dE$LOc',
-        'database' => 'u710604058_singham',
-        'socket' => '' // Live server typically uses default socket
-    ];
-}
 
 // Create database connection
 if (!empty($db_config['socket'])) {

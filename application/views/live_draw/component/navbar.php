@@ -1,7 +1,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
     <a class="navbar-brand" href="index.php" title="Manipur State Lottery"> 
-        <img src="assets/images/logo.png" width="50" class="d-inline-block align-top"> 
+        <img src="assets/images/logo_chagol.png" width="50" class="d-inline-block align-top"> 
     </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
