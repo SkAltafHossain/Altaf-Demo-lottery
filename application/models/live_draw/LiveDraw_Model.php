@@ -5,7 +5,7 @@
 
 		public function get_1price_data()
 		{
-			$this->db->select('tbl_price_manegment.first_price');
+			$this->db->select('tbl_price_manegment.first_price, tbl_price_manegment.title');
 	    	$this->db->from('tbl_price_manegment');
 	    	$this->db->where('tbl_price_manegment.status','Inactive');
 	    	$this->db->order_by("id", "desc");
