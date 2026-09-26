@@ -144,7 +144,7 @@
         </div>
         <div align="center"><span id="div2" >Manipur Singham Lion</span></div>
         <div align="center" style="padding-top: - 10px; padding-bottom: 10px"><span id="div3"><?=$result_pdf->title?></span></div>
-        <div align="center"><span id="div4"><?=$result_pdf->drow_number?> Draw held on  <?=$result_pdf->date_1 ?>   Price ₹6/-</span></div>
+        <div align="center"><span id="div4"><?=$result_pdf->drow_number?> Draw held on  <?=$result_pdf->date_1 ?>   Price ₹10/-</span></div>
         <div align="center" style="padding-top: 10px; padding-bottom: 10px;"><span id="div5">1st Prize <?=isset($result_pdf->first_prize_amount) ? $result_pdf->first_prize_amount : '1 Crore'?>/- <?=$result_pdf->first_price?></span></div>    
         <div align="center"><span id="div1">Cons.Prize   ₹   10000/-&ensp;
             <?php
