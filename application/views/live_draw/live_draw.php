@@ -150,7 +150,7 @@
 					</div>
 				</div>
 				<div id="head_title">
-					<span id="heading_text">Manipur Singham <?=$first_price->title?> Lottery</span>
+					<span id="heading_text"><?=$first_price->title?></span>
 				</div>
 
 				<div id="head_live">
@@ -475,7 +475,7 @@
 					</div>
 				</div>
 				<div id="head_title">
-					<span id="heading_text">Manipur Singham <?=$first_price->title?> Lottery</span>
+					<span id="heading_text"><?=$first_price->title?></span>
 				</div>
 
 				<div id="head_live">
@@ -693,7 +693,7 @@
 					</div>
 				</div>
 				<div id="head_title">
-					<span id="heading_text">Manipur Singham <?=$first_price->title?> Lottery</span>
+					<span id="heading_text"><?=$first_price->title?></span>
 				</div>
 
 				<div id="head_live">
@@ -912,7 +912,7 @@
 					</div>
 				</div>
 				<div id="head_title">
-					<span id="heading_text">Manipur Singham <?=$first_price->title?> Lottery</span>
+					<span id="heading_text"><?=$first_price->title?></span>
 				</div>
 
 				<div id="head_live">
@@ -1251,7 +1251,7 @@
 					</div>
 				</div>
 				<div id="head_title">
-					<span id="heading_text">Manipur Singham <?=$first_price->title?> Lottery</span>
+					<span id="heading_text"><?=$first_price->title?></span>
 				</div>
 
 				<div id="head_live">
@@ -1483,7 +1483,7 @@
 					</div>
 				</div>
 				<div id="head_title">
-					<span id="heading_text">Manipur Singham <?=$first_price->title?> Lottery</span>
+					<span id="heading_text"><?=$first_price->title?></span>
 				</div>
 
 				<div id="head_live">
@@ -1716,7 +1716,7 @@
 					</div>
 				</div>
 				<div id="head_title">
-					<span id="heading_text">Manipur Singham <?=$first_price->title?> Lottery</span>
+					<span id="heading_text"><?=$first_price->title?></span>
 				</div>
 
 				<div id="head_live">
@@ -1948,7 +1948,7 @@
 					</div>
 				</div>
 				<div id="head_title">
-					<span id="heading_text">Manipur Singham <?=$first_price->title?> Lottery</span>
+					<span id="heading_text"><?=$first_price->title?></span>
 				</div>
 
 				<div id="head_live">
@@ -2181,7 +2181,7 @@
 					</div>
 				</div>
 				<div id="head_title">
-					<span id="heading_text">Manipur Singham <?=$first_price->title?> Lottery</span>
+					<span id="heading_text"><?=$first_price->title?></span>
 				</div>
 
 				<div id="head_live">
@@ -2720,7 +2720,7 @@
 					</div>
 				</div>
 				<div id="head_title">
-					<span id="heading_text">Manipur Singham <?=$first_price->title?> Lottery</span>
+					<span id="heading_text"><?=$first_price->title?></span>
 				</div>
 
 				<div id="head_live">
